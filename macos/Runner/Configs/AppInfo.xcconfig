@@ -8,7 +8,7 @@
 PRODUCT_NAME = Fundedfy
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dashboard
+PRODUCT_BUNDLE_IDENTIFIER = com.fundedfy.app
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 Fundedfy. All rights reserved.

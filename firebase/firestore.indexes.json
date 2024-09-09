@@ -1,3 +1,32 @@
 {
-  "indexes": []
+  "indexes": [
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "referente1",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "challenges_orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "referente1",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time_order",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
 }

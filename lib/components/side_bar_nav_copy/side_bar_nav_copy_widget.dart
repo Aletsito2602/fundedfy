@@ -43,7 +43,7 @@ class _SideBarNavCopyWidgetState extends State<SideBarNavCopyWidget> {
     super.initState();
     _model = createModel(context, () => SideBarNavCopyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

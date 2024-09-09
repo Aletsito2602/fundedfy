@@ -16,25 +16,43 @@ class ReferidosListaRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "email_customer" field.
-  String? _emailCustomer;
-  String get emailCustomer => _emailCustomer ?? '';
-  bool hasEmailCustomer() => _emailCustomer != null;
+  // "uid_customer" field.
+  String? _uidCustomer;
+  String get uidCustomer => _uidCustomer ?? '';
+  bool hasUidCustomer() => _uidCustomer != null;
 
-  // "comision_obtenida" field.
-  String? _comisionObtenida;
-  String get comisionObtenida => _comisionObtenida ?? '';
-  bool hasComisionObtenida() => _comisionObtenida != null;
+  // "uid_user1" field.
+  String? _uidUser1;
+  String get uidUser1 => _uidUser1 ?? '';
+  bool hasUidUser1() => _uidUser1 != null;
 
-  // "email_referente" field.
-  String? _emailReferente;
-  String get emailReferente => _emailReferente ?? '';
-  bool hasEmailReferente() => _emailReferente != null;
+  // "referreals" field.
+  List<String>? _referreals;
+  List<String> get referreals => _referreals ?? const [];
+  bool hasReferreals() => _referreals != null;
+
+  // "referente1" field.
+  String? _referente1;
+  String get referente1 => _referente1 ?? '';
+  bool hasReferente1() => _referente1 != null;
+
+  // "referente2" field.
+  String? _referente2;
+  String get referente2 => _referente2 ?? '';
+  bool hasReferente2() => _referente2 != null;
+
+  // "referente3" field.
+  String? _referente3;
+  String get referente3 => _referente3 ?? '';
+  bool hasReferente3() => _referente3 != null;
 
   void _initializeFields() {
-    _emailCustomer = snapshotData['email_customer'] as String?;
-    _comisionObtenida = snapshotData['comision_obtenida'] as String?;
-    _emailReferente = snapshotData['email_referente'] as String?;
+    _uidCustomer = snapshotData['uid_customer'] as String?;
+    _uidUser1 = snapshotData['uid_user1'] as String?;
+    _referreals = getDataList(snapshotData['referreals']);
+    _referente1 = snapshotData['referente1'] as String?;
+    _referente2 = snapshotData['referente2'] as String?;
+    _referente3 = snapshotData['referente3'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -72,15 +90,19 @@ class ReferidosListaRecord extends FirestoreRecord {
 }
 
 Map<String, dynamic> createReferidosListaRecordData({
-  String? emailCustomer,
-  String? comisionObtenida,
-  String? emailReferente,
+  String? uidCustomer,
+  String? uidUser1,
+  String? referente1,
+  String? referente2,
+  String? referente3,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
-      'email_customer': emailCustomer,
-      'comision_obtenida': comisionObtenida,
-      'email_referente': emailReferente,
+      'uid_customer': uidCustomer,
+      'uid_user1': uidUser1,
+      'referente1': referente1,
+      'referente2': referente2,
+      'referente3': referente3,
     }.withoutNulls,
   );
 
@@ -93,14 +115,24 @@ class ReferidosListaRecordDocumentEquality
 
   @override
   bool equals(ReferidosListaRecord? e1, ReferidosListaRecord? e2) {
-    return e1?.emailCustomer == e2?.emailCustomer &&
-        e1?.comisionObtenida == e2?.comisionObtenida &&
-        e1?.emailReferente == e2?.emailReferente;
+    const listEquality = ListEquality();
+    return e1?.uidCustomer == e2?.uidCustomer &&
+        e1?.uidUser1 == e2?.uidUser1 &&
+        listEquality.equals(e1?.referreals, e2?.referreals) &&
+        e1?.referente1 == e2?.referente1 &&
+        e1?.referente2 == e2?.referente2 &&
+        e1?.referente3 == e2?.referente3;
   }
 
   @override
-  int hash(ReferidosListaRecord? e) => const ListEquality()
-      .hash([e?.emailCustomer, e?.comisionObtenida, e?.emailReferente]);
+  int hash(ReferidosListaRecord? e) => const ListEquality().hash([
+        e?.uidCustomer,
+        e?.uidUser1,
+        e?.referreals,
+        e?.referente1,
+        e?.referente2,
+        e?.referente3
+      ]);
 
   @override
   bool isValidKey(Object? o) => o is ReferidosListaRecord;

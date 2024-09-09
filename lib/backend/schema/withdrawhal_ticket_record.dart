@@ -36,11 +36,17 @@ class WithdrawhalTicketRecord extends FirestoreRecord {
   String get status => _status ?? '';
   bool hasStatus() => _status != null;
 
+  // "fecharetiro" field.
+  DateTime? _fecharetiro;
+  DateTime? get fecharetiro => _fecharetiro;
+  bool hasFecharetiro() => _fecharetiro != null;
+
   void _initializeFields() {
     _idAccount = snapshotData['id_account'] as String?;
     _amountTicket = snapshotData['amount_ticket'] as String?;
     _emailTicketer = snapshotData['email_ticketer'] as String?;
     _status = snapshotData['status'] as String?;
+    _fecharetiro = snapshotData['fecharetiro'] as DateTime?;
   }
 
   static CollectionReference get collection =>
@@ -83,6 +89,7 @@ Map<String, dynamic> createWithdrawhalTicketRecordData({
   String? amountTicket,
   String? emailTicketer,
   String? status,
+  DateTime? fecharetiro,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -90,6 +97,7 @@ Map<String, dynamic> createWithdrawhalTicketRecordData({
       'amount_ticket': amountTicket,
       'email_ticketer': emailTicketer,
       'status': status,
+      'fecharetiro': fecharetiro,
     }.withoutNulls,
   );
 
@@ -105,12 +113,18 @@ class WithdrawhalTicketRecordDocumentEquality
     return e1?.idAccount == e2?.idAccount &&
         e1?.amountTicket == e2?.amountTicket &&
         e1?.emailTicketer == e2?.emailTicketer &&
-        e1?.status == e2?.status;
+        e1?.status == e2?.status &&
+        e1?.fecharetiro == e2?.fecharetiro;
   }
 
   @override
-  int hash(WithdrawhalTicketRecord? e) => const ListEquality()
-      .hash([e?.idAccount, e?.amountTicket, e?.emailTicketer, e?.status]);
+  int hash(WithdrawhalTicketRecord? e) => const ListEquality().hash([
+        e?.idAccount,
+        e?.amountTicket,
+        e?.emailTicketer,
+        e?.status,
+        e?.fecharetiro
+      ]);
 
   @override
   bool isValidKey(Object? o) => o is WithdrawhalTicketRecord;

@@ -53,7 +53,7 @@ class _ContactWidgetState extends State<ContactWidget> {
     _model.textController8 ??= TextEditingController();
     _model.textFieldFocusNode8 ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -66,7 +66,7 @@ class _ContactWidgetState extends State<ContactWidget> {
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'Contact',
+        title: 'Support',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -107,7 +107,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(
@@ -834,6 +834,8 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                         nameTicket: _model
                                                             .textController1
                                                             .text,
+                                                        fecha:
+                                                            getCurrentTimestamp,
                                                       ));
 
                                                   context.pushNamed(
@@ -1471,6 +1473,8 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                         nameTicket: _model
                                                             .textController5
                                                             .text,
+                                                        fecha:
+                                                            getCurrentTimestamp,
                                                       ));
 
                                                   context.pushNamed(

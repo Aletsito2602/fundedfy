@@ -27,7 +27,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
     super.initState();
     _model = createModel(context, () => DownloadsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -81,7 +81,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(
@@ -198,7 +198,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
-                                                    width: 300.0,
+                                                    width: double.infinity,
                                                     height: 52.0,
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -255,7 +255,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
-                                                    width: 300.0,
+                                                    width: double.infinity,
                                                     height: 52.0,
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -369,7 +369,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
-                                                    width: 300.0,
+                                                    width: double.infinity,
                                                     height: 52.0,
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -426,7 +426,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     size: 15.0,
                                                   ),
                                                   options: FFButtonOptions(
-                                                    width: 300.0,
+                                                    width: double.infinity,
                                                     height: 52.0,
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -479,6 +479,8 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                             if (responsiveVisibility(
                               context: context,
                               phone: false,
+                              tablet: false,
+                              tabletLandscape: false,
                             ))
                               Padding(
                                 padding: EdgeInsets.all(10.0),
@@ -704,6 +706,8 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                             if (responsiveVisibility(
                               context: context,
                               phone: false,
+                              tablet: false,
+                              tabletLandscape: false,
                             ))
                               Padding(
                                 padding: EdgeInsets.all(10.0),
@@ -788,7 +792,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         await launchURL(
                                                             'https://download.mql5.com/cdn/web/just.global.markets/mt5/justmarkets5setup.exe');
                                                       },
-                                                      text: 'Download MT4',
+                                                      text: 'Download MT5',
                                                       icon: FaIcon(
                                                         FontAwesomeIcons
                                                             .windows,
@@ -859,7 +863,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         await launchURL(
                                                             'https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/MetaTrader5.pkg.zip');
                                                       },
-                                                      text: 'Download MT4',
+                                                      text: 'Download MT5',
                                                       icon: FaIcon(
                                                         FontAwesomeIcons.apple,
                                                         size: 15.0,

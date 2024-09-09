@@ -4,9 +4,11 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:provider/provider.dart';
 import 'cuentas_model.dart';
 export 'cuentas_model.dart';
@@ -33,13 +35,13 @@ class _CuentasWidgetState extends State<CuentasWidget>
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
     _model.tabBarController2 = TabController(
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -52,7 +54,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'Cuentas',
+        title: 'Accounts',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -93,7 +95,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(
@@ -124,6 +126,8 @@ class _CuentasWidgetState extends State<CuentasWidget>
                           if (responsiveVisibility(
                             context: context,
                             phone: false,
+                            tablet: false,
+                            tabletLandscape: false,
                           ))
                             Expanded(
                               child: Container(
@@ -215,8 +219,6 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           height: 730.0,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: Color(
-                                                                0x1E0D121D),
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .only(
@@ -237,8 +239,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
-                                                                    24.0),
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        15.0,
+                                                                        0.0,
+                                                                        15.0,
+                                                                        0.0),
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -273,10 +279,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                       children: [
                                                                         Align(
                                                                           alignment: Alignment(
-                                                                              0.0,
+                                                                              -1.0,
                                                                               0),
                                                                           child:
                                                                               TabBar(
+                                                                            isScrollable:
+                                                                                true,
                                                                             labelColor:
                                                                                 FlutterFlowTheme.of(context).primaryText,
                                                                             unselectedLabelColor:
@@ -369,12 +377,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                 begin: AlignmentDirectional(1.0, -0.98),
                                                                                                 end: AlignmentDirectional(-1.0, 0.98),
                                                                                               ),
-                                                                                              borderRadius: BorderRadius.only(
-                                                                                                bottomLeft: Radius.circular(20.0),
-                                                                                                bottomRight: Radius.circular(20.0),
-                                                                                                topLeft: Radius.circular(20.0),
-                                                                                                topRight: Radius.circular(20.0),
-                                                                                              ),
+                                                                                              borderRadius: BorderRadius.circular(4.0),
                                                                                             ),
                                                                                             child: Padding(
                                                                                               padding: EdgeInsets.all(20.0),
@@ -386,14 +389,32 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                     children: [
-                                                                                                      Text(
-                                                                                                        listViewChallengueAccountsRecord.challengeType,
-                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              fontSize: 35.0,
-                                                                                                              letterSpacing: 0.0,
-                                                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      RichText(
+                                                                                                        textScaler: MediaQuery.of(context).textScaler,
+                                                                                                        text: TextSpan(
+                                                                                                          children: [
+                                                                                                            TextSpan(
+                                                                                                              text: '\$',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                                    fontSize: 30.0,
+                                                                                                                    letterSpacing: 0.0,
+                                                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                                  ),
                                                                                                             ),
+                                                                                                            TextSpan(
+                                                                                                              text: valueOrDefault<String>(
+                                                                                                                listViewChallengueAccountsRecord.balanceAccount,
+                                                                                                                '0',
+                                                                                                              ),
+                                                                                                              style: TextStyle(
+                                                                                                                color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                fontSize: 30.0,
+                                                                                                              ),
+                                                                                                            )
+                                                                                                          ],
+                                                                                                          style: TextStyle(),
+                                                                                                        ),
                                                                                                       ),
                                                                                                       FFButtonWidget(
                                                                                                         onPressed: () async {
@@ -625,118 +646,142 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                   context: context,
                                                                                   phone: false,
                                                                                 ),
-                                                                                child: StreamBuilder<List<FundedAccountsRecord>>(
-                                                                                  stream: queryFundedAccountsRecord(
-                                                                                    queryBuilder: (fundedAccountsRecord) => fundedAccountsRecord.where(
+                                                                                child: PagedListView<DocumentSnapshot<Object?>?, FundedAccountsRecord>(
+                                                                                  pagingController: _model.setListViewController2(
+                                                                                    FundedAccountsRecord.collection.where(
                                                                                       'account_email_user',
-                                                                                      isEqualTo: currentUserEmail,
+                                                                                      isEqualTo: currentUserEmail != '' ? currentUserEmail : null,
+                                                                                      isNull: (currentUserEmail != '' ? currentUserEmail : null) == null,
                                                                                     ),
                                                                                   ),
-                                                                                  builder: (context, snapshot) {
-                                                                                    // Customize what your widget looks like when it's loading.
-                                                                                    if (!snapshot.hasData) {
-                                                                                      return Center(
-                                                                                        child: SizedBox(
-                                                                                          width: 50.0,
-                                                                                          height: 50.0,
-                                                                                          child: CircularProgressIndicator(
-                                                                                            valueColor: AlwaysStoppedAnimation<Color>(
-                                                                                              FlutterFlowTheme.of(context).primary,
-                                                                                            ),
+                                                                                  padding: EdgeInsets.zero,
+                                                                                  shrinkWrap: true,
+                                                                                  reverse: false,
+                                                                                  scrollDirection: Axis.vertical,
+                                                                                  builderDelegate: PagedChildBuilderDelegate<FundedAccountsRecord>(
+                                                                                    // Customize what your widget looks like when it's loading the first page.
+                                                                                    firstPageProgressIndicatorBuilder: (_) => Center(
+                                                                                      child: SizedBox(
+                                                                                        width: 40.0,
+                                                                                        height: 40.0,
+                                                                                        child: CircularProgressIndicator(
+                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                            FlutterFlowTheme.of(context).primary,
                                                                                           ),
                                                                                         ),
-                                                                                      );
-                                                                                    }
-                                                                                    List<FundedAccountsRecord> listViewFundedAccountsRecordList = snapshot.data!;
+                                                                                      ),
+                                                                                    ),
+                                                                                    // Customize what your widget looks like when it's loading another page.
+                                                                                    newPageProgressIndicatorBuilder: (_) => Center(
+                                                                                      child: SizedBox(
+                                                                                        width: 40.0,
+                                                                                        height: 40.0,
+                                                                                        child: CircularProgressIndicator(
+                                                                                          valueColor: AlwaysStoppedAnimation<Color>(
+                                                                                            FlutterFlowTheme.of(context).primary,
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
 
-                                                                                    return ListView.builder(
-                                                                                      padding: EdgeInsets.zero,
-                                                                                      shrinkWrap: true,
-                                                                                      scrollDirection: Axis.vertical,
-                                                                                      itemCount: listViewFundedAccountsRecordList.length,
-                                                                                      itemBuilder: (context, listViewIndex) {
-                                                                                        final listViewFundedAccountsRecord = listViewFundedAccountsRecordList[listViewIndex];
-                                                                                        return Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                                                                                          child: Container(
-                                                                                            width: 100.0,
-                                                                                            height: 188.0,
-                                                                                            decoration: BoxDecoration(
-                                                                                              gradient: LinearGradient(
-                                                                                                colors: [
-                                                                                                  Color(0xA04591D5),
-                                                                                                  Color(0x7CE765AC)
-                                                                                                ],
-                                                                                                stops: [0.0, 1.0],
-                                                                                                begin: AlignmentDirectional(1.0, -0.98),
-                                                                                                end: AlignmentDirectional(-1.0, 0.98),
-                                                                                              ),
-                                                                                              borderRadius: BorderRadius.only(
-                                                                                                bottomLeft: Radius.circular(20.0),
-                                                                                                bottomRight: Radius.circular(20.0),
-                                                                                                topLeft: Radius.circular(20.0),
-                                                                                                topRight: Radius.circular(20.0),
-                                                                                              ),
+                                                                                    itemBuilder: (context, _, listViewIndex) {
+                                                                                      final listViewFundedAccountsRecord = _model.listViewPagingController2!.itemList![listViewIndex];
+                                                                                      return Padding(
+                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                        child: Container(
+                                                                                          width: 100.0,
+                                                                                          height: 188.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            gradient: LinearGradient(
+                                                                                              colors: [
+                                                                                                Color(0xA04591D5),
+                                                                                                Color(0x7CE765AC)
+                                                                                              ],
+                                                                                              stops: [0.0, 1.0],
+                                                                                              begin: AlignmentDirectional(1.0, -0.98),
+                                                                                              end: AlignmentDirectional(-1.0, 0.98),
                                                                                             ),
-                                                                                            child: Padding(
-                                                                                              padding: EdgeInsets.all(20.0),
-                                                                                              child: Column(
-                                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                                children: [
-                                                                                                  Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                                                                                                    child: Row(
-                                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                                      children: [
-                                                                                                        Text(
-                                                                                                          listViewFundedAccountsRecord.plataforma,
-                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                fontSize: 35.0,
-                                                                                                                letterSpacing: 0.0,
-                                                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                              ),
-                                                                                                        ),
-                                                                                                        FFButtonWidget(
-                                                                                                          onPressed: () async {
-                                                                                                            context.pushNamed(
-                                                                                                              'funded',
-                                                                                                              queryParameters: {
-                                                                                                                'funded': serializeParam(
-                                                                                                                  listViewFundedAccountsRecord.reference,
-                                                                                                                  ParamType.DocumentReference,
-                                                                                                                ),
-                                                                                                              }.withoutNulls,
-                                                                                                            );
-                                                                                                          },
-                                                                                                          text: 'Accounts Details',
-                                                                                                          options: FFButtonOptions(
-                                                                                                            height: 40.0,
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                            color: Color(0x008E33FF),
-                                                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                                                  fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
-                                                                                                                  color: Colors.white,
-                                                                                                                  letterSpacing: 0.0,
-                                                                                                                  fontWeight: FontWeight.w500,
-                                                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
-                                                                                                                ),
-                                                                                                            elevation: 3.0,
-                                                                                                            borderSide: BorderSide(
-                                                                                                              color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                              width: 1.0,
+                                                                                            borderRadius: BorderRadius.circular(4.0),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsets.all(20.0),
+                                                                                            child: Column(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                              children: [
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                                  child: Row(
+                                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                                    children: [
+                                                                                                      RichText(
+                                                                                                        textScaler: MediaQuery.of(context).textScaler,
+                                                                                                        text: TextSpan(
+                                                                                                          children: [
+                                                                                                            TextSpan(
+                                                                                                              text: '\$',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                                    fontSize: 30.0,
+                                                                                                                    letterSpacing: 0.0,
+                                                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                                  ),
                                                                                                             ),
-                                                                                                            borderRadius: BorderRadius.circular(24.0),
-                                                                                                          ),
+                                                                                                            TextSpan(
+                                                                                                              text: valueOrDefault<String>(
+                                                                                                                listViewFundedAccountsRecord.balanceAccount,
+                                                                                                                '0',
+                                                                                                              ),
+                                                                                                              style: TextStyle(
+                                                                                                                color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                                fontSize: 30.0,
+                                                                                                              ),
+                                                                                                            )
+                                                                                                          ],
+                                                                                                          style: TextStyle(),
                                                                                                         ),
-                                                                                                      ],
-                                                                                                    ),
+                                                                                                      ),
+                                                                                                      FFButtonWidget(
+                                                                                                        onPressed: () async {
+                                                                                                          context.pushNamed(
+                                                                                                            'funded',
+                                                                                                            queryParameters: {
+                                                                                                              'funded': serializeParam(
+                                                                                                                listViewFundedAccountsRecord.reference,
+                                                                                                                ParamType.DocumentReference,
+                                                                                                              ),
+                                                                                                            }.withoutNulls,
+                                                                                                          );
+                                                                                                        },
+                                                                                                        text: 'Accounts Details',
+                                                                                                        options: FFButtonOptions(
+                                                                                                          height: 40.0,
+                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                          color: Color(0x008E33FF),
+                                                                                                          textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                                                color: Colors.white,
+                                                                                                                letterSpacing: 0.0,
+                                                                                                                fontWeight: FontWeight.w500,
+                                                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
+                                                                                                              ),
+                                                                                                          elevation: 3.0,
+                                                                                                          borderSide: BorderSide(
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            width: 1.0,
+                                                                                                          ),
+                                                                                                          borderRadius: BorderRadius.circular(24.0),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
                                                                                                   ),
-                                                                                                  Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                ),
+                                                                                                Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                  child: SingleChildScrollView(
+                                                                                                    scrollDirection: Axis.horizontal,
                                                                                                     child: Row(
                                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                                       children: [
@@ -905,14 +950,14 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ],
                                                                                                     ),
                                                                                                   ),
-                                                                                                ],
-                                                                                              ),
+                                                                                                ),
+                                                                                              ],
                                                                                             ),
                                                                                           ),
-                                                                                        );
-                                                                                      },
-                                                                                    );
-                                                                                  },
+                                                                                        ),
+                                                                                      );
+                                                                                    },
+                                                                                  ),
                                                                                 ),
                                                                               ),
                                                                             ],
@@ -1406,7 +1451,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                   color: Color(0x310D121D),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 30.0, 0.0, 0.0),
@@ -1579,87 +1624,6 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                               width: double.infinity,
                                                                               decoration: BoxDecoration(),
                                                                             ),
-                                                                            if (responsiveVisibility(
-                                                                              context: context,
-                                                                              phone: false,
-                                                                            ))
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
-                                                                                child: Row(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                                                  children: [
-                                                                                    Flexible(
-                                                                                      child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
-                                                                                        child: Container(
-                                                                                          width: 2247.0,
-                                                                                          height: 232.0,
-                                                                                          decoration: BoxDecoration(
-                                                                                            color: Color(0x5F5119B7),
-                                                                                            borderRadius: BorderRadius.circular(8.0),
-                                                                                            border: Border.all(
-                                                                                              color: FlutterFlowTheme.of(context).primary,
-                                                                                            ),
-                                                                                          ),
-                                                                                          child: InkWell(
-                                                                                            splashColor: Colors.transparent,
-                                                                                            focusColor: Colors.transparent,
-                                                                                            hoverColor: Colors.transparent,
-                                                                                            highlightColor: Colors.transparent,
-                                                                                            onTap: () async {
-                                                                                              context.pushNamed('homePage');
-                                                                                            },
-                                                                                            child: Row(
-                                                                                              mainAxisSize: MainAxisSize.max,
-                                                                                              mainAxisAlignment: MainAxisAlignment.center,
-                                                                                              children: [
-                                                                                                InkWell(
-                                                                                                  splashColor: Colors.transparent,
-                                                                                                  focusColor: Colors.transparent,
-                                                                                                  hoverColor: Colors.transparent,
-                                                                                                  highlightColor: Colors.transparent,
-                                                                                                  onTap: () async {
-                                                                                                    context.pushNamed('NewChallenge');
-                                                                                                  },
-                                                                                                  child: Icon(
-                                                                                                    Icons.add_box,
-                                                                                                    color: FlutterFlowTheme.of(context).primary,
-                                                                                                    size: 50.0,
-                                                                                                  ),
-                                                                                                ),
-                                                                                                Align(
-                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                                                                                  child: InkWell(
-                                                                                                    splashColor: Colors.transparent,
-                                                                                                    focusColor: Colors.transparent,
-                                                                                                    hoverColor: Colors.transparent,
-                                                                                                    highlightColor: Colors.transparent,
-                                                                                                    onTap: () async {
-                                                                                                      context.pushNamed('NewChallenge');
-                                                                                                    },
-                                                                                                    child: Text(
-                                                                                                      'Start New Challenge',
-                                                                                                      style: FlutterFlowTheme.of(context).displaySmall.override(
-                                                                                                            fontFamily: 'Outfit',
-                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
-                                                                                                            fontSize: 36.0,
-                                                                                                            letterSpacing: 0.0,
-                                                                                                            fontWeight: FontWeight.normal,
-                                                                                                            useGoogleFonts: GoogleFonts.asMap().containsKey('Outfit'),
-                                                                                                          ),
-                                                                                                    ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                              ],
-                                                                                            ),
-                                                                                          ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ),
-                                                                                  ],
-                                                                                ),
-                                                                              ),
                                                                           ],
                                                                         ),
                                                                       ),
@@ -1751,15 +1715,38 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                             children: [
-                                                                                              Text(
-                                                                                                listViewChallengueAccountsRecord.challengeType,
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: FlutterFlowTheme.of(context).success,
-                                                                                                      fontSize: 25.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                              RichText(
+                                                                                                textScaler: MediaQuery.of(context).textScaler,
+                                                                                                text: TextSpan(
+                                                                                                  children: [
+                                                                                                    TextSpan(
+                                                                                                      text: '\$',
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                            color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                            fontSize: 25.0,
+                                                                                                            letterSpacing: 0.0,
+                                                                                                            fontWeight: FontWeight.w600,
+                                                                                                            useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                          ),
                                                                                                     ),
+                                                                                                    TextSpan(
+                                                                                                      text: listViewChallengueAccountsRecord.balanceAccount,
+                                                                                                      style: TextStyle(
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontWeight: FontWeight.w600,
+                                                                                                        fontSize: 25.0,
+                                                                                                      ),
+                                                                                                    )
+                                                                                                  ],
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                        fontSize: 25.0,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      ),
+                                                                                                ),
                                                                                               ),
                                                                                             ],
                                                                                           ),
@@ -2134,15 +2121,38 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                       children: [
-                                                                                        Text(
-                                                                                          listViewFundedAccountsRecord.plataforma,
-                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: FlutterFlowTheme.of(context).success,
-                                                                                                fontSize: 25.0,
-                                                                                                letterSpacing: 0.0,
-                                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                        RichText(
+                                                                                          textScaler: MediaQuery.of(context).textScaler,
+                                                                                          text: TextSpan(
+                                                                                            children: [
+                                                                                              TextSpan(
+                                                                                                text: '\$',
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                      color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                      fontSize: 25.0,
+                                                                                                      letterSpacing: 0.0,
+                                                                                                      fontWeight: FontWeight.w600,
+                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                    ),
                                                                                               ),
+                                                                                              TextSpan(
+                                                                                                text: listViewFundedAccountsRecord.balanceAccount,
+                                                                                                style: TextStyle(
+                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                  fontWeight: FontWeight.w600,
+                                                                                                  fontSize: 25.0,
+                                                                                                ),
+                                                                                              )
+                                                                                            ],
+                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                                  fontSize: 25.0,
+                                                                                                  letterSpacing: 0.0,
+                                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                ),
+                                                                                          ),
                                                                                         ),
                                                                                       ],
                                                                                     ),
@@ -2400,141 +2410,6 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                               ],
                                             ),
                                           ),
-                                          if (responsiveVisibility(
-                                            context: context,
-                                            phone: false,
-                                          ))
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 0.0, 0.0, 50.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  Flexible(
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  15.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Container(
-                                                        width: 2247.0,
-                                                        height: 232.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color:
-                                                              Color(0x5F5119B7),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      8.0),
-                                                          border: Border.all(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                          ),
-                                                        ),
-                                                        child: InkWell(
-                                                          splashColor: Colors
-                                                              .transparent,
-                                                          focusColor: Colors
-                                                              .transparent,
-                                                          hoverColor: Colors
-                                                              .transparent,
-                                                          highlightColor: Colors
-                                                              .transparent,
-                                                          onTap: () async {
-                                                            context.pushNamed(
-                                                                'homePage');
-                                                          },
-                                                          child: Row(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            mainAxisAlignment:
-                                                                MainAxisAlignment
-                                                                    .center,
-                                                            children: [
-                                                              InkWell(
-                                                                splashColor: Colors
-                                                                    .transparent,
-                                                                focusColor: Colors
-                                                                    .transparent,
-                                                                hoverColor: Colors
-                                                                    .transparent,
-                                                                highlightColor:
-                                                                    Colors
-                                                                        .transparent,
-                                                                onTap:
-                                                                    () async {
-                                                                  context.pushNamed(
-                                                                      'NewChallenge');
-                                                                },
-                                                                child: Icon(
-                                                                  Icons.add_box,
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primary,
-                                                                  size: 50.0,
-                                                                ),
-                                                              ),
-                                                              Align(
-                                                                alignment:
-                                                                    AlignmentDirectional(
-                                                                        0.0,
-                                                                        0.0),
-                                                                child: InkWell(
-                                                                  splashColor:
-                                                                      Colors
-                                                                          .transparent,
-                                                                  focusColor: Colors
-                                                                      .transparent,
-                                                                  hoverColor: Colors
-                                                                      .transparent,
-                                                                  highlightColor:
-                                                                      Colors
-                                                                          .transparent,
-                                                                  onTap:
-                                                                      () async {
-                                                                    context.pushNamed(
-                                                                        'NewChallenge');
-                                                                  },
-                                                                  child: Text(
-                                                                    'Start New Challenge',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .displaySmall
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Outfit',
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryText,
-                                                                          fontSize:
-                                                                              36.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.normal,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey('Outfit'),
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
                                         ],
                                       ),
                                     ),

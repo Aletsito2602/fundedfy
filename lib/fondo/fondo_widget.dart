@@ -24,7 +24,7 @@ class _FondoWidgetState extends State<FondoWidget> {
     super.initState();
     _model = createModel(context, () => FondoModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

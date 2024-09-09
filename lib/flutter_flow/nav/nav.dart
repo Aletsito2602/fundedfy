@@ -90,13 +90,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           routes: [
             FFRoute(
               name: 'signIn',
-              path: 'signIn',
+              path: 'SignIn',
               builder: (context, params) => SignInWidget(
                 ref: params.getParam(
                   'ref',
-                  ParamType.DocumentReference,
-                  isList: false,
-                  collectionNamePath: ['users'],
+                  ParamType.String,
                 ),
               ),
             ),
@@ -107,7 +105,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             ),
             FFRoute(
               name: 'homePage',
-              path: 'homePage',
+              path: 'Home',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
                   ? NavBarPage(initialPage: 'homePage')
@@ -163,7 +161,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             ),
             FFRoute(
               name: 'ReferralProgram',
-              path: 'referralProgram',
+              path: 'Referrals',
               requireAuth: true,
               builder: (context, params) => ReferralProgramWidget(),
             ),
@@ -171,29 +169,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Register',
               path: 'register',
               builder: (context, params) => RegisterWidget(
-                cuponreferido: params.getParam(
-                  'cuponreferido',
-                  ParamType.DocumentReference,
-                  isList: false,
-                  collectionNamePath: ['users'],
+                ref: params.getParam(
+                  'ref',
+                  ParamType.String,
                 ),
               ),
             ),
             FFRoute(
-              name: 'backgrounds',
-              path: 'backgrounds',
-              requireAuth: true,
-              builder: (context, params) => BackgroundsWidget(),
-            ),
-            FFRoute(
-              name: 'backgroundsCopy',
-              path: 'backgroundsCopy',
-              requireAuth: true,
-              builder: (context, params) => BackgroundsCopyWidget(),
-            ),
-            FFRoute(
               name: 'cuenta',
-              path: 'cuenta',
+              path: 'challenge',
               requireAuth: true,
               builder: (context, params) => CuentaWidget(
                 cuenta: params.getParam(
@@ -205,71 +189,55 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'only_crm',
-              path: 'onlyCrm',
-              requireAuth: true,
-              builder: (context, params) => OnlyCrmWidget(),
-            ),
-            FFRoute(
               name: 'NewChallenge',
               path: 'newChallenge',
               requireAuth: true,
               builder: (context, params) => NewChallengeWidget(),
             ),
             FFRoute(
-              name: 'selectbalancehft',
-              path: 'selectbalancehft',
-              requireAuth: true,
-              builder: (context, params) => SelectbalancehftWidget(),
-            ),
-            FFRoute(
-              name: 'selectbalancestandard',
-              path: 'selectbalancestandard',
-              requireAuth: true,
-              builder: (context, params) => SelectbalancestandardWidget(),
-            ),
-            FFRoute(
-              name: 'select-balance-hft-10k',
-              path: 'select-balance-hft-10k',
-              requireAuth: true,
-              builder: (context, params) => SelectBalanceHft10kWidget(),
-            ),
-            FFRoute(
-              name: 'OrderReicebed',
-              path: 'challenge_order_ok',
-              requireAuth: true,
-              builder: (context, params) => OrderReicebedWidget(),
-            ),
-            FFRoute(
               name: 'select-balance-hft-25k',
               path: 'select-balance-hft-25k',
               requireAuth: true,
-              builder: (context, params) => SelectBalanceHft25kWidget(),
+              builder: (context, params) => SelectBalanceHft25kWidget(
+                cupon: params.getParam(
+                  'cupon',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['CUPON'],
+                ),
+              ),
             ),
             FFRoute(
               name: 'select-balance-hft-50k',
               path: 'select-balance-hft-50k',
               requireAuth: true,
-              builder: (context, params) => SelectBalanceHft50kWidget(),
+              builder: (context, params) => SelectBalanceHft50kWidget(
+                ref50: params.getParam(
+                  'ref50',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['CUPON'],
+                ),
+              ),
             ),
             FFRoute(
               name: 'select-balance-hft-100k',
               path: 'select-balance-hft-100k',
               requireAuth: true,
-              builder: (context, params) => SelectBalanceHft100kWidget(),
+              builder: (context, params) => SelectBalanceHft100kWidget(
+                ref100: params.getParam(
+                  'ref100',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['CUPON'],
+                ),
+              ),
             ),
             FFRoute(
               name: 'cuentaCopy',
               path: 'cuentaCopy',
               requireAuth: true,
-              builder: (context, params) => CuentaCopyWidget(
-                cuenta: params.getParam(
-                  'cuenta',
-                  ParamType.DocumentReference,
-                  isList: false,
-                  collectionNamePath: ['challengue_accounts'],
-                ),
-              ),
+              builder: (context, params) => CuentaCopyWidget(),
             ),
             FFRoute(
               name: 'faqs_only',
@@ -312,7 +280,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             ),
             FFRoute(
               name: 'funded',
-              path: 'funded_account',
+              path: 'funded',
               requireAuth: true,
               builder: (context, params) => FundedWidget(
                 funded: params.getParam(
@@ -330,69 +298,64 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => CertificatesWidget(),
             ),
             FFRoute(
-              name: 'NewChallengeCopy',
-              path: 'newChallengeCopy',
-              requireAuth: true,
-              builder: (context, params) => NewChallengeCopyWidget(),
-            ),
-            FFRoute(
-              name: 'NewChallengeCopyCopy',
-              path: 'newChallengeCopyCopy',
-              requireAuth: true,
-              builder: (context, params) => NewChallengeCopyCopyWidget(),
-            ),
-            FFRoute(
-              name: 'backgroundsCopy2',
-              path: 'backgroundsCopy2',
-              requireAuth: true,
-              builder: (context, params) => BackgroundsCopy2Widget(),
-            ),
-            FFRoute(
-              name: 'backgroundsCopy3',
-              path: 'backgroundsCopy3',
-              builder: (context, params) => BackgroundsCopy3Widget(),
-            ),
-            FFRoute(
               name: 'fondo',
               path: 'fondo',
               requireAuth: true,
               builder: (context, params) => FondoWidget(),
             ),
             FFRoute(
-              name: 'ContactCopy',
-              path: 'contactCopy',
-              requireAuth: true,
-              builder: (context, params) => ContactCopyWidget(),
-            ),
-            FFRoute(
-              name: 'withdrawal_requestCopy',
-              path: 'withdrawalRequestCopy',
-              requireAuth: true,
-              builder: (context, params) => WithdrawalRequestCopyWidget(),
-            ),
-            FFRoute(
-              name: 'FAQCopy',
-              path: 'fAQCopy',
-              requireAuth: true,
-              builder: (context, params) => FAQCopyWidget(),
-            ),
-            FFRoute(
-              name: 'NewChallengeCopy2',
-              path: 'newChallengeCopy2',
-              requireAuth: true,
-              builder: (context, params) => NewChallengeCopy2Widget(),
-            ),
-            FFRoute(
               name: 'select-balance-hft-200k',
               path: 'select-balance-hft-200k',
-              requireAuth: true,
-              builder: (context, params) => SelectBalanceHft200kWidget(),
+              builder: (context, params) => SelectBalanceHft200kWidget(
+                ref200: params.getParam(
+                  'ref200',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['CUPON'],
+                ),
+              ),
             ),
             FFRoute(
-              name: 'NewChallengeCopy3',
-              path: 'newChallengeCopy3',
+              name: 'KYC',
+              path: 'kyc',
               requireAuth: true,
-              builder: (context, params) => NewChallengeCopy3Widget(),
+              builder: (context, params) => KycWidget(),
+            ),
+            FFRoute(
+              name: 'CuentasApi',
+              path: 'cuentasApi',
+              requireAuth: true,
+              builder: (context, params) => CuentasApiWidget(),
+            ),
+            FFRoute(
+              name: 'IBPortal',
+              path: 'iBPortal',
+              requireAuth: true,
+              builder: (context, params) => IBPortalWidget(),
+            ),
+            FFRoute(
+              name: 'select-balance-hft-300k',
+              path: 'select-balance-hft-300k',
+              builder: (context, params) => SelectBalanceHft300kWidget(
+                ref300: params.getParam(
+                  'ref300',
+                  ParamType.DocumentReference,
+                  isList: false,
+                  collectionNamePath: ['CUPON'],
+                ),
+              ),
+            ),
+            FFRoute(
+              name: 'NewChallengec',
+              path: 'newchallenge',
+              requireAuth: true,
+              builder: (context, params) => NewChallengecWidget(),
+            ),
+            FFRoute(
+              name: 'CuentasCopy',
+              path: 'cuentasCopy',
+              requireAuth: true,
+              builder: (context, params) => CuentasCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -567,7 +530,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/signIn';
+            return '/SignIn';
           }
           return null;
         },
@@ -581,15 +544,17 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? isWeb
-                  ? Container()
-                  : Container(
-                      color: Colors.transparent,
-                      child: Image.asset(
-                        'assets/images/Diseo_sin_ttulo_(1).jpg',
-                        fit: BoxFit.cover,
+              ? Center(
+                  child: SizedBox(
+                    width: 50.0,
+                    height: 50.0,
+                    child: CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(
+                        FlutterFlowTheme.of(context).primary,
                       ),
-                    )
+                    ),
+                  ),
+                )
               : page;
 
           final transitionInfo = state.transitionInfo;

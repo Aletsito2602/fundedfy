@@ -131,6 +131,77 @@ class TaloCall {
       ));
 }
 
+class ApimtCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'apimt',
+      apiUrl:
+          'https://sheets.googleapis.com/v4/spreadsheets/1y5qz_1p1KK_IysHof5jY5-gDzP_mdERU1k1rccz0vLM/values/A:H',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {
+        'key': "AIzaSyDzQIZfaPx9HjdNliOLflSzgv7tjBv8zeU",
+      },
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class SheetsCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'sheets',
+      apiUrl:
+          'https://sheets.googleapis.com/v4/spreadsheets/1y5qz_1p1KK_IysHof5jY5-gDzP_mdERU1k1rccz0vLM/values/A1:999',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {
+        'key': "AIzaSyD6dx1hUGi0NOnseBDEOifbK0tP65JIPVQ",
+      },
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class GeetCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'geet',
+      apiUrl:
+          'https://lpagustin.app.n8n.cloud/webhook/d1af4e30-7bc1-4126-b4f0-2b7baa32801d',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static List<String>? email(dynamic response) => (getJsonField(
+        response,
+        r'''$[:].Email''',
+        true,
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

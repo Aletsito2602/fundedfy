@@ -33,7 +33,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
     super.initState();
     _model = createModel(context, () => FaqsOnlyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -76,230 +76,207 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
               child: Scaffold(
                 key: scaffoldKey,
                 backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-                body: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Expanded(
-                      child: Container(
-                        width: double.infinity,
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            alignment: AlignmentDirectional(0.0, 1.0),
-                            image: Image.asset(
-                              'assets/images/fondo_Dunomik_espacial_2.jpg',
-                            ).image,
-                          ),
+                body: Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: Image.asset(
+                        'assets/images/Diseo_sin_ttulo_(1).jpg',
+                      ).image,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 4.0,
+                        color: Color(0x4C00C0FF),
+                        offset: Offset(
+                          3.0,
+                          2.0,
                         ),
-                        child: Container(
-                          width: 100.0,
-                          height: 100.0,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [Color(0xEF000000), Color(0xE3013C03)],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(0.0, -1.0),
-                              end: AlignmentDirectional(0, 1.0),
+                      )
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (responsiveVisibility(
+                        context: context,
+                        phone: false,
+                        tablet: false,
+                      ))
+                        wrapWithModel(
+                          model: _model.sideBarNavModel,
+                          updateCallback: () => safeSetState(() {}),
+                          child: SideBarNavWidget(
+                            oneBG:
+                                FlutterFlowTheme.of(context).primaryBackground,
+                            oneIcon: Icon(
+                              Icons.bar_chart_rounded,
+                              color: FlutterFlowTheme.of(context).primary,
+                            ),
+                            twoBG: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            twoIcon: Icon(
+                              Icons.school_outlined,
+                              color: FlutterFlowTheme.of(context).primaryText,
+                            ),
+                            threeColor: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            threeIcon: Icon(
+                              Icons.account_circle_outlined,
+                              color: FlutterFlowTheme.of(context).primaryText,
                             ),
                           ),
-                          child: Row(
+                        ),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              if (responsiveVisibility(
-                                context: context,
-                                phone: false,
-                                tablet: false,
-                              ))
-                                wrapWithModel(
-                                  model: _model.sideBarNavModel,
-                                  updateCallback: () => setState(() {}),
-                                  child: SideBarNavWidget(
-                                    oneBG: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    oneIcon: Icon(
-                                      Icons.bar_chart_rounded,
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                    ),
-                                    twoBG: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    twoIcon: Icon(
-                                      Icons.school_outlined,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                    ),
-                                    threeColor: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    threeIcon: Icon(
-                                      Icons.account_circle_outlined,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                    ),
-                                  ),
-                                ),
-                              Expanded(
-                                child: SingleChildScrollView(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.stretch,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 64.0, 0.0, 16.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              children: [
-                                                InkWell(
-                                                  splashColor:
-                                                      Colors.transparent,
-                                                  focusColor:
-                                                      Colors.transparent,
-                                                  hoverColor:
-                                                      Colors.transparent,
-                                                  highlightColor:
-                                                      Colors.transparent,
-                                                  onTap: () async {
-                                                    context.safePop();
-                                                  },
-                                                  child: Icon(
-                                                    Icons.chevron_left_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    size: 30.0,
-                                                  ),
-                                                ),
-                                                Expanded(
-                                                  child: Text(
-                                                    faqsOnlyFaqsChallengeRecord
-                                                        .category,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .displayLarge
-                                                        .override(
-                                                          fontFamily:
-                                                              'Montserrat',
-                                                          fontSize: 35.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          useGoogleFonts:
-                                                              GoogleFonts
-                                                                      .asMap()
-                                                                  .containsKey(
-                                                                      'Montserrat'),
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 30.0, 0.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                children: [
-                                                  Expanded(
-                                                    child: AutoSizeText(
-                                                      valueOrDefault<String>(
-                                                        faqsOnlyFaqsChallengeRecord
-                                                            .postTitle,
-                                                        'Frequently Asked Questions',
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .headlineSmall
-                                                              .override(
-                                                                fontFamily: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineSmallFamily,
-                                                                fontSize: 28.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w500,
-                                                                useGoogleFonts: GoogleFonts
-                                                                        .asMap()
-                                                                    .containsKey(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .headlineSmallFamily),
-                                                              ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    16.0, 64.0, 0.0, 16.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            context.safePop();
+                                          },
+                                          child: Icon(
+                                            Icons.chevron_left_rounded,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            size: 30.0,
+                                          ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            25.0, 10.0, 10.0, 0.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Expanded(
+                                        Expanded(
+                                          child: Text(
+                                            faqsOnlyFaqsChallengeRecord
+                                                .category,
+                                            style: FlutterFlowTheme.of(context)
+                                                .displayLarge
+                                                .override(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 35.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w500,
+                                                  useGoogleFonts:
+                                                      GoogleFonts.asMap()
+                                                          .containsKey(
+                                                              'Montserrat'),
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 30.0, 0.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Expanded(
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: AutoSizeText(
                                                 valueOrDefault<String>(
                                                   faqsOnlyFaqsChallengeRecord
-                                                      .postData,
-                                                  'Faqs',
+                                                      .postTitle,
+                                                  'Frequently Asked Questions',
                                                 ),
-                                                minFontSize: 12.0,
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyMedium
+                                                        .headlineSmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyMediumFamily,
+                                                                  .headlineSmallFamily,
+                                                          fontSize: 28.0,
                                                           letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMediumFamily),
+                                                                      .headlineSmallFamily),
                                                         ),
                                               ),
                                             ),
-                                          ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    30.0, 10.0, 10.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 20.0, 40.0, 0.0),
+                                        child: AutoSizeText(
+                                          valueOrDefault<String>(
+                                            faqsOnlyFaqsChallengeRecord
+                                                .postData,
+                                            'Faqs',
+                                          ),
+                                          minFontSize: 12.0,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily,
+                                                letterSpacing: 0.0,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMediumFamily),
+                                              ),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ));

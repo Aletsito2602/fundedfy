@@ -1,3 +1,4 @@
+import '/backend/backend.dart';
 import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -5,6 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'new_challenge_widget.dart' show NewChallengeWidget;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -13,6 +15,10 @@ class NewChallengeModel extends FlutterFlowModel<NewChallengeWidget> {
 
   // Model for sideBarNav component.
   late SideBarNavModel sideBarNavModel;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode;
+  TextEditingController? textController1;
+  String? Function(BuildContext, String?)? textController1Validator;
   // State field(s) for TabBar widget.
   TabController? tabBarController1;
   int get tabBarCurrentIndex1 =>
@@ -33,6 +39,11 @@ class NewChallengeModel extends FlutterFlowModel<NewChallengeWidget> {
   int get tabBarCurrentIndex4 =>
       tabBarController4 != null ? tabBarController4!.index : 0;
 
+  // State field(s) for cupon_res widget.
+  FocusNode? cuponResFocusNode;
+  TextEditingController? cuponResTextController;
+  String? Function(BuildContext, String?)? cuponResTextControllerValidator;
+
   @override
   void initState(BuildContext context) {
     sideBarNavModel = createModel(context, () => SideBarNavModel());
@@ -41,9 +52,14 @@ class NewChallengeModel extends FlutterFlowModel<NewChallengeWidget> {
   @override
   void dispose() {
     sideBarNavModel.dispose();
+    textFieldFocusNode?.dispose();
+    textController1?.dispose();
+
     tabBarController1?.dispose();
     tabBarController2?.dispose();
     tabBarController3?.dispose();
     tabBarController4?.dispose();
+    cuponResFocusNode?.dispose();
+    cuponResTextController?.dispose();
   }
 }

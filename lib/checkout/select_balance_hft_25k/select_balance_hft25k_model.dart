@@ -18,8 +18,8 @@ class SelectBalanceHft25kModel
     extends FlutterFlowModel<SelectBalanceHft25kWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final formKey2 = GlobalKey<FormState>();
   final formKey1 = GlobalKey<FormState>();
+  final formKey2 = GlobalKey<FormState>();
   // Model for sideBarNav component.
   late SideBarNavModel sideBarNavModel;
   // State field(s) for TabBar widget.

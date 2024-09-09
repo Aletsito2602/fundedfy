@@ -16,7 +16,12 @@ import 'select_balance_hft200k_model.dart';
 export 'select_balance_hft200k_model.dart';
 
 class SelectBalanceHft200kWidget extends StatefulWidget {
-  const SelectBalanceHft200kWidget({super.key});
+  const SelectBalanceHft200kWidget({
+    super.key,
+    this.ref200,
+  });
+
+  final DocumentReference? ref200;
 
   @override
   State<SelectBalanceHft200kWidget> createState() =>
@@ -38,19 +43,19 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
     _model.tabBarController2 = TabController(
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
     _model.textFieldResponsiveTextController ??= TextEditingController();
     _model.textFieldResponsiveFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -62,10 +67,10 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<List<PayoutWalletsRecord>>(
-      stream: queryPayoutWalletsRecord(
-        singleRecord: true,
-      ),
+    context.watch<FFAppState>();
+
+    return StreamBuilder<CuponRecord>(
+      stream: CuponRecord.getDocument(widget!.ref200!),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
@@ -84,26 +89,18 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
             ),
           );
         }
-        List<PayoutWalletsRecord> selectBalanceHft200kPayoutWalletsRecordList =
-            snapshot.data!;
-        // Return an empty Container when the item does not exist.
-        if (snapshot.data!.isEmpty) {
-          return Container();
-        }
-        final selectBalanceHft200kPayoutWalletsRecord =
-            selectBalanceHft200kPayoutWalletsRecordList.isNotEmpty
-                ? selectBalanceHft200kPayoutWalletsRecordList.first
-                : null;
+
+        final selectBalanceHft200kCuponRecord = snapshot.data!;
 
         return Title(
-            title: 'selectbalancehft',
+            title: '200k Challenge',
             color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
-            child: GestureDetector(
-              onTap: () => FocusScope.of(context).unfocus(),
-              child: Scaffold(
-                key: scaffoldKey,
-                backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-                body: Container(
+            child: Scaffold(
+              key: scaffoldKey,
+              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+              body: SafeArea(
+                top: true,
+                child: Container(
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
@@ -137,7 +134,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                       ))
                         wrapWithModel(
                           model: _model.sideBarNavModel,
-                          updateCallback: () => setState(() {}),
+                          updateCallback: () => safeSetState(() {}),
                           child: SideBarNavWidget(
                             oneBG:
                                 FlutterFlowTheme.of(context).primaryBackground,
@@ -252,33 +249,98 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                     .headlineSmallFamily),
                                                       ),
                                                 ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          10.0, 0.0, 0.0, 0.0),
-                                                  child: Text(
-                                                    '\$997',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .headlineSmall
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmallFamily,
-                                                          color:
-                                                              Color(0xFFE7D4FF),
-                                                          fontSize: 30.0,
-                                                          letterSpacing: 0.0,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineSmallFamily),
-                                                        ),
+                                                if (FFAppState().CUPON ==
+                                                    'NONE')
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(10.0, 0.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      '\$1097',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineSmall
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineSmallFamily,
+                                                                color: Color(
+                                                                    0xFFE7D4FF),
+                                                                fontSize: 30.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .headlineSmallFamily),
+                                                              ),
+                                                    ),
                                                   ),
-                                                ),
+                                                if (FFAppState().CUPON ==
+                                                    selectBalanceHft200kCuponRecord
+                                                        .cupon5)
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(10.0, 0.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      '\$1042,15',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineSmall
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineSmallFamily,
+                                                                color: Color(
+                                                                    0xFFE7D4FF),
+                                                                fontSize: 30.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .headlineSmallFamily),
+                                                              ),
+                                                    ),
+                                                  ),
+                                                if (FFAppState().CUPON ==
+                                                    selectBalanceHft200kCuponRecord
+                                                        .cupon25)
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(10.0, 0.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      '\$822.75',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineSmall
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineSmallFamily,
+                                                                color: Color(
+                                                                    0xFFE7D4FF),
+                                                                fontSize: 30.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .headlineSmallFamily),
+                                                              ),
+                                                    ),
+                                                  ),
                                               ],
                                             ),
                                             Row(
@@ -457,10 +519,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                               0.0),
                                                                           child:
                                                                               AutoSizeText(
-                                                                            valueOrDefault<String>(
-                                                                              selectBalanceHft200kPayoutWalletsRecord?.hftTrcWallet,
-                                                                              'TWTRkkTNQg55gqmoRtatLWoKiEN9M7s2Pq',
-                                                                            ),
+                                                                            'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS',
                                                                             textAlign:
                                                                                 TextAlign.center,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -491,7 +550,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                               Colors.transparent,
                                                                           onTap:
                                                                               () async {
-                                                                            await Clipboard.setData(ClipboardData(text: selectBalanceHft200kPayoutWalletsRecord!.hftTrcWallet));
+                                                                            await Clipboard.setData(ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
                                                                             ScaffoldMessenger.of(context).showSnackBar(
                                                                               SnackBar(
                                                                                 content: Text(
@@ -570,12 +629,8 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                         borderRadius:
                                                                             BorderRadius.circular(8.0),
                                                                         child: Image
-                                                                            .network(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            selectBalanceHft200kPayoutWalletsRecord?.hftTrcWalletQr,
-                                                                            'https://firebasestorage.googleapis.com/v0/b/dunomic-c1930.appspot.com/o/bep20_qr.jpg?alt=media&token=b411d6d0-f76a-4c34-ad28-36effe7bfc6b',
-                                                                          ),
+                                                                            .asset(
+                                                                          'assets/images/trc20_(1).png',
                                                                           width:
                                                                               166.0,
                                                                           height:
@@ -619,10 +674,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                               0.0),
                                                                           child:
                                                                               AutoSizeText(
-                                                                            valueOrDefault<String>(
-                                                                              selectBalanceHft200kPayoutWalletsRecord?.hftBep20Wallet,
-                                                                              '0xd49BC88A0cC6e01E6802cc95Fd23846874bBb85b',
-                                                                            ),
+                                                                            '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956',
                                                                             textAlign:
                                                                                 TextAlign.center,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -653,7 +705,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                               Colors.transparent,
                                                                           onTap:
                                                                               () async {
-                                                                            await Clipboard.setData(ClipboardData(text: selectBalanceHft200kPayoutWalletsRecord!.hftBep20Wallet));
+                                                                            await Clipboard.setData(ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
                                                                             ScaffoldMessenger.of(context).showSnackBar(
                                                                               SnackBar(
                                                                                 content: Text(
@@ -732,12 +784,8 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                         borderRadius:
                                                                             BorderRadius.circular(8.0),
                                                                         child: Image
-                                                                            .network(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            selectBalanceHft200kPayoutWalletsRecord?.hftTrcWalletQr,
-                                                                            'https://firebasestorage.googleapis.com/v0/b/dunomic-c1930.appspot.com/o/hft_qqr.jpg?alt=media&token=63951296-9959-4c4f-a4c8-b1fcb3968eae',
-                                                                          ),
+                                                                            .asset(
+                                                                          'assets/images/bcp20.png',
                                                                           width:
                                                                               166.0,
                                                                           height:
@@ -872,10 +920,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                                 child: Padding(
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                   child: AutoSizeText(
-                                                                                    valueOrDefault<String>(
-                                                                                      selectBalanceHft200kPayoutWalletsRecord?.hftTrcWallet,
-                                                                                      '0',
-                                                                                    ),
+                                                                                    'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS',
                                                                                     textAlign: TextAlign.center,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -895,7 +940,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                                   hoverColor: Colors.transparent,
                                                                                   highlightColor: Colors.transparent,
                                                                                   onTap: () async {
-                                                                                    await Clipboard.setData(ClipboardData(text: selectBalanceHft200kPayoutWalletsRecord!.hftTrcWallet));
+                                                                                    await Clipboard.setData(ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
                                                                                     ScaffoldMessenger.of(context).showSnackBar(
                                                                                       SnackBar(
                                                                                         content: Text(
@@ -957,11 +1002,8 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                             children: [
                                                                               ClipRRect(
                                                                                 borderRadius: BorderRadius.circular(8.0),
-                                                                                child: Image.network(
-                                                                                  valueOrDefault<String>(
-                                                                                    selectBalanceHft200kPayoutWalletsRecord?.hftTrcWalletQr,
-                                                                                    'https://firebasestorage.googleapis.com/v0/b/dunomic-c1930.appspot.com/o/hft_qqr.jpg?alt=media&token=63951296-9959-4c4f-a4c8-b1fcb3968eae',
-                                                                                  ),
+                                                                                child: Image.asset(
+                                                                                  'assets/images/trc20_(1).png',
                                                                                   width: 159.0,
                                                                                   height: 158.0,
                                                                                   fit: BoxFit.contain,
@@ -994,10 +1036,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                                 child: Padding(
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                   child: AutoSizeText(
-                                                                                    valueOrDefault<String>(
-                                                                                      selectBalanceHft200kPayoutWalletsRecord?.hftBep20Wallet,
-                                                                                      '0',
-                                                                                    ),
+                                                                                    '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956',
                                                                                     textAlign: TextAlign.center,
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -1017,7 +1056,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                                   hoverColor: Colors.transparent,
                                                                                   highlightColor: Colors.transparent,
                                                                                   onTap: () async {
-                                                                                    await Clipboard.setData(ClipboardData(text: selectBalanceHft200kPayoutWalletsRecord!.hftBep20Wallet));
+                                                                                    await Clipboard.setData(ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
                                                                                     ScaffoldMessenger.of(context).showSnackBar(
                                                                                       SnackBar(
                                                                                         content: Text(
@@ -1079,11 +1118,8 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                             children: [
                                                                               ClipRRect(
                                                                                 borderRadius: BorderRadius.circular(8.0),
-                                                                                child: Image.network(
-                                                                                  valueOrDefault<String>(
-                                                                                    selectBalanceHft200kPayoutWalletsRecord?.hftBep20WalletQt,
-                                                                                    'https://firebasestorage.googleapis.com/v0/b/dunomic-c1930.appspot.com/o/bep20_qr.jpg?alt=media&token=b411d6d0-f76a-4c34-ad28-36effe7bfc6b',
-                                                                                  ),
+                                                                                child: Image.asset(
+                                                                                  'assets/images/bcp20.png',
                                                                                   width: 159.0,
                                                                                   height: 158.0,
                                                                                   fit: BoxFit.contain,
@@ -1203,7 +1239,7 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                       'Metatrader 5'
                                                     ],
                                                     onChanged: (val) =>
-                                                        setState(() => _model
+                                                        safeSetState(() => _model
                                                                 .dropDownPlatformValue =
                                                             val),
                                                     width: 300.0,
@@ -1505,8 +1541,8 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                     'Metatrader 4',
                                                     'Metatrader 5'
                                                   ],
-                                                  onChanged: (val) => setState(
-                                                      () => _model
+                                                  onChanged: (val) =>
+                                                      safeSetState(() => _model
                                                               .dropDownPlattformResValue =
                                                           val),
                                                   width: 300.0,
@@ -1800,9 +1836,17 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                                                       status:
                                                                           'Pending order',
                                                                       nameBuyer:
-                                                                          currentUserDisplayName,
+                                                                          '${currentUserDisplayName} ${valueOrDefault(currentUserDocument?.lastName, '')}',
                                                                       timeOrder:
                                                                           getCurrentTimestamp,
+                                                                      referente1: valueOrDefault(
+                                                                          currentUserDocument
+                                                                              ?.referente1,
+                                                                          ''),
+                                                                      referente2: valueOrDefault(
+                                                                          currentUserDocument
+                                                                              ?.referente2,
+                                                                          ''),
                                                                     ));
 
                                                                 context.goNamed(
@@ -1893,8 +1937,17 @@ class _SelectBalanceHft200kWidgetState extends State<SelectBalanceHft200kWidget>
                                               hashOrders:
                                                   _model.textController1.text,
                                               status: 'Pending order',
-                                              nameBuyer: currentUserDisplayName,
+                                              nameBuyer:
+                                                  '${currentUserDisplayName} ${valueOrDefault(currentUserDocument?.lastName, '')}',
                                               timeOrder: getCurrentTimestamp,
+                                              referente1: valueOrDefault(
+                                                  currentUserDocument
+                                                      ?.referente1,
+                                                  ''),
+                                              referente2: valueOrDefault(
+                                                  currentUserDocument
+                                                      ?.referente2,
+                                                  ''),
                                             ));
 
                                         context.goNamed('tickets_boughts');

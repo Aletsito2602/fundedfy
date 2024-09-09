@@ -81,11 +81,6 @@ class UsersRecord extends FirestoreRecord {
   List<DocumentReference> get referidosList => _referidosList ?? const [];
   bool hasReferidosList() => _referidosList != null;
 
-  // "referente_codigo" field.
-  String? _referenteCodigo;
-  String get referenteCodigo => _referenteCodigo ?? '';
-  bool hasReferenteCodigo() => _referenteCodigo != null;
-
   // "country" field.
   String? _country;
   String get country => _country ?? '';
@@ -136,6 +131,26 @@ class UsersRecord extends FirestoreRecord {
   String get codigodereferido => _codigodereferido ?? '';
   bool hasCodigodereferido() => _codigodereferido != null;
 
+  // "dnifrente" field.
+  String? _dnifrente;
+  String get dnifrente => _dnifrente ?? '';
+  bool hasDnifrente() => _dnifrente != null;
+
+  // "dniatras" field.
+  String? _dniatras;
+  String get dniatras => _dniatras ?? '';
+  bool hasDniatras() => _dniatras != null;
+
+  // "referente1" field.
+  String? _referente1;
+  String get referente1 => _referente1 ?? '';
+  bool hasReferente1() => _referente1 != null;
+
+  // "referente2" field.
+  String? _referente2;
+  String get referente2 => _referente2 ?? '';
+  bool hasReferente2() => _referente2 != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -150,7 +165,6 @@ class UsersRecord extends FirestoreRecord {
     _kycStatus = snapshotData['kyc_status'] as bool?;
     _referente = snapshotData['referente'] as DocumentReference?;
     _referidosList = getDataList(snapshotData['referidos_list']);
-    _referenteCodigo = snapshotData['referente_codigo'] as String?;
     _country = snapshotData['country'] as String?;
     _lastName = snapshotData['last_name'] as String?;
     _aceptaTerminos = snapshotData['acepta_terminos'] as bool?;
@@ -161,6 +175,10 @@ class UsersRecord extends FirestoreRecord {
     _direccionAcc = snapshotData['direccion_acc'] as String?;
     _emailuserVerified = snapshotData['emailuser_verified'] as bool?;
     _codigodereferido = snapshotData['codigodereferido'] as String?;
+    _dnifrente = snapshotData['dnifrente'] as String?;
+    _dniatras = snapshotData['dniatras'] as String?;
+    _referente1 = snapshotData['referente1'] as String?;
+    _referente2 = snapshotData['referente2'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -209,7 +227,6 @@ Map<String, dynamic> createUsersRecordData({
   bool? challengesActive,
   bool? kycStatus,
   DocumentReference? referente,
-  String? referenteCodigo,
   String? country,
   String? lastName,
   bool? aceptaTerminos,
@@ -220,6 +237,10 @@ Map<String, dynamic> createUsersRecordData({
   String? direccionAcc,
   bool? emailuserVerified,
   String? codigodereferido,
+  String? dnifrente,
+  String? dniatras,
+  String? referente1,
+  String? referente2,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -235,7 +256,6 @@ Map<String, dynamic> createUsersRecordData({
       'challenges_active': challengesActive,
       'kyc_status': kycStatus,
       'referente': referente,
-      'referente_codigo': referenteCodigo,
       'country': country,
       'last_name': lastName,
       'acepta_terminos': aceptaTerminos,
@@ -246,6 +266,10 @@ Map<String, dynamic> createUsersRecordData({
       'direccion_acc': direccionAcc,
       'emailuser_verified': emailuserVerified,
       'codigodereferido': codigodereferido,
+      'dnifrente': dnifrente,
+      'dniatras': dniatras,
+      'referente1': referente1,
+      'referente2': referente2,
     }.withoutNulls,
   );
 
@@ -271,7 +295,6 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.kycStatus == e2?.kycStatus &&
         e1?.referente == e2?.referente &&
         listEquality.equals(e1?.referidosList, e2?.referidosList) &&
-        e1?.referenteCodigo == e2?.referenteCodigo &&
         e1?.country == e2?.country &&
         e1?.lastName == e2?.lastName &&
         e1?.aceptaTerminos == e2?.aceptaTerminos &&
@@ -281,7 +304,11 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.ibComisiions == e2?.ibComisiions &&
         e1?.direccionAcc == e2?.direccionAcc &&
         e1?.emailuserVerified == e2?.emailuserVerified &&
-        e1?.codigodereferido == e2?.codigodereferido;
+        e1?.codigodereferido == e2?.codigodereferido &&
+        e1?.dnifrente == e2?.dnifrente &&
+        e1?.dniatras == e2?.dniatras &&
+        e1?.referente1 == e2?.referente1 &&
+        e1?.referente2 == e2?.referente2;
   }
 
   @override
@@ -299,7 +326,6 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.kycStatus,
         e?.referente,
         e?.referidosList,
-        e?.referenteCodigo,
         e?.country,
         e?.lastName,
         e?.aceptaTerminos,
@@ -309,7 +335,11 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.ibComisiions,
         e?.direccionAcc,
         e?.emailuserVerified,
-        e?.codigodereferido
+        e?.codigodereferido,
+        e?.dnifrente,
+        e?.dniatras,
+        e?.referente1,
+        e?.referente2
       ]);
 
   @override

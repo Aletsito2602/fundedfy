@@ -29,7 +29,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -42,7 +42,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'forgotPassword',
+        title: 'Reset Password',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: Scaffold(
           key: scaffoldKey,
@@ -55,7 +55,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/Diseo_sin_ttulo_(1).jpg',
+                  'assets/images/LOGIN-min.jpg',
                 ).image,
               ),
               boxShadow: [
@@ -82,7 +82,6 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       maxWidth: 430.0,
                     ),
                     decoration: BoxDecoration(
-                      color: Color(0x23DF5CFA),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 4.0,
@@ -93,6 +92,12 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                           ),
                         )
                       ],
+                      gradient: LinearGradient(
+                        colors: [Color(0x1CF333FF), Color(0x66A547B4)],
+                        stops: [0.0, 1.0],
+                        begin: AlignmentDirectional(0.0, -1.0),
+                        end: AlignmentDirectional(0, 1.0),
+                      ),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(20.0),
                         bottomRight: Radius.circular(20.0),

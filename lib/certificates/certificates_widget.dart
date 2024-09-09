@@ -52,7 +52,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -65,7 +65,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'certificates',
+        title: 'Certificates',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -106,7 +106,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(

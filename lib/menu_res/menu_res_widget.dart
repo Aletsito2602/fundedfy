@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'menu_res_model.dart';
@@ -26,7 +27,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
     super.initState();
     _model = createModel(context, () => MenuResModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -80,7 +81,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(
@@ -104,7 +105,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
@@ -115,7 +116,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'We Are Dunomik',
+                                  'We Are Fundedfy',
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
@@ -182,7 +183,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -296,7 +297,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -410,7 +411,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -518,13 +519,13 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        context.pushNamed('ReferralProgram');
+                                        context.pushNamed('Withdrawals');
                                       },
                                       child: Container(
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -632,13 +633,127 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
+                                        context.pushNamed('ReferralProgram');
+                                      },
+                                      child: Container(
+                                        width: double.infinity,
+                                        height: 68.0,
+                                        decoration: BoxDecoration(
+                                          color: Color(0x12EAEEEB),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 3.0,
+                                              color: Color(0x33000000),
+                                              offset: Offset(
+                                                0.0,
+                                                -1.0,
+                                              ),
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(24.0),
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      15.0, 0.0, 0.0, 0.0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons.moneyBillWave,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                size: 30.0,
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(10.0, 0.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      'Withdrawals',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
+                                                                fontSize: 20.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily),
+                                                              ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          15.0, 0.0, 15.0, 0.0),
+                                                  child: Icon(
+                                                    Icons.arrow_forward,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryText,
+                                                    size: 30.0,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
                                         context.pushNamed('tickets_boughts');
                                       },
                                       child: Container(
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -752,7 +867,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,
@@ -866,7 +981,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x1233FF7E),
+                                          color: Color(0x12EAEEEB),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 3.0,

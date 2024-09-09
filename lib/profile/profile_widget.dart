@@ -36,7 +36,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
     _model.yourNameResTextController ??=
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameResFocusNode ??= FocusNode();
@@ -73,7 +73,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
       vsync: this,
       length: 2,
       initialIndex: 0,
-    )..addListener(() => setState(() {}));
+    )..addListener(() => safeSetState(() {}));
     _model.namePcTextController ??=
         TextEditingController(text: currentUserDisplayName);
     _model.namePcFocusNode ??= FocusNode();
@@ -109,7 +109,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
     ));
     _model.withdrawallWFocusNode ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -153,7 +153,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   ))
                     wrapWithModel(
                       model: _model.sideBarNavModel,
-                      updateCallback: () => setState(() {}),
+                      updateCallback: () => safeSetState(() {}),
                       child: SideBarNavWidget(
                         oneBG: FlutterFlowTheme.of(context).primaryBackground,
                         oneIcon: Icon(
@@ -182,7 +182,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                         children: [
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 64.0, 0.0, 16.0),
+                                16.0, 30.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -235,6 +235,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           ),
                           if (responsiveVisibility(
                             context: context,
+                            tabletLandscape: false,
                             desktop: false,
                           ))
                             Padding(
@@ -1016,7 +1017,37 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       _model
                                                                           .adressResTextController
                                                                           .text,
+                                                                  email: _model
+                                                                      .emailResTextController
+                                                                      .text,
                                                                 ));
+                                                                if (_model
+                                                                    .emailResTextController
+                                                                    .text
+                                                                    .isEmpty) {
+                                                                  ScaffoldMessenger.of(
+                                                                          context)
+                                                                      .showSnackBar(
+                                                                    SnackBar(
+                                                                      content:
+                                                                          Text(
+                                                                        'Email required!',
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                  return;
+                                                                }
+
+                                                                await authManager
+                                                                    .updateEmail(
+                                                                  email: _model
+                                                                      .emailResTextController
+                                                                      .text,
+                                                                  context:
+                                                                      context,
+                                                                );
+                                                                safeSetState(
+                                                                    () {});
 
                                                                 context.pushNamed(
                                                                     'Profile');
@@ -1233,7 +1264,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       'Tether USDT (Ethereum ERC20 Network)'
                                                                     ],
                                                                     onChanged: (val) =>
-                                                                        setState(() =>
+                                                                        safeSetState(() =>
                                                                             _model.waDrResValue =
                                                                                 val),
                                                                     width:
@@ -1532,6 +1563,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           if (responsiveVisibility(
                             context: context,
                             phone: false,
+                            tablet: false,
                           ))
                             Padding(
                               padding: EdgeInsets.all(12.0),
@@ -1575,7 +1607,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               backgroundColor:
-                                                  Color(0xB68E33FF),
+                                                  Color(0xB6B68FE0),
                                               unselectedBackgroundColor:
                                                   Color(0x005119B7),
                                               unselectedBorderColor:
@@ -1750,7 +1782,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -1869,7 +1901,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         borderSide:
                                                                             BorderSide(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiary,
+                                                                              FlutterFlowTheme.of(context).primaryText,
                                                                           width:
                                                                               2.0,
                                                                         ),
@@ -1980,7 +2012,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -2101,7 +2133,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -2213,7 +2245,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -2325,7 +2357,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -2437,7 +2469,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiary,
+                                                                                FlutterFlowTheme.of(context).primaryText,
                                                                             width:
                                                                                 2.0,
                                                                           ),
@@ -2534,7 +2566,24 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 phoneNumber: _model.cellphoneTextController.text,
                                                                                 lastName: _model.lastNameTextController.text,
                                                                                 direccionAcc: _model.adressAccTextController.text,
+                                                                                email: _model.emailPcTextController.text,
                                                                               ));
+                                                                              if (_model.emailPcTextController.text.isEmpty) {
+                                                                                ScaffoldMessenger.of(context).showSnackBar(
+                                                                                  SnackBar(
+                                                                                    content: Text(
+                                                                                      'Email required!',
+                                                                                    ),
+                                                                                  ),
+                                                                                );
+                                                                                return;
+                                                                              }
+
+                                                                              await authManager.updateEmail(
+                                                                                email: _model.emailPcTextController.text,
+                                                                                context: context,
+                                                                              );
+                                                                              safeSetState(() {});
 
                                                                               context.pushNamed('Profile');
                                                                             },
@@ -2555,7 +2604,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                   ),
                                                                               elevation: 2.0,
                                                                               borderSide: BorderSide(
-                                                                                color: FlutterFlowTheme.of(context).primary,
+                                                                                color: FlutterFlowTheme.of(context).primaryText,
                                                                                 width: 1.0,
                                                                               ),
                                                                               borderRadius: BorderRadius.circular(50.0),
@@ -2738,7 +2787,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                               'Tether USDT (Ethereum ERC20 Network)'
                                                                             ],
                                                                             onChanged: (val) =>
-                                                                                setState(() => _model.walletServerValue = val),
+                                                                                safeSetState(() => _model.walletServerValue = val),
                                                                             width:
                                                                                 771.0,
                                                                             height:

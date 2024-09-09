@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.mycompany.dashboard</string>
+	<string>com.fundedfy.app</string>
 	<key>PROJECT_ID</key>
 	<string>fundedfy-9byfvq</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:863904173488:ios:50fa74238ec57f5ec11a75</string>
+	<string>1:863904173488:ios:34e6d9111a167dc6c11a75</string>
+	<key>DATABASE_URL</key>
+	<string>https://fundedfy-9byfvq-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

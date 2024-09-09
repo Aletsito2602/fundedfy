@@ -4,6 +4,7 @@ import '/backend/schema/structs/index.dart';
 import 'backend/api_requests/api_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
+import 'dart:convert';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -26,6 +27,9 @@ class FFAppState extends ChangeNotifier {
     _safeInit(() {
       _cupondereferido =
           prefs.getString('ff_cupondereferido') ?? _cupondereferido;
+    });
+    _safeInit(() {
+      _CUPON = prefs.getString('ff_CUPON') ?? _CUPON;
     });
   }
 
@@ -132,6 +136,19 @@ class FFAppState extends ChangeNotifier {
   double get challengeprice => _challengeprice;
   set challengeprice(double value) {
     _challengeprice = value;
+  }
+
+  dynamic _JsonData;
+  dynamic get JsonData => _JsonData;
+  set JsonData(dynamic value) {
+    _JsonData = value;
+  }
+
+  String _CUPON = 'NONE';
+  String get CUPON => _CUPON;
+  set CUPON(String value) {
+    _CUPON = value;
+    prefs.setString('ff_CUPON', value);
   }
 }
 

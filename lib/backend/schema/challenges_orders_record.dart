@@ -56,6 +56,21 @@ class ChallengesOrdersRecord extends FirestoreRecord {
   DateTime? get timeOrder => _timeOrder;
   bool hasTimeOrder() => _timeOrder != null;
 
+  // "referente1" field.
+  String? _referente1;
+  String get referente1 => _referente1 ?? '';
+  bool hasReferente1() => _referente1 != null;
+
+  // "referente2" field.
+  String? _referente2;
+  String get referente2 => _referente2 ?? '';
+  bool hasReferente2() => _referente2 != null;
+
+  // "referente3" field.
+  String? _referente3;
+  String get referente3 => _referente3 ?? '';
+  bool hasReferente3() => _referente3 != null;
+
   void _initializeFields() {
     _typeofaccount = snapshotData['typeofaccount'] as String?;
     _amountofaccount = snapshotData['amountofaccount'] as String?;
@@ -65,6 +80,9 @@ class ChallengesOrdersRecord extends FirestoreRecord {
     _status = snapshotData['status'] as String?;
     _nameBuyer = snapshotData['name_buyer'] as String?;
     _timeOrder = snapshotData['time_order'] as DateTime?;
+    _referente1 = snapshotData['referente1'] as String?;
+    _referente2 = snapshotData['referente2'] as String?;
+    _referente3 = snapshotData['referente3'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -111,6 +129,9 @@ Map<String, dynamic> createChallengesOrdersRecordData({
   String? status,
   String? nameBuyer,
   DateTime? timeOrder,
+  String? referente1,
+  String? referente2,
+  String? referente3,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -122,6 +143,9 @@ Map<String, dynamic> createChallengesOrdersRecordData({
       'status': status,
       'name_buyer': nameBuyer,
       'time_order': timeOrder,
+      'referente1': referente1,
+      'referente2': referente2,
+      'referente3': referente3,
     }.withoutNulls,
   );
 
@@ -141,7 +165,10 @@ class ChallengesOrdersRecordDocumentEquality
         e1?.hashOrders == e2?.hashOrders &&
         e1?.status == e2?.status &&
         e1?.nameBuyer == e2?.nameBuyer &&
-        e1?.timeOrder == e2?.timeOrder;
+        e1?.timeOrder == e2?.timeOrder &&
+        e1?.referente1 == e2?.referente1 &&
+        e1?.referente2 == e2?.referente2 &&
+        e1?.referente3 == e2?.referente3;
   }
 
   @override
@@ -153,7 +180,10 @@ class ChallengesOrdersRecordDocumentEquality
         e?.hashOrders,
         e?.status,
         e?.nameBuyer,
-        e?.timeOrder
+        e?.timeOrder,
+        e?.referente1,
+        e?.referente2,
+        e?.referente3
       ]);
 
   @override

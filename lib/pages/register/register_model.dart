@@ -12,7 +12,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -20,6 +19,10 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();
+  // State field(s) for Referral widget.
+  FocusNode? referralFocusNode;
+  TextEditingController? referralTextController;
+  String? Function(BuildContext, String?)? referralTextControllerValidator;
   // State field(s) for customer_Name widget.
   FocusNode? customerNameFocusNode;
   TextEditingController? customerNameTextController;
@@ -47,10 +50,6 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
     return null;
   }
 
-  // State field(s) for cupon_code widget.
-  FocusNode? cuponCodeFocusNode;
-  TextEditingController? cuponCodeTextController;
-  String? Function(BuildContext, String?)? cuponCodeTextControllerValidator;
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
   TextEditingController? emailAddressTextController;
@@ -165,14 +164,14 @@ class RegisterModel extends FlutterFlowModel<RegisterWidget> {
 
   @override
   void dispose() {
+    referralFocusNode?.dispose();
+    referralTextController?.dispose();
+
     customerNameFocusNode?.dispose();
     customerNameTextController?.dispose();
 
     customerLastNameFocusNode?.dispose();
     customerLastNameTextController?.dispose();
-
-    cuponCodeFocusNode?.dispose();
-    cuponCodeTextController?.dispose();
 
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();

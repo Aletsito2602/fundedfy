@@ -36,11 +36,17 @@ class SupportTicketsRecord extends FirestoreRecord {
   String get nameTicket => _nameTicket ?? '';
   bool hasNameTicket() => _nameTicket != null;
 
+  // "fecha" field.
+  DateTime? _fecha;
+  DateTime? get fecha => _fecha;
+  bool hasFecha() => _fecha != null;
+
   void _initializeFields() {
     _emailSupport = snapshotData['email_support'] as String?;
     _textTicket = snapshotData['text_ticket'] as String?;
     _subjetSitcket = snapshotData['subjet_sitcket'] as String?;
     _nameTicket = snapshotData['name_ticket'] as String?;
+    _fecha = snapshotData['fecha'] as DateTime?;
   }
 
   static CollectionReference get collection =>
@@ -82,6 +88,7 @@ Map<String, dynamic> createSupportTicketsRecordData({
   String? textTicket,
   String? subjetSitcket,
   String? nameTicket,
+  DateTime? fecha,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -89,6 +96,7 @@ Map<String, dynamic> createSupportTicketsRecordData({
       'text_ticket': textTicket,
       'subjet_sitcket': subjetSitcket,
       'name_ticket': nameTicket,
+      'fecha': fecha,
     }.withoutNulls,
   );
 
@@ -104,12 +112,18 @@ class SupportTicketsRecordDocumentEquality
     return e1?.emailSupport == e2?.emailSupport &&
         e1?.textTicket == e2?.textTicket &&
         e1?.subjetSitcket == e2?.subjetSitcket &&
-        e1?.nameTicket == e2?.nameTicket;
+        e1?.nameTicket == e2?.nameTicket &&
+        e1?.fecha == e2?.fecha;
   }
 
   @override
-  int hash(SupportTicketsRecord? e) => const ListEquality()
-      .hash([e?.emailSupport, e?.textTicket, e?.subjetSitcket, e?.nameTicket]);
+  int hash(SupportTicketsRecord? e) => const ListEquality().hash([
+        e?.emailSupport,
+        e?.textTicket,
+        e?.subjetSitcket,
+        e?.nameTicket,
+        e?.fecha
+      ]);
 
   @override
   bool isValidKey(Object? o) => o is SupportTicketsRecord;
