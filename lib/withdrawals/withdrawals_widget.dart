@@ -8,7 +8,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'withdrawals_model.dart';
 export 'withdrawals_model.dart';
 
@@ -101,14 +100,14 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                     ),
                   Expanded(
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, -1.0),
+                      alignment: const AlignmentDirectional(0.0, -1.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 20.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -132,7 +131,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 10.0),
                             child: AutoSizeText(
                               'Accounts available to request withdrawals or already ordered.',
@@ -152,7 +151,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 15.0, 5.0, 0.0, 15.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -162,7 +161,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 15.0, 0.0, 0.0),
                                       child: AutoSizeText(
                                         'Your Withdrawal Wallet:',
@@ -185,7 +184,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 0.0, 5.0),
                                       child: AuthUserStreamWidget(
                                         builder: (context) => AutoSizeText(
@@ -215,7 +214,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           20.0, 0.0, 0.0, 10.0),
                                       child: AuthUserStreamWidget(
                                         builder: (context) => AutoSizeText(
@@ -249,7 +248,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                             child: Column(
                               children: [
                                 Align(
-                                  alignment: Alignment(0.0, 0),
+                                  alignment: const Alignment(0.0, 0),
                                   child: TabBar(
                                     labelColor: FlutterFlowTheme.of(context)
                                         .primaryText,
@@ -268,11 +267,11 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .titleMediumFamily),
                                         ),
-                                    unselectedLabelStyle: TextStyle(),
+                                    unselectedLabelStyle: const TextStyle(),
                                     indicatorColor: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    padding: EdgeInsets.all(4.0),
-                                    tabs: [
+                                    padding: const EdgeInsets.all(4.0),
+                                    tabs: const [
                                       Tab(
                                         text: 'Accounts',
                                       ),
@@ -292,9 +291,9 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
-                                          padding: EdgeInsets.all(6.0),
+                                          padding: const EdgeInsets.all(6.0),
                                           child: SingleChildScrollView(
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -305,10 +304,10 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                               children: [
                                                 Container(
                                                   width: double.infinity,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 5.0, 0.0, 0.0),
                                                   child: Row(
@@ -333,11 +332,11 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                 width: double
                                                                     .infinity,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             5.0,
@@ -357,7 +356,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               0.0,
                                                                               -1.0),
                                                                           child:
@@ -395,11 +394,11 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                 itemBuilder: (context, listViewIndex) {
                                                                                   final listViewFundedAccountsRecord = listViewFundedAccountsRecordList[listViewIndex];
                                                                                   return Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                     child: Container(
                                                                                       width: 100.0,
                                                                                       height: 139.0,
-                                                                                      decoration: BoxDecoration(
+                                                                                      decoration: const BoxDecoration(
                                                                                         gradient: LinearGradient(
                                                                                           colors: [
                                                                                             Color(0xA04591D5),
@@ -417,7 +416,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                         ),
                                                                                       ),
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsets.all(20.0),
+                                                                                        padding: const EdgeInsets.all(20.0),
                                                                                         child: Column(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -443,8 +442,8 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                                   text: 'Request withdrawal',
                                                                                                   options: FFButtonOptions(
                                                                                                     height: 40.0,
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                     color: FlutterFlowTheme.of(context).primary,
                                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                           fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -453,7 +452,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                                           useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                         ),
                                                                                                     elevation: 3.0,
-                                                                                                    borderSide: BorderSide(
+                                                                                                    borderSide: const BorderSide(
                                                                                                       color: Colors.transparent,
                                                                                                       width: 1.0,
                                                                                                     ),
@@ -528,11 +527,11 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                               itemBuilder: (context, listViewIndex) {
                                                                                 final listViewFundedAccountsRecord = listViewFundedAccountsRecordList[listViewIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                   child: Container(
                                                                                     width: 100.0,
                                                                                     height: 180.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       gradient: LinearGradient(
                                                                                         colors: [
                                                                                           Color(0xA04591D5),
@@ -550,7 +549,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(20.0),
+                                                                                      padding: const EdgeInsets.all(20.0),
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -563,7 +562,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                                 listViewFundedAccountsRecord.idAccount,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFE557FF),
+                                                                                                      color: const Color(0xFFE557FF),
                                                                                                       fontSize: 25.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -573,7 +572,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                             ],
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               listViewFundedAccountsRecord.status,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -587,9 +586,9 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                           ),
                                                                                           Flexible(
                                                                                             child: Align(
-                                                                                              alignment: AlignmentDirectional(1.0, 0.0),
+                                                                                              alignment: const AlignmentDirectional(1.0, 0.0),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                                 child: FFButtonWidget(
                                                                                                   onPressed: () async {
                                                                                                     context.pushNamed('withdrawal_request');
@@ -597,8 +596,8 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                                   text: 'Request withdrawal',
                                                                                                   options: FFButtonOptions(
                                                                                                     height: 40.0,
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                     color: FlutterFlowTheme.of(context).primary,
                                                                                                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                           fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -607,7 +606,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                                                           useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                         ),
                                                                                                     elevation: 3.0,
-                                                                                                    borderSide: BorderSide(
+                                                                                                    borderSide: const BorderSide(
                                                                                                       color: Colors.transparent,
                                                                                                       width: 1.0,
                                                                                                     ),
@@ -689,13 +688,13 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                   listViewWithdrawhalTicketRecordList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 20.0),
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 166.0,
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     gradient: LinearGradient(
                                                       colors: [
                                                         Color(0xA04591D5),
@@ -722,7 +721,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(20.0),
+                                                        const EdgeInsets.all(20.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -746,26 +745,26 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                       'Button pressed ...');
                                                                 },
                                                                 text: 'Refused',
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons.block,
                                                                   size: 15.0,
                                                                 ),
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFD60202),
                                                                   textStyle: FlutterFlowTheme.of(
                                                                           context)
@@ -783,7 +782,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -804,7 +803,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                 },
                                                                 text:
                                                                     'Pending Approval',
-                                                                icon: FaIcon(
+                                                                icon: const FaIcon(
                                                                   FontAwesomeIcons
                                                                       .clock,
                                                                   size: 15.0,
@@ -812,13 +811,13 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -843,7 +842,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -864,7 +863,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                 },
                                                                 text:
                                                                     'Approved',
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .offline_pin_sharp,
                                                                   size: 15.0,
@@ -872,13 +871,13 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -903,7 +902,7 @@ class _WithdrawalsWidgetState extends State<WithdrawalsWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,

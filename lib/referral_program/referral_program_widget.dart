@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'referral_program_model.dart';
 export 'referral_program_model.dart';
@@ -66,7 +65,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -123,7 +122,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 34.0, 0.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -200,7 +199,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                               tabletLandscape: false,
                                             ))
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 45.0, 0.0),
                                                 child: FFButtonWidget(
@@ -212,14 +211,14 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                   options: FFButtonOptions(
                                                     height: 40.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0x068E33FF),
+                                                    color: const Color(0x068E33FF),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleSmall
@@ -259,7 +258,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                         ))
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     40.0, 20.0, 40.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -270,9 +269,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                   width: 548.0,
                                                   height: 165.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x395119B7),
+                                                    color: const Color(0x395119B7),
                                                     borderRadius:
-                                                        BorderRadius.only(
+                                                        const BorderRadius.only(
                                                       bottomLeft:
                                                           Radius.circular(15.0),
                                                       bottomRight:
@@ -291,7 +290,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Column(
                                                       mainAxisSize:
@@ -302,11 +301,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         20.0,
@@ -345,11 +344,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             5.0,
@@ -402,7 +401,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -414,7 +413,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             10.0,
@@ -427,7 +426,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                     await Clipboard.setData(
                                                                         ClipboardData(
                                                                             text:
-                                                                                'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                                                'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                                     ScaffoldMessenger.of(
                                                                             context)
                                                                         .showSnackBar(
@@ -442,7 +441,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                           ),
                                                                         ),
                                                                         duration:
-                                                                            Duration(milliseconds: 4000),
+                                                                            const Duration(milliseconds: 4000),
                                                                         backgroundColor:
                                                                             FlutterFlowTheme.of(context).secondary,
                                                                       ),
@@ -454,19 +453,19 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                       FFButtonOptions(
                                                                     height:
                                                                         40.0,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0x068E33FF),
                                                                     textStyle: FlutterFlowTheme.of(
                                                                             context)
@@ -507,7 +506,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Container(
@@ -515,9 +514,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                       height: 165.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0x395119B7),
+                                                            const Color(0x395119B7),
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   15.0),
@@ -539,7 +538,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Column(
                                                           mainAxisSize:
@@ -550,11 +549,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             20.0,
@@ -582,7 +581,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child:
                                                                   AuthUserStreamWidget(
@@ -590,7 +589,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                     (context) =>
                                                                         Text(
                                                                   formatNumber(
-                                                                    (currentUserDocument?.referidosList?.toList() ??
+                                                                    (currentUserDocument?.referidosList.toList() ??
                                                                             [])
                                                                         .length,
                                                                     formatType:
@@ -630,7 +629,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                         ))
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -642,9 +641,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                     width: 350.0,
                                                     height: 165.0,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0x395119B7),
+                                                      color: const Color(0x395119B7),
                                                       borderRadius:
-                                                          BorderRadius.only(
+                                                          const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
                                                                 15.0),
@@ -667,7 +666,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Column(
                                                         mainAxisSize:
@@ -678,11 +677,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           20.0,
@@ -711,7 +710,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               currentUserUid,
@@ -741,7 +740,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                 (context) =>
                                                                     Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -753,7 +752,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                     () async {
                                                                   await Share
                                                                       .share(
-                                                                    'Join FundedFy now, to get great benefits:https://portal.fundedfy.website/register?ref=${currentUserUid}',
+                                                                    'Join FundedFy now, to get great benefits:https://portal.fundedfy.website/register?ref=$currentUserUid',
                                                                     sharePositionOrigin:
                                                                         getWidgetBoundingBox(
                                                                             context),
@@ -771,7 +770,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                               FlutterFlowTheme.of(context).primaryText,
                                                                         ),
                                                                       ),
-                                                                      duration: Duration(
+                                                                      duration: const Duration(
                                                                           milliseconds:
                                                                               4000),
                                                                       backgroundColor:
@@ -785,13 +784,13 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -816,7 +815,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -843,7 +842,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                         ))
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 20.0, 20.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -855,9 +854,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                     width: 350.0,
                                                     height: 165.0,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0x395119B7),
+                                                      color: const Color(0x395119B7),
                                                       borderRadius:
-                                                          BorderRadius.only(
+                                                          const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
                                                                 15.0),
@@ -880,7 +879,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Column(
                                                         mainAxisSize:
@@ -891,11 +890,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           20.0,
@@ -924,7 +923,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child:
                                                                 AuthUserStreamWidget(
@@ -977,7 +976,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 30.0, 50.0, 30.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1001,7 +1000,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(24.0),
+                            padding: const EdgeInsets.all(24.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -1009,7 +1008,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                   child: Container(
                                     width: 100.0,
                                     height: 442.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.transparent,
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
@@ -1018,11 +1017,11 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                         topRight: Radius.circular(10.0),
                                       ),
                                     ),
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: const AlignmentDirectional(0.0, 1.0),
                                     child: Column(
                                       children: [
                                         Align(
-                                          alignment: Alignment(-1.0, 0),
+                                          alignment: const Alignment(-1.0, 0),
                                           child: TabBar(
                                             isScrollable: true,
                                             labelColor:
@@ -1047,12 +1046,12 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                       context)
                                                                   .titleMediumFamily),
                                                     ),
-                                            unselectedLabelStyle: TextStyle(),
+                                            unselectedLabelStyle: const TextStyle(),
                                             indicatorColor:
                                                 FlutterFlowTheme.of(context)
                                                     .primary,
-                                            padding: EdgeInsets.all(4.0),
-                                            tabs: [
+                                            padding: const EdgeInsets.all(4.0),
+                                            tabs: const [
                                               Tab(
                                                 text: 'Referes',
                                               ),
@@ -1121,7 +1120,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                               listViewIndex];
                                                       return Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -1132,9 +1131,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           height: 99.0,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0x37000000),
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 0.0,
                                                                 color: Color(
@@ -1152,7 +1151,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
@@ -1167,7 +1166,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                   flex: 4,
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -1181,7 +1180,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                         Expanded(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -1311,7 +1310,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                               listViewIndex];
                                                       return Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -1322,9 +1321,9 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           height: 99.0,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0x37000000),
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 0.0,
                                                                 color: Color(
@@ -1342,7 +1341,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
@@ -1357,7 +1356,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                   flex: 4,
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -1371,7 +1370,7 @@ class _ReferralProgramWidgetState extends State<ReferralProgramWidget>
                                                                         Expanded(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4.0,
                                                                                 0.0,
                                                                                 0.0,

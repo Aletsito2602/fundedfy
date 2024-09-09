@@ -6,10 +6,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'kyc_model.dart';
 export 'kyc_model.dart';
 
@@ -88,7 +86,7 @@ class _KycWidgetState extends State<KycWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -139,7 +137,7 @@ class _KycWidgetState extends State<KycWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 15.0, 40.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -149,7 +147,7 @@ class _KycWidgetState extends State<KycWidget> {
                                   desktop: false,
                                 ))
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 5.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -171,7 +169,7 @@ class _KycWidgetState extends State<KycWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 25.0, 25.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -179,7 +177,7 @@ class _KycWidgetState extends State<KycWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'Initiate KYC verification',
                                     style: FlutterFlowTheme.of(context)
@@ -206,12 +204,12 @@ class _KycWidgetState extends State<KycWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsets.all(10.0),
+                                  padding: const EdgeInsets.all(10.0),
                                   child: Container(
                                     width: 445.0,
                                     height: 814.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x309137EC),
+                                      color: const Color(0x309137EC),
                                       borderRadius: BorderRadius.circular(24.0),
                                     ),
                                     child: Form(
@@ -219,7 +217,7 @@ class _KycWidgetState extends State<KycWidget> {
                                       autovalidateMode:
                                           AutovalidateMode.disabled,
                                       child: Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -228,7 +226,7 @@ class _KycWidgetState extends State<KycWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -254,7 +252,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -376,7 +374,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -498,7 +496,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -619,7 +617,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -742,7 +740,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -865,7 +863,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -987,7 +985,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1108,7 +1106,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1229,7 +1227,7 @@ class _KycWidgetState extends State<KycWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1363,12 +1361,12 @@ class _KycWidgetState extends State<KycWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsets.all(10.0),
+                                  padding: const EdgeInsets.all(10.0),
                                   child: Container(
                                     width: 445.0,
                                     height: 447.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x309137EC),
+                                      color: const Color(0x309137EC),
                                       borderRadius: BorderRadius.circular(24.0),
                                     ),
                                     child: Form(
@@ -1376,7 +1374,7 @@ class _KycWidgetState extends State<KycWidget> {
                                       autovalidateMode:
                                           AutovalidateMode.disabled,
                                       child: Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -1385,7 +1383,7 @@ class _KycWidgetState extends State<KycWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 25.0),
                                               child: Text(
@@ -1560,7 +1558,7 @@ class _KycWidgetState extends State<KycWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     0.0,
@@ -1711,7 +1709,7 @@ class _KycWidgetState extends State<KycWidget> {
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 20.0,
                                                                 0.0, 0.0),
                                                     child: FFButtonWidget(
@@ -1774,7 +1772,7 @@ class _KycWidgetState extends State<KycWidget> {
                                                                     .primaryText,
                                                               ),
                                                             ),
-                                                            duration: Duration(
+                                                            duration: const Duration(
                                                                 milliseconds:
                                                                     4000),
                                                             backgroundColor:
@@ -1791,14 +1789,14 @@ class _KycWidgetState extends State<KycWidget> {
                                                       options: FFButtonOptions(
                                                         height: 48.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,

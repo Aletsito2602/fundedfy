@@ -8,7 +8,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tickets_boughts_model.dart';
 export 'tickets_boughts_model.dart';
 
@@ -60,7 +59,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -107,7 +106,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                     child: Container(
                       width: 100.0,
                       height: 1445.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -116,15 +115,15 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                           children: [
                             Container(
                               width: double.infinity,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(14.0),
+                                    padding: const EdgeInsets.all(14.0),
                                     child: Text(
                                       'Your Orders',
                                       style: FlutterFlowTheme.of(context)
@@ -145,7 +144,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 5.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -201,7 +200,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                   listViewChallengesOrdersRecordList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 20.0),
                                                 child: Container(
@@ -212,7 +211,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                             context)
                                                         .secondaryBackground,
                                                     borderRadius:
-                                                        BorderRadius.only(
+                                                        const BorderRadius.only(
                                                       bottomLeft:
                                                           Radius.circular(20.0),
                                                       bottomRight:
@@ -225,7 +224,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(20.0),
+                                                        const EdgeInsets.all(20.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -270,7 +269,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                 },
                                                                 text:
                                                                     'Pending order',
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .pending_outlined,
                                                                   size: 15.0,
@@ -278,13 +277,13 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -309,7 +308,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -330,7 +329,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                 },
                                                                 text:
                                                                     'Not approved',
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons
                                                                       .not_interested,
                                                                   size: 15.0,
@@ -338,13 +337,13 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -369,7 +368,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -390,20 +389,20 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                 },
                                                                 text:
                                                                     'Approved',
-                                                                icon: Icon(
+                                                                icon: const Icon(
                                                                   Icons.check,
                                                                   size: 15.0,
                                                                 ),
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -428,7 +427,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -466,7 +465,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -501,7 +500,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                               ),
                                                               Flexible(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -518,7 +517,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           fontFamily:
                                                                               FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                           color:
-                                                                              Color(0xFFD4B1FF),
+                                                                              const Color(0xFFD4B1FF),
                                                                           fontSize:
                                                                               20.0,
                                                                           letterSpacing:
@@ -553,7 +552,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                               ),
                                                               Flexible(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -570,7 +569,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           fontFamily:
                                                                               FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                           color:
-                                                                              Color(0xFFD4B1FF),
+                                                                              const Color(0xFFD4B1FF),
                                                                           fontSize:
                                                                               20.0,
                                                                           letterSpacing:
@@ -647,13 +646,13 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                   listViewChallengueAccountsRecordList[
                                                       listViewIndex];
                                               return Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 20.0),
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 377.0,
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     color: Color(0x780D121D),
                                                     borderRadius:
                                                         BorderRadius.only(
@@ -669,7 +668,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(20.0),
+                                                        const EdgeInsets.all(20.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -711,7 +710,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -744,7 +743,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -794,7 +793,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                               .spaceBetween,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               10.0,
@@ -804,7 +803,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                             listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                  color: Color(0xFFD4B1FF),
+                                                                                  color: const Color(0xFFD4B1FF),
                                                                                   fontSize: 15.0,
                                                                                   letterSpacing: 0.0,
                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -812,7 +811,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               20.0,
@@ -849,7 +848,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -873,7 +872,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           .start,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           10.0,
@@ -901,7 +900,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                               .spaceBetween,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               10.0,
@@ -911,7 +910,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                  color: Color(0xFFD4B1FF),
+                                                                                  color: const Color(0xFFD4B1FF),
                                                                                   fontSize: 15.0,
                                                                                   letterSpacing: 0.0,
                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -919,7 +918,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               20.0,
@@ -956,7 +955,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       10.0,
@@ -980,7 +979,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           .start,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           10.0,
@@ -1008,7 +1007,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                               .spaceBetween,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               10.0,
@@ -1018,7 +1017,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                             listViewChallengueAccountsRecord.passwordAccount,
                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                  color: Color(0xFFD4B1FF),
+                                                                                  color: const Color(0xFFD4B1FF),
                                                                                   fontSize: 15.0,
                                                                                   letterSpacing: 0.0,
                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1026,7 +1025,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               20.0,
@@ -1063,11 +1062,11 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         15.0,
@@ -1097,14 +1096,14 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                               options:
                                                                   FFButtonOptions(
                                                                 height: 40.0,
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         24.0,
                                                                         0.0,
                                                                         24.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1131,7 +1130,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                                     ),
                                                                 elevation: 3.0,
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Colors
                                                                       .transparent,
                                                                   width: 1.0,
@@ -1163,7 +1162,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                               desktop: false,
                             ))
                               Padding(
-                                padding: EdgeInsets.all(24.0),
+                                padding: const EdgeInsets.all(24.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -1173,17 +1172,17 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                           context.pushNamed('NewChallenge');
                                         },
                                         text: 'Start New Challenge',
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.add_box,
                                           size: 15.0,
                                         ),
                                         options: FFButtonOptions(
                                           height: 60.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
@@ -1206,7 +1205,7 @@ class _TicketsBoughtsWidgetState extends State<TicketsBoughtsWidget> {
                                                             .titleSmallFamily),
                                               ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),

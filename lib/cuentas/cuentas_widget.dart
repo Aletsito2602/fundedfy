@@ -4,12 +4,10 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-import 'package:provider/provider.dart';
 import 'cuentas_model.dart';
 export 'cuentas_model.dart';
 
@@ -72,7 +70,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -119,7 +117,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                     child: Container(
                       width: 100.0,
                       height: 1445.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -133,13 +131,13 @@ class _CuentasWidgetState extends State<CuentasWidget>
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.transparent,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(24.0),
+                                    padding: const EdgeInsets.all(24.0),
                                     child: SingleChildScrollView(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -150,11 +148,11 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                         children: [
                                           Container(
                                             width: double.infinity,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 5.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -175,7 +173,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           width:
                                                               double.infinity,
                                                           decoration:
-                                                              BoxDecoration(),
+                                                              const BoxDecoration(),
                                                         ),
                                                         Row(
                                                           mainAxisSize:
@@ -183,11 +181,11 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             14.0),
                                                                 child: Text(
@@ -218,7 +216,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           width: 100.0,
                                                           height: 730.0,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .only(
@@ -239,7 +237,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         15.0,
                                                                         0.0,
@@ -258,7 +256,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                     height:
                                                                         1230.0,
                                                                     decoration:
-                                                                        BoxDecoration(
+                                                                        const BoxDecoration(
                                                                       color: Color(
                                                                           0x000D121D),
                                                                       borderRadius:
@@ -278,7 +276,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                         Column(
                                                                       children: [
                                                                         Align(
-                                                                          alignment: Alignment(
+                                                                          alignment: const Alignment(
                                                                               -1.0,
                                                                               0),
                                                                           child:
@@ -296,12 +294,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                                 ),
                                                                             unselectedLabelStyle:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                             indicatorColor:
                                                                                 Colors.white,
                                                                             padding:
-                                                                                EdgeInsets.all(10.0),
-                                                                            tabs: [
+                                                                                const EdgeInsets.all(10.0),
+                                                                            tabs: const [
                                                                               Tab(
                                                                                 text: 'Challenges',
                                                                               ),
@@ -363,12 +361,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       itemBuilder: (context, listViewIndex) {
                                                                                         final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                         return Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                           child: Container(
                                                                                             width: 100.0,
                                                                                             height: 188.0,
                                                                                             decoration: BoxDecoration(
-                                                                                              gradient: LinearGradient(
+                                                                                              gradient: const LinearGradient(
                                                                                                 colors: [
                                                                                                   Color(0xA04591D5),
                                                                                                   Color(0x7CE765AC)
@@ -380,7 +378,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                               borderRadius: BorderRadius.circular(4.0),
                                                                                             ),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsets.all(20.0),
+                                                                                              padding: const EdgeInsets.all(20.0),
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -413,7 +411,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                               ),
                                                                                                             )
                                                                                                           ],
-                                                                                                          style: TextStyle(),
+                                                                                                          style: const TextStyle(),
                                                                                                         ),
                                                                                                       ),
                                                                                                       FFButtonWidget(
@@ -431,9 +429,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         text: 'Accounts Details',
                                                                                                         options: FFButtonOptions(
                                                                                                           height: 40.0,
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                          color: Color(0x008E33FF),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                          color: const Color(0x008E33FF),
                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                                 color: Colors.white,
@@ -462,7 +460,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                                     child: Row(
                                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                                       children: [
@@ -477,12 +475,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                               ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.serverAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -490,7 +488,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -506,7 +504,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -519,7 +517,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             'Login',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -532,12 +530,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -545,7 +543,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -561,7 +559,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -574,7 +572,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             'Password',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -587,12 +585,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.passwordAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -600,7 +598,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -616,7 +614,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -687,12 +685,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                     itemBuilder: (context, _, listViewIndex) {
                                                                                       final listViewFundedAccountsRecord = _model.listViewPagingController2!.itemList![listViewIndex];
                                                                                       return Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                         child: Container(
                                                                                           width: 100.0,
                                                                                           height: 188.0,
                                                                                           decoration: BoxDecoration(
-                                                                                            gradient: LinearGradient(
+                                                                                            gradient: const LinearGradient(
                                                                                               colors: [
                                                                                                 Color(0xA04591D5),
                                                                                                 Color(0x7CE765AC)
@@ -704,13 +702,13 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             borderRadius: BorderRadius.circular(4.0),
                                                                                           ),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsets.all(20.0),
+                                                                                            padding: const EdgeInsets.all(20.0),
                                                                                             child: Column(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                                               children: [
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -739,7 +737,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                               ),
                                                                                                             )
                                                                                                           ],
-                                                                                                          style: TextStyle(),
+                                                                                                          style: const TextStyle(),
                                                                                                         ),
                                                                                                       ),
                                                                                                       FFButtonWidget(
@@ -757,9 +755,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         text: 'Accounts Details',
                                                                                                         options: FFButtonOptions(
                                                                                                           height: 40.0,
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                          color: Color(0x008E33FF),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                          color: const Color(0x008E33FF),
                                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                                 color: Colors.white,
@@ -779,7 +777,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   ),
                                                                                                 ),
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                                   child: SingleChildScrollView(
                                                                                                     scrollDirection: Axis.horizontal,
                                                                                                     child: Row(
@@ -796,12 +794,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                               ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.serverAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -809,7 +807,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -825,7 +823,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -838,7 +836,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             'Login',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -851,12 +849,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -864,7 +862,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -880,7 +878,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -893,7 +891,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             'Password',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -906,12 +904,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.passwordAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 20.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -919,7 +917,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -935,7 +933,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -973,7 +971,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -1047,7 +1045,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                           final listViewChallengueAccountsRecord =
                                                                               listViewChallengueAccountsRecordList[listViewIndex];
                                                                           return Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -1056,7 +1054,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                 Container(
                                                                               width: 100.0,
                                                                               height: 377.0,
-                                                                              decoration: BoxDecoration(
+                                                                              decoration: const BoxDecoration(
                                                                                 color: Color(0x780D121D),
                                                                                 borderRadius: BorderRadius.only(
                                                                                   bottomLeft: Radius.circular(20.0),
@@ -1066,7 +1064,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                 ),
                                                                               ),
                                                                               child: Padding(
-                                                                                padding: EdgeInsets.all(20.0),
+                                                                                padding: const EdgeInsets.all(20.0),
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1088,7 +1086,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ],
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                       child: Text(
                                                                                         listViewChallengueAccountsRecord.status,
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1101,7 +1099,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -1126,12 +1124,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1139,7 +1137,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -1164,7 +1162,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -1175,7 +1173,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                                               children: [
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                   child: Text(
                                                                                                     'Login',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1192,12 +1190,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewChallengueAccountsRecord.idAccount,
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1205,7 +1203,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -1230,7 +1228,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -1241,7 +1239,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                                               children: [
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                   child: Text(
                                                                                                     'Password',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1258,12 +1256,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewChallengueAccountsRecord.passwordAccount,
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1271,7 +1269,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -1296,9 +1294,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Align(
-                                                                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                         child: FFButtonWidget(
                                                                                           onPressed: () async {
                                                                                             context.pushNamed(
@@ -1314,8 +1312,8 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                           text: 'Accounts Details',
                                                                                           options: FFButtonOptions(
                                                                                             height: 40.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primary,
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -1324,7 +1322,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                 ),
                                                                                             elevation: 3.0,
-                                                                                            borderSide: BorderSide(
+                                                                                            borderSide: const BorderSide(
                                                                                               color: Colors.transparent,
                                                                                               width: 1.0,
                                                                                             ),
@@ -1354,7 +1352,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                         ))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     24.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -1371,7 +1369,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                     },
                                                                     text:
                                                                         'Start New Challenge',
-                                                                    icon: Icon(
+                                                                    icon: const Icon(
                                                                       Icons
                                                                           .add_box,
                                                                       size:
@@ -1381,12 +1379,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                         FFButtonOptions(
                                                                       height:
                                                                           60.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -1410,7 +1408,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                       elevation:
                                                                           3.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -1447,13 +1445,13 @@ class _CuentasWidgetState extends State<CuentasWidget>
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x310D121D),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 30.0, 0.0, 0.0),
                                     child: SingleChildScrollView(
                                       child: Column(
@@ -1465,18 +1463,18 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                         children: [
                                           Container(
                                             width: double.infinity,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 30.0, 10.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     'Your Challenges',
@@ -1505,7 +1503,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 5.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -1514,7 +1512,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                   child: Container(
                                                     width: 100.0,
                                                     height: 659.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0x140D121D),
                                                       borderRadius:
                                                           BorderRadius.only(
@@ -1536,7 +1534,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              Alignment(0.0, 0),
+                                                              const Alignment(0.0, 0),
                                                           child: TabBar(
                                                             labelColor:
                                                                 FlutterFlowTheme.of(
@@ -1562,15 +1560,15 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                               FlutterFlowTheme.of(context).titleMediumFamily),
                                                                     ),
                                                             unselectedLabelStyle:
-                                                                TextStyle(),
+                                                                const TextStyle(),
                                                             indicatorColor:
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     8.0),
-                                                            tabs: [
+                                                            tabs: const [
                                                               Tab(
                                                                 text:
                                                                     'Challenges',
@@ -1601,13 +1599,13 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               6.0),
                                                                       child:
                                                                           SingleChildScrollView(
@@ -1622,7 +1620,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                           children: [
                                                                             Container(
                                                                               width: double.infinity,
-                                                                              decoration: BoxDecoration(),
+                                                                              decoration: const BoxDecoration(),
                                                                             ),
                                                                           ],
                                                                         ),
@@ -1638,7 +1636,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             10.0,
                                                                             1.0,
                                                                             10.0,
@@ -1684,11 +1682,11 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                               itemBuilder: (context, listViewIndex) {
                                                                                 final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                   child: Container(
                                                                                     width: 100.0,
                                                                                     height: 371.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       gradient: LinearGradient(
                                                                                         colors: [
                                                                                           Color(0xA04591D5),
@@ -1706,7 +1704,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(20.0),
+                                                                                      padding: const EdgeInsets.all(20.0),
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1751,7 +1749,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             ],
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               listViewChallengueAccountsRecord.status,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1764,7 +1762,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -1789,12 +1787,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1802,7 +1800,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -1827,7 +1825,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -1838,7 +1836,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Login',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1855,12 +1853,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.idAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1868,7 +1866,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -1893,7 +1891,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -1904,7 +1902,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Password',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1921,12 +1919,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.passwordAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1934,7 +1932,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -1959,9 +1957,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                               child: FFButtonWidget(
                                                                                                 onPressed: () async {
                                                                                                   context.pushNamed(
@@ -1977,9 +1975,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                 text: 'Accounts Details',
                                                                                                 options: FFButtonOptions(
                                                                                                   height: 40.0,
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                  color: Color(0x008E33FF),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                  color: const Color(0x008E33FF),
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                         color: Colors.white,
@@ -2018,7 +2016,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                       false,
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           1.0,
@@ -2082,7 +2080,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                           final listViewFundedAccountsRecord =
                                                                               listViewFundedAccountsRecordList[listViewIndex];
                                                                           return Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -2091,7 +2089,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                 Container(
                                                                               width: 100.0,
                                                                               height: 340.0,
-                                                                              decoration: BoxDecoration(
+                                                                              decoration: const BoxDecoration(
                                                                                 gradient: LinearGradient(
                                                                                   colors: [
                                                                                     Color(0xA04591D5),
@@ -2112,7 +2110,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                 ),
                                                                               ),
                                                                               child: Padding(
-                                                                                padding: EdgeInsets.all(20.0),
+                                                                                padding: const EdgeInsets.all(20.0),
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -2157,7 +2155,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ],
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -2182,12 +2180,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewFundedAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2195,7 +2193,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -2220,7 +2218,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -2231,7 +2229,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                                               children: [
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                   child: Text(
                                                                                                     'Login',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2248,12 +2246,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewFundedAccountsRecord.idAccount,
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2261,7 +2259,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -2286,7 +2284,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -2297,7 +2295,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                                               children: [
                                                                                                 Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                   child: Text(
                                                                                                     'Password',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2314,12 +2312,12 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         listViewFundedAccountsRecord.passwordAccount,
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                              color: Color(0xFFD4B1FF),
+                                                                                                              color: const Color(0xFFD4B1FF),
                                                                                                               fontSize: 15.0,
                                                                                                               letterSpacing: 0.0,
                                                                                                               useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2327,7 +2325,7 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -2352,9 +2350,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                       ),
                                                                                     ),
                                                                                     Align(
-                                                                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                         child: FFButtonWidget(
                                                                                           onPressed: () async {
                                                                                             context.pushNamed(
@@ -2370,9 +2368,9 @@ class _CuentasWidgetState extends State<CuentasWidget>
                                                                                           text: 'Accounts Details',
                                                                                           options: FFButtonOptions(
                                                                                             height: 40.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x008E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x008E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,

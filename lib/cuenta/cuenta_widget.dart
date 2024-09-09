@@ -3,11 +3,8 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cuenta_model.dart';
 export 'cuenta_model.dart';
 
@@ -46,7 +43,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<ChallengueAccountsRecord>(
-      future: ChallengueAccountsRecord.getDocumentOnce(widget!.cuenta!),
+      future: ChallengueAccountsRecord.getDocumentOnce(widget.cuenta!),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
@@ -87,7 +84,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                         'assets/images/Diseo_sin_ttulo_(1).jpg',
                       ).image,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4C00C0FF),
@@ -138,9 +135,9 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 30.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -154,7 +151,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                         onTap: () async {
                                           context.safePop();
                                         },
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.chevron_left_outlined,
                                           color: Colors.white,
                                           size: 40.0,
@@ -213,7 +210,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                 phone: false,
                               ))
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       30.0, 40.0, 30.0, 20.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -232,7 +229,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                               width: double.infinity,
                                               height: 523.0,
                                               decoration: BoxDecoration(
-                                                gradient: LinearGradient(
+                                                gradient: const LinearGradient(
                                                   colors: [
                                                     Color(0x396C696D),
                                                     Color(0x2F807187)
@@ -243,7 +240,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                   end: AlignmentDirectional(
                                                       0, 1.0),
                                                 ),
-                                                borderRadius: BorderRadius.only(
+                                                borderRadius: const BorderRadius.only(
                                                   bottomLeft:
                                                       Radius.circular(20.0),
                                                   bottomRight:
@@ -260,10 +257,10 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         4.0, 70.0, 4.0, 60.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 370.0,
                                                   height: 141.0,
                                                   child: FlutterFlowLineChart(
@@ -278,7 +275,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                         settings:
                                                             LineChartBarData(
                                                           color:
-                                                              Color(0xFFE533FF),
+                                                              const Color(0xFFE533FF),
                                                           barWidth: 2.0,
                                                           isCurved: true,
                                                           preventCurveOverShooting:
@@ -286,7 +283,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                           belowBarData:
                                                               BarAreaData(
                                                             show: true,
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0x00DA10D8),
                                                           ),
                                                         ),
@@ -300,16 +297,16 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                   context)
                                                               .primaryBackground,
                                                       backgroundColor:
-                                                          Color(0x000D121D),
+                                                          const Color(0x000D121D),
                                                       showBorder: false,
                                                     ),
-                                                    axisBounds: AxisBounds(),
+                                                    axisBounds: const AxisBounds(),
                                                     xAxisLabelInfo:
-                                                        AxisLabelInfo(
+                                                        const AxisLabelInfo(
                                                       reservedSize: 32.0,
                                                     ),
                                                     yAxisLabelInfo:
-                                                        AxisLabelInfo(
+                                                        const AxisLabelInfo(
                                                       reservedSize: 40.0,
                                                     ),
                                                   ),
@@ -322,14 +319,14 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                       Flexible(
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             height: 524.0,
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -346,7 +343,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                       height: 207.0,
                                                       decoration: BoxDecoration(
                                                         gradient:
-                                                            LinearGradient(
+                                                            const LinearGradient(
                                                           colors: [
                                                             Color(0x396C696D),
                                                             Color(0x2F807187)
@@ -360,7 +357,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                   0, 1.0),
                                                         ),
                                                         borderRadius:
-                                                            BorderRadius.only(
+                                                            const BorderRadius.only(
                                                           bottomLeft:
                                                               Radius.circular(
                                                                   20.0),
@@ -376,16 +373,16 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                         ),
                                                         border: Border.all(
                                                           color:
-                                                              Color(0x20E71BCD),
+                                                              const Color(0x20E71BCD),
                                                         ),
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   16.0),
                                                           child: Column(
                                                             mainAxisSize:
@@ -408,7 +405,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -429,14 +426,14 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 50.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 50.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                                                 children: [
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                     child: Text(
                                                                                       'Account Details',
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -471,7 +468,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -502,7 +499,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'Account Type',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -522,7 +519,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: Text(
                                                                                                     'CHALLENGE',
                                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -564,7 +561,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -595,7 +592,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'Status',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -617,7 +614,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisAlignment: MainAxisAlignment.center,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: Icon(
                                                                                                     Icons.check,
                                                                                                     color: FlutterFlowTheme.of(context).primaryText,
@@ -657,7 +654,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -688,7 +685,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'Start Date',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -710,7 +707,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisAlignment: MainAxisAlignment.end,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: Text(
                                                                                                     valueOrDefault<String>(
                                                                                                       dateTimeFormat(
@@ -759,7 +756,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -790,7 +787,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'End Date',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -812,7 +809,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisAlignment: MainAxisAlignment.end,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: Text(
                                                                                                     valueOrDefault<String>(
                                                                                                       cuentaChallengueAccountsRecord.endAccount,
@@ -857,7 +854,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -888,7 +885,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'Platform',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -910,7 +907,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisAlignment: MainAxisAlignment.end,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: InkWell(
                                                                                                     splashColor: Colors.transparent,
                                                                                                     focusColor: Colors.transparent,
@@ -964,7 +961,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       height:
                                                                           52.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         borderRadius:
                                                                             BorderRadius.only(
                                                                           bottomLeft:
@@ -995,7 +992,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           'Last Update',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1017,7 +1014,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                               mainAxisAlignment: MainAxisAlignment.end,
                                                                                               children: [
                                                                                                 Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                                   child: Text(
                                                                                                     valueOrDefault<String>(
                                                                                                       dateTimeFormat(
@@ -1073,7 +1070,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                 desktop: false,
                               ))
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 40.0, 10.0, 20.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1089,12 +1086,12 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsets.all(6.0),
+                                              padding: const EdgeInsets.all(6.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 489.0,
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0x396C696D),
                                                       Color(0x2F807187)
@@ -1106,7 +1103,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                         0, 1.0),
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.only(
+                                                      const BorderRadius.only(
                                                     bottomLeft:
                                                         Radius.circular(20.0),
                                                     bottomRight:
@@ -1123,8 +1120,8 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                   ),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(3.0),
-                                                  child: Container(
+                                                  padding: const EdgeInsets.all(3.0),
+                                                  child: SizedBox(
                                                     width: 370.0,
                                                     height: 230.0,
                                                     child: FlutterFlowLineChart(
@@ -1137,7 +1134,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                               .challengeBalance,
                                                           settings:
                                                               LineChartBarData(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFE533FF),
                                                             barWidth: 2.0,
                                                             isCurved: true,
@@ -1146,25 +1143,25 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                             belowBarData:
                                                                 BarAreaData(
                                                               show: true,
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0x19DA10D8),
                                                             ),
                                                           ),
                                                         )
                                                       ],
                                                       chartStylingInfo:
-                                                          ChartStylingInfo(
+                                                          const ChartStylingInfo(
                                                         backgroundColor:
                                                             Color(0x000D121D),
                                                         showBorder: false,
                                                       ),
-                                                      axisBounds: AxisBounds(),
+                                                      axisBounds: const AxisBounds(),
                                                       xAxisLabelInfo:
-                                                          AxisLabelInfo(
+                                                          const AxisLabelInfo(
                                                         reservedSize: 32.0,
                                                       ),
                                                       yAxisLabelInfo:
-                                                          AxisLabelInfo(
+                                                          const AxisLabelInfo(
                                                         reservedSize: 40.0,
                                                       ),
                                                     ),
@@ -1173,12 +1170,12 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsets.all(6.0),
+                                              padding: const EdgeInsets.all(6.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 489.0,
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0x396C696D),
                                                       Color(0x2F807187)
@@ -1190,7 +1187,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                         0, 1.0),
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.only(
+                                                      const BorderRadius.only(
                                                     bottomLeft:
                                                         Radius.circular(20.0),
                                                     bottomRight:
@@ -1208,11 +1205,11 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(16.0),
+                                                        const EdgeInsets.all(16.0),
                                                     child: Column(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -1229,7 +1226,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 501.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1263,7 +1260,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                             CrossAxisAlignment.start,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 5.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -1298,7 +1295,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1338,7 +1335,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Account Type',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1358,7 +1355,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Text(
                                                                                               'CHALLENGE',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1396,7 +1393,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1436,7 +1433,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Status',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1458,7 +1455,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisAlignment: MainAxisAlignment.center,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Icon(
                                                                                               Icons.check,
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
@@ -1494,7 +1491,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1534,7 +1531,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Start Date',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1556,7 +1553,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisAlignment: MainAxisAlignment.end,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Text(
                                                                                               valueOrDefault<String>(
                                                                                                 cuentaChallengueAccountsRecord.startDate?.toString(),
@@ -1597,7 +1594,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1637,7 +1634,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'End Date',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1659,7 +1656,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisAlignment: MainAxisAlignment.end,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Text(
                                                                                               valueOrDefault<String>(
                                                                                                 cuentaChallengueAccountsRecord.endAccount,
@@ -1700,7 +1697,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1740,7 +1737,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Plattform',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1762,7 +1759,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisAlignment: MainAxisAlignment.end,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Text(
                                                                                               valueOrDefault<String>(
                                                                                                 cuentaChallengueAccountsRecord.plataforma,
@@ -1803,7 +1800,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                 width: 505.0,
                                                                 height: 52.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1843,7 +1840,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Last Update',
                                                                                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1865,7 +1862,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                                         mainAxisAlignment: MainAxisAlignment.end,
                                                                                         children: [
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                             child: Text(
                                                                                               valueOrDefault<String>(
                                                                                                 cuentaChallengueAccountsRecord.lastupdate?.toString(),
@@ -1918,27 +1915,27 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                   children: [
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                       ),
                                     ),
                                   ],
                                 ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 30.0, 80.0),
                                         child: Container(
                                           width: 100.0,
                                           height: 337.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x1B626263),
-                                            borderRadius: BorderRadius.only(
+                                            color: const Color(0x1B626263),
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(20.0),
                                               bottomRight:
                                                   Radius.circular(20.0),
@@ -1963,7 +1960,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                     child: Container(
                                                       width: 501.0,
                                                       height: 52.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius.only(
                                                           bottomLeft:
@@ -1997,7 +1994,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2038,7 +2035,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                     child: Container(
                                                       width: 501.0,
                                                       height: 52.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius.only(
                                                           bottomLeft:
@@ -2072,7 +2069,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2113,7 +2110,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .center,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2154,7 +2151,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .center,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2200,7 +2197,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                         width: 465.0,
                                                         height: 52.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           borderRadius:
                                                               BorderRadius.only(
                                                             bottomLeft:
@@ -2234,7 +2231,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                         .start,
                                                                 children: [
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             15.0,
                                                                             0.0,
@@ -2282,7 +2279,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               .center,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               15.0,
                                                                               0.0,
                                                                               0.0,
@@ -2326,7 +2323,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                               .center,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               15.0,
                                                                               0.0,
                                                                               0.0,
@@ -2364,7 +2361,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                     child: Container(
                                                       width: 465.0,
                                                       height: 52.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius.only(
                                                           bottomLeft:
@@ -2398,7 +2395,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2446,7 +2443,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                             .center,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             15.0,
                                                                             0.0,
                                                                             0.0,
@@ -2496,7 +2493,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                             .center,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             15.0,
                                                                             0.0,
                                                                             0.0,
@@ -2537,7 +2534,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                     child: Container(
                                                       width: 465.0,
                                                       height: 52.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius.only(
                                                           bottomLeft:
@@ -2571,7 +2568,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2619,7 +2616,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                             .center,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             15.0,
                                                                             0.0,
                                                                             0.0,
@@ -2666,7 +2663,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                     children: [
                                                                       if (cuentaChallengueAccountsRecord
                                                                           .mlStatus)
-                                                                        Icon(
+                                                                        const Icon(
                                                                           Icons
                                                                               .done,
                                                                           color:
@@ -2703,7 +2700,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                     child: Container(
                                                       width: 465.0,
                                                       height: 52.0,
-                                                      decoration: BoxDecoration(
+                                                      decoration: const BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius.only(
                                                           bottomLeft:
@@ -2737,7 +2734,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           15.0,
                                                                           0.0,
@@ -2788,7 +2785,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                             .center,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             15.0,
                                                                             0.0,
                                                                             0.0,
@@ -2835,7 +2832,7 @@ class _CuentaWidgetState extends State<CuentaWidget> {
                                                                     children: [
                                                                       if (cuentaChallengueAccountsRecord
                                                                           .mdlStatus)
-                                                                        Icon(
+                                                                        const Icon(
                                                                           Icons
                                                                               .done,
                                                                           color:

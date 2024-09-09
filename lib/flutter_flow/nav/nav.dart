@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -12,10 +10,7 @@ import '/auth/base_auth_user_provider.dart';
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -80,13 +75,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : SignInWidget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const SignInWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : SignInWidget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const SignInWidget(),
           routes: [
             FFRoute(
               name: 'signIn',
@@ -101,69 +96,69 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'forgotPassword',
               path: 'forgotPassword',
-              builder: (context, params) => ForgotPasswordWidget(),
+              builder: (context, params) => const ForgotPasswordWidget(),
             ),
             FFRoute(
               name: 'homePage',
               path: 'Home',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'homePage')
-                  : HomePageWidget(),
+                  ? const NavBarPage(initialPage: 'homePage')
+                  : const HomePageWidget(),
             ),
             FFRoute(
               name: 'Cuentas',
               path: 'cuentas',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Cuentas')
-                  : CuentasWidget(),
+                  ? const NavBarPage(initialPage: 'Cuentas')
+                  : const CuentasWidget(),
             ),
             FFRoute(
               name: 'Withdrawals',
               path: 'withdrawals',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Withdrawals')
-                  : WithdrawalsWidget(),
+                  ? const NavBarPage(initialPage: 'Withdrawals')
+                  : const WithdrawalsWidget(),
             ),
             FFRoute(
               name: 'Downloads',
               path: 'downloads',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Downloads')
-                  : DownloadsWidget(),
+                  ? const NavBarPage(initialPage: 'Downloads')
+                  : const DownloadsWidget(),
             ),
             FFRoute(
               name: 'Profile',
               path: 'profile',
               requireAuth: true,
-              builder: (context, params) => ProfileWidget(),
+              builder: (context, params) => const ProfileWidget(),
             ),
             FFRoute(
               name: 'Orders',
               path: 'orders',
               requireAuth: true,
-              builder: (context, params) => OrdersWidget(),
+              builder: (context, params) => const OrdersWidget(),
             ),
             FFRoute(
               name: 'FAQ',
               path: 'faq',
               requireAuth: true,
-              builder: (context, params) => FaqWidget(),
+              builder: (context, params) => const FaqWidget(),
             ),
             FFRoute(
               name: 'Contact',
               path: 'contact',
               requireAuth: true,
-              builder: (context, params) => ContactWidget(),
+              builder: (context, params) => const ContactWidget(),
             ),
             FFRoute(
               name: 'ReferralProgram',
               path: 'Referrals',
               requireAuth: true,
-              builder: (context, params) => ReferralProgramWidget(),
+              builder: (context, params) => const ReferralProgramWidget(),
             ),
             FFRoute(
               name: 'Register',
@@ -192,7 +187,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'NewChallenge',
               path: 'newChallenge',
               requireAuth: true,
-              builder: (context, params) => NewChallengeWidget(),
+              builder: (context, params) => const NewChallengeWidget(),
             ),
             FFRoute(
               name: 'select-balance-hft-25k',
@@ -237,7 +232,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'cuentaCopy',
               path: 'cuentaCopy',
               requireAuth: true,
-              builder: (context, params) => CuentaCopyWidget(),
+              builder: (context, params) => const CuentaCopyWidget(),
             ),
             FFRoute(
               name: 'faqs_only',
@@ -256,27 +251,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'withdrawal_request',
               path: 'withdrawalRequest',
               requireAuth: true,
-              builder: (context, params) => WithdrawalRequestWidget(),
+              builder: (context, params) => const WithdrawalRequestWidget(),
             ),
             FFRoute(
               name: 'MENU_RES',
               path: 'menuRes',
               requireAuth: true,
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'MENU_RES')
-                  : MenuResWidget(),
+                  ? const NavBarPage(initialPage: 'MENU_RES')
+                  : const MenuResWidget(),
             ),
             FFRoute(
               name: 'tickets_support',
               path: 'ticketsSupport',
               requireAuth: true,
-              builder: (context, params) => TicketsSupportWidget(),
+              builder: (context, params) => const TicketsSupportWidget(),
             ),
             FFRoute(
               name: 'tickets_boughts',
               path: 'ticketsBoughts',
               requireAuth: true,
-              builder: (context, params) => TicketsBoughtsWidget(),
+              builder: (context, params) => const TicketsBoughtsWidget(),
             ),
             FFRoute(
               name: 'funded',
@@ -295,13 +290,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'certificates',
               path: 'certificates',
               requireAuth: true,
-              builder: (context, params) => CertificatesWidget(),
+              builder: (context, params) => const CertificatesWidget(),
             ),
             FFRoute(
               name: 'fondo',
               path: 'fondo',
               requireAuth: true,
-              builder: (context, params) => FondoWidget(),
+              builder: (context, params) => const FondoWidget(),
             ),
             FFRoute(
               name: 'select-balance-hft-200k',
@@ -319,19 +314,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'KYC',
               path: 'kyc',
               requireAuth: true,
-              builder: (context, params) => KycWidget(),
+              builder: (context, params) => const KycWidget(),
             ),
             FFRoute(
               name: 'CuentasApi',
               path: 'cuentasApi',
               requireAuth: true,
-              builder: (context, params) => CuentasApiWidget(),
+              builder: (context, params) => const CuentasApiWidget(),
             ),
             FFRoute(
               name: 'IBPortal',
               path: 'iBPortal',
               requireAuth: true,
-              builder: (context, params) => IBPortalWidget(),
+              builder: (context, params) => const IBPortalWidget(),
             ),
             FFRoute(
               name: 'select-balance-hft-300k',
@@ -349,13 +344,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'NewChallengec',
               path: 'newchallenge',
               requireAuth: true,
-              builder: (context, params) => NewChallengecWidget(),
+              builder: (context, params) => const NewChallengecWidget(),
             ),
             FFRoute(
               name: 'CuentasCopy',
               path: 'cuentasCopy',
               requireAuth: true,
-              builder: (context, params) => CuentasCopyWidget(),
+              builder: (context, params) => const CuentasCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -597,7 +592,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

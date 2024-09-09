@@ -4,10 +4,8 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'withdrawal_request_model.dart';
 export 'withdrawal_request_model.dart';
 
@@ -76,7 +74,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                       'assets/images/Diseo_sin_ttulo_(1).jpg',
                     ).image,
                   ),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x4C00C0FF),
@@ -128,7 +126,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   15.0, 20.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -141,7 +139,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                     onTap: () async {
                                       context.safePop();
                                     },
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.chevron_left_outlined,
                                       color: Colors.white,
                                       size: 40.0,
@@ -168,7 +166,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 25.0, 0.0, 5.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -176,7 +174,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       'Request Withdrawal',
                                       style: FlutterFlowTheme.of(context)
@@ -203,13 +201,13 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                               children: [
                                 Flexible(
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 394.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0x2D8E33FF),
-                                        borderRadius: BorderRadius.only(
+                                        color: const Color(0x2D8E33FF),
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(25.0),
                                           bottomRight: Radius.circular(25.0),
                                           topLeft: Radius.circular(25.0),
@@ -236,7 +234,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     10.0,
@@ -371,7 +369,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     10.0,
@@ -504,7 +502,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     10.0,
@@ -637,7 +635,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     10.0,
@@ -775,11 +773,11 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       1.0,
@@ -795,7 +793,7 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                             children: [
                                                               Expanded(
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           5.0,
@@ -828,17 +826,17 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                                                                         FFButtonOptions(
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x00FFFFFF),
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
@@ -891,11 +889,11 @@ class _WithdrawalRequestWidgetState extends State<WithdrawalRequestWidget> {
                               children: [
                                 Flexible(
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 198.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(25.0),
                                           bottomRight: Radius.circular(25.0),

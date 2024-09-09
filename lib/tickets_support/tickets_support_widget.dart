@@ -8,7 +8,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tickets_support_model.dart';
 export 'tickets_support_model.dart';
 
@@ -60,7 +59,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -107,9 +106,9 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                     child: Container(
                       width: 100.0,
                       height: 1445.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: SingleChildScrollView(
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -118,10 +117,10 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                             children: [
                               Container(
                                 width: double.infinity,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 5.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -137,18 +136,18 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                           children: [
                                             Container(
                                               width: double.infinity,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                             Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsets.all(14.0),
+                                                        const EdgeInsets.all(14.0),
                                                     child: Text(
                                                       'Your Tickets',
                                                       style:
@@ -178,7 +177,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                               ],
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -190,7 +189,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsets.all(8.0),
+                                                            const EdgeInsets.all(8.0),
                                                         child: StreamBuilder<
                                                             List<
                                                                 SupportTicketsRecord>>(
@@ -248,7 +247,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                     listViewSupportTicketsRecordList[
                                                                         listViewIndex];
                                                                 return Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -266,7 +265,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                               context)
                                                                           .secondaryBackground,
                                                                       borderRadius:
-                                                                          BorderRadius
+                                                                          const BorderRadius
                                                                               .only(
                                                                         bottomLeft:
                                                                             Radius.circular(20.0),
@@ -281,7 +280,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               20.0),
                                                                       child:
                                                                           Column(
@@ -318,7 +317,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                 ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 5.0,
                                                                                 0.0,
@@ -339,12 +338,12 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                     child: AutoSizeText(
                                                                                       listViewSupportTicketsRecord.textTicket,
                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                            color: Color(0xFFD4B1FF),
+                                                                                            color: const Color(0xFFD4B1FF),
                                                                                             fontSize: 20.0,
                                                                                             letterSpacing: 0.0,
                                                                                             useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -429,7 +428,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                       listViewIndex];
                                                               return Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -440,7 +439,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                   width: 100.0,
                                                                   height: 377.0,
                                                                   decoration:
-                                                                      BoxDecoration(
+                                                                      const BoxDecoration(
                                                                     color: Color(
                                                                         0x780D121D),
                                                                     borderRadius:
@@ -463,7 +462,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             20.0),
                                                                     child:
                                                                         Column(
@@ -493,7 +492,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                           ],
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               5.0,
                                                                               0.0,
@@ -511,7 +510,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               10.0,
                                                                               0.0,
@@ -543,12 +542,12 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                           child: Text(
                                                                                             listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                   fontSize: 15.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -556,7 +555,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                           child: InkWell(
                                                                                             splashColor: Colors.transparent,
                                                                                             focusColor: Colors.transparent,
@@ -581,7 +580,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               10.0,
                                                                               0.0,
@@ -599,7 +598,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                       child: Text(
                                                                                         'Login',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -616,12 +615,12 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                           child: Text(
                                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                   fontSize: 15.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -629,7 +628,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                           child: InkWell(
                                                                                             splashColor: Colors.transparent,
                                                                                             focusColor: Colors.transparent,
@@ -654,7 +653,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               10.0,
                                                                               0.0,
@@ -672,7 +671,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                       child: Text(
                                                                                         'Password',
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -689,12 +688,12 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                           child: Text(
                                                                                             listViewChallengueAccountsRecord.passwordAccount,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                   fontSize: 15.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -702,7 +701,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                           child: InkWell(
                                                                                             splashColor: Colors.transparent,
                                                                                             focusColor: Colors.transparent,
@@ -727,12 +726,12 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                           ),
                                                                         ),
                                                                         Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -753,8 +752,8 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                               text: 'Accounts Details',
                                                                               options: FFButtonOptions(
                                                                                 height: 40.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -763,7 +762,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                     ),
                                                                                 elevation: 3.0,
-                                                                                borderSide: BorderSide(
+                                                                                borderSide: const BorderSide(
                                                                                   color: Colors.transparent,
                                                                                   width: 1.0,
                                                                                 ),
@@ -791,7 +790,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                               desktop: false,
                                             ))
                                               Padding(
-                                                padding: EdgeInsets.all(24.0),
+                                                padding: const EdgeInsets.all(24.0),
                                                 child: Row(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -804,7 +803,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                         },
                                                         text:
                                                             'Start New Challenge',
-                                                        icon: Icon(
+                                                        icon: const Icon(
                                                           Icons.add_box,
                                                           size: 15.0,
                                                         ),
@@ -812,14 +811,14 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                             FFButtonOptions(
                                                           height: 60.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       0.0,
                                                                       24.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -848,7 +847,7 @@ class _TicketsSupportWidgetState extends State<TicketsSupportWidget> {
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Colors
                                                                 .transparent,
                                                             width: 1.0,

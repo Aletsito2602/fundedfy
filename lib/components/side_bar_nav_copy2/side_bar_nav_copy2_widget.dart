@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'side_bar_nav_copy2_model.dart';
 export 'side_bar_nav_copy2_model.dart';
 
@@ -57,11 +56,11 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(-1.0, -1.0),
+      alignment: const AlignmentDirectional(-1.0, -1.0),
       child: Container(
         width: 98.0,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           boxShadow: [
             BoxShadow(
               blurRadius: 15.0,
@@ -89,15 +88,33 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
               child: MouseRegion(
                 opaque: false,
                 cursor: MouseCursor.defer ?? MouseCursor.defer,
+                onEnter: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered = true);
+                  await showModalBottomSheet(
+                    isScrollControlled: true,
+                    backgroundColor: Colors.transparent,
+                    enableDrag: false,
+                    context: context,
+                    builder: (context) {
+                      return Padding(
+                        padding: MediaQuery.viewInsetsOf(context),
+                        child: const SideBarNavCopyWidget(),
+                      );
+                    },
+                  ).then((value) => safeSetState(() {}));
+                }),
+                onExit: ((event) async {
+                  safeSetState(() => _model.mouseRegionHovered = false);
+                }),
                 child: Align(
-                  alignment: AlignmentDirectional(-1.0, -1.0),
+                  alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
@@ -110,7 +127,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -120,7 +137,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'homePage',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -135,7 +152,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -166,7 +183,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -176,7 +193,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Cuentas',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -191,7 +208,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -211,7 +228,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -221,7 +238,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Withdrawals',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -236,7 +253,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -256,7 +273,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -266,7 +283,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Downloads',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -281,7 +298,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -301,7 +318,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -311,7 +328,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Profile',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -326,7 +343,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -346,7 +363,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -356,7 +373,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'FAQ',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -371,7 +388,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -391,7 +408,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -401,7 +418,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Contact',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -416,7 +433,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -436,7 +453,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -446,7 +463,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'Orders',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -461,7 +478,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -481,7 +498,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -491,7 +508,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'certificates',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -506,7 +523,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -526,7 +543,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -536,7 +553,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                             context.pushNamed(
                               'ReferralProgram',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType: PageTransitionType.fade,
                                   duration: Duration(milliseconds: 0),
@@ -551,7 +568,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -571,7 +588,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -587,7 +604,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -607,7 +624,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -627,7 +644,7 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                               borderRadius: BorderRadius.circular(12.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 4.0, 4.0, 4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -648,24 +665,6 @@ class _SideBarNavCopy2WidgetState extends State<SideBarNavCopy2Widget> {
                     ],
                   ),
                 ),
-                onEnter: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered = true);
-                  await showModalBottomSheet(
-                    isScrollControlled: true,
-                    backgroundColor: Colors.transparent,
-                    enableDrag: false,
-                    context: context,
-                    builder: (context) {
-                      return Padding(
-                        padding: MediaQuery.viewInsetsOf(context),
-                        child: SideBarNavCopyWidget(),
-                      );
-                    },
-                  ).then((value) => safeSetState(() {}));
-                }),
-                onExit: ((event) async {
-                  safeSetState(() => _model.mouseRegionHovered = false);
-                }),
               ),
             ),
           ],

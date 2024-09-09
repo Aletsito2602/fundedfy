@@ -3,10 +3,7 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cuenta_copy_model.dart';
 export 'cuenta_copy_model.dart';
 
@@ -47,7 +44,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: Color(0x08000000),
+            backgroundColor: const Color(0x08000000),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -79,7 +76,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
               onTap: () => FocusScope.of(context).unfocus(),
               child: Scaffold(
                 key: scaffoldKey,
-                backgroundColor: Color(0x08000000),
+                backgroundColor: const Color(0x08000000),
                 body: Container(
                   width: double.infinity,
                   height: double.infinity,
@@ -91,7 +88,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                         'assets/images/Diseo_sin_ttulo_(1).jpg',
                       ).image,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4C00C0FF),
@@ -113,7 +110,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                         tablet: false,
                       ))
                         Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: wrapWithModel(
                             model: _model.sideBarNavModel,
                             updateCallback: () => safeSetState(() {}),
@@ -149,7 +146,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                 desktop: false,
                               ))
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 40.0, 10.0, 20.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -165,12 +162,12 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsets.all(6.0),
+                                              padding: const EdgeInsets.all(6.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 489.0,
                                                 decoration: BoxDecoration(
-                                                  gradient: LinearGradient(
+                                                  gradient: const LinearGradient(
                                                     colors: [
                                                       Color(0x396C696D),
                                                       Color(0x2F807187)
@@ -182,7 +179,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                                         0, 1.0),
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.only(
+                                                      const BorderRadius.only(
                                                     bottomLeft:
                                                         Radius.circular(20.0),
                                                     bottomRight:
@@ -199,8 +196,8 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                                   ),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsets.all(12.0),
-                                                  child: Container(
+                                                  padding: const EdgeInsets.all(12.0),
+                                                  child: SizedBox(
                                                     width: 370.0,
                                                     height: 230.0,
                                                     child: FlutterFlowLineChart(
@@ -209,11 +206,11 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                                           xData:
                                                               cuentaCopyChallengueAccountsRecord!
                                                                   .challengeDay,
-                                                          yData: cuentaCopyChallengueAccountsRecord!
+                                                          yData: cuentaCopyChallengueAccountsRecord
                                                               .challengeBalance,
                                                           settings:
                                                               LineChartBarData(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0xFFE533FF),
                                                             barWidth: 2.0,
                                                             isCurved: true,
@@ -222,25 +219,25 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                                             belowBarData:
                                                                 BarAreaData(
                                                               show: true,
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0x19DA10D8),
                                                             ),
                                                           ),
                                                         )
                                                       ],
                                                       chartStylingInfo:
-                                                          ChartStylingInfo(
+                                                          const ChartStylingInfo(
                                                         backgroundColor:
                                                             Color(0x000D121D),
                                                         showBorder: false,
                                                       ),
-                                                      axisBounds: AxisBounds(),
+                                                      axisBounds: const AxisBounds(),
                                                       xAxisLabelInfo:
-                                                          AxisLabelInfo(
+                                                          const AxisLabelInfo(
                                                         reservedSize: 32.0,
                                                       ),
                                                       yAxisLabelInfo:
-                                                          AxisLabelInfo(
+                                                          const AxisLabelInfo(
                                                         reservedSize: 40.0,
                                                       ),
                                                     ),
@@ -263,7 +260,7 @@ class _CuentaCopyWidgetState extends State<CuentaCopyWidget> {
                                   children: [
                                     Expanded(
                                       child: Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                       ),
                                     ),
                                   ],

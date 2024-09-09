@@ -2,10 +2,8 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'forgot_password_model.dart';
 export 'forgot_password_model.dart';
 
@@ -58,7 +56,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   'assets/images/LOGIN-min.jpg',
                 ).image,
               ),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   blurRadius: 4.0,
                   color: Color(0x4C00C0FF),
@@ -75,14 +73,14 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+                      const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
                   child: Container(
                     width: double.infinity,
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 430.0,
                     ),
                     decoration: BoxDecoration(
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 4.0,
                           color: Color(0x33000000),
@@ -92,30 +90,30 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                           ),
                         )
                       ],
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [Color(0x1CF333FF), Color(0x66A547B4)],
                         stops: [0.0, 1.0],
                         begin: AlignmentDirectional(0.0, -1.0),
                         end: AlignmentDirectional(0, 1.0),
                       ),
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(20.0),
                         bottomRight: Radius.circular(20.0),
                         topLeft: Radius.circular(20.0),
                         topRight: Radius.circular(20.0),
                       ),
                       border: Border.all(
-                        color: Color(0x4F8B76B0),
+                        color: const Color(0x4F8B76B0),
                         width: 2.0,
                       ),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Form(
                         key: _model.formKey,
                         autovalidateMode: AutovalidateMode.disabled,
                         child: Padding(
-                          padding: EdgeInsets.all(24.0),
+                          padding: const EdgeInsets.all(24.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,7 +123,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 30.0),
                                     child: Text(
                                       'Recover your account',
@@ -145,16 +143,16 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller:
                                             _model.emailAddressTextController,
                                         focusNode: _model.emailAddressFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: 'Email',
@@ -174,7 +172,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                                             .labelLargeFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.white,
                                               width: 2.0,
                                             ),
@@ -214,7 +212,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                           ),
                                           filled: true,
                                           fillColor: Colors.transparent,
-                                          suffixIcon: Icon(
+                                          suffixIcon: const Icon(
                                             Icons.person_outline_rounded,
                                             color: Color(0xFFEAE1E1),
                                             size: 22.0,
@@ -243,7 +241,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -257,7 +255,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                             .text.isEmpty) {
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(
-                                            SnackBar(
+                                            const SnackBar(
                                               content: Text(
                                                 'Email required!',
                                               ),
@@ -275,10 +273,10 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 44.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: Colors.white,
                                         textStyle: FlutterFlowTheme.of(context)
@@ -301,7 +299,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                                           .titleSmallFamily),
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),
@@ -313,9 +311,9 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
 
                                   // You will have to add an action on this rich text to go to your login page.
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 12.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -330,7 +328,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                               MediaQuery.of(context).textScaler,
                                           text: TextSpan(
                                             children: [
-                                              TextSpan(
+                                              const TextSpan(
                                                 text: 'Have an account? ',
                                                 style: TextStyle(),
                                               ),

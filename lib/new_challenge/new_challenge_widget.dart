@@ -125,7 +125,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                         'assets/images/Diseo_sin_ttulo_(1).jpg',
                       ).image,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4C00C0FF),
@@ -178,7 +178,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 20.0, 0.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -205,7 +205,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             'New Challenge',
@@ -233,14 +233,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                               ),
                               Flexible(
                                 child: Padding(
-                                  padding: EdgeInsets.all(24.0),
+                                  padding: const EdgeInsets.all(24.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -259,7 +259,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -292,7 +292,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                     Expanded(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     0.0,
@@ -442,7 +442,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -473,7 +473,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -504,7 +504,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -535,7 +535,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -566,7 +566,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -597,7 +597,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -628,7 +628,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -659,7 +659,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -682,7 +682,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -700,14 +700,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                       options: FFButtonOptions(
                                                         height: 45.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -740,7 +740,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               .titleSmallFamily),
                                                                 ),
                                                         elevation: 3.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color: Colors
                                                               .transparent,
                                                           width: 2.0,
@@ -765,7 +765,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                 phone: false,
                               ))
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       30.0, 0.0, 30.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -773,12 +773,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 15.0),
                                           child: Container(
                                             width: 100.0,
                                             height: 711.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               borderRadius: BorderRadius.only(
                                                 bottomLeft:
                                                     Radius.circular(20.0),
@@ -798,7 +798,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        Alignment(0.0, 0),
+                                                        const Alignment(0.0, 0),
                                                     child: TabBar(
                                                       labelColor:
                                                           FlutterFlowTheme.of(
@@ -826,14 +826,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             .titleMediumFamily),
                                                               ),
                                                       unselectedLabelStyle:
-                                                          TextStyle(),
+                                                          const TextStyle(),
                                                       indicatorColor:
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .primaryText,
                                                       padding:
-                                                          EdgeInsets.all(4.0),
-                                                      tabs: [
+                                                          const EdgeInsets.all(4.0),
+                                                      tabs: const [
                                                         Tab(
                                                           text: 'HFT Challenge',
                                                         ),
@@ -856,7 +856,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                           height:
                                                               double.infinity,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .only(
@@ -877,7 +877,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         20.0,
@@ -887,7 +887,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           0.0,
                                                                           0),
                                                                   child:
@@ -910,7 +910,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                         ),
                                                                     unselectedLabelStyle:
-                                                                        TextStyle(),
+                                                                        const TextStyle(),
                                                                     labelColor:
                                                                         FlutterFlowTheme.of(context)
                                                                             .primaryText,
@@ -918,10 +918,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         FlutterFlowTheme.of(context)
                                                                             .secondaryText,
                                                                     backgroundColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x0BFFFFFF),
                                                                     unselectedBackgroundColor:
-                                                                        Color(
+                                                                        const Color(
                                                                             0x115119B7),
                                                                     borderColor:
                                                                         FlutterFlowTheme.of(context)
@@ -933,15 +933,15 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                     elevation:
                                                                         0.0,
                                                                     buttonMargin:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             8.0,
                                                                             0.0,
                                                                             8.0,
                                                                             0.0),
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             4.0),
-                                                                    tabs: [
+                                                                    tabs: const [
                                                                       Tab(
                                                                         text:
                                                                             '\$25.000',
@@ -990,7 +990,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -1001,13 +1001,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Conditions',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1020,7 +1020,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Trading Period',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1032,7 +1032,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Minimum Trading Days',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1044,7 +1044,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Daily Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1056,7 +1056,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Total Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1068,7 +1068,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Target',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1080,7 +1080,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Split',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1092,7 +1092,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Leverage',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1104,7 +1104,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Refundable Fee',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1121,12 +1121,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Step 1',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1139,7 +1139,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1151,7 +1151,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1163,7 +1163,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1175,7 +1175,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1187,7 +1187,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '7%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1199,7 +1199,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1211,7 +1211,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1223,7 +1223,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1240,12 +1240,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Funded',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1258,7 +1258,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1270,7 +1270,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1282,7 +1282,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1294,7 +1294,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1306,7 +1306,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1318,7 +1318,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1330,7 +1330,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1342,7 +1342,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1362,10 +1362,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                           ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -1389,19 +1389,19 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ],
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                                                       children: [
                                                                                         if (FFAppState().CUPON == 'NONE')
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$297 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -1411,12 +1411,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$297 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -1426,14 +1426,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$267.30 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1444,14 +1444,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon18)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$243.54 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1462,14 +1462,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$237.60 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1480,14 +1480,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$222.75 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1498,14 +1498,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon30)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$207.90 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1516,14 +1516,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$178.20 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1534,14 +1534,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon50)
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$246.51 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -1554,7 +1554,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ),
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -1574,9 +1574,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           text: 'Pay Now with Crypto',
                                                                                           options: FFButtonOptions(
                                                                                             height: 51.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x078E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x078E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,
@@ -1606,7 +1606,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -1617,13 +1617,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Conditions',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1636,7 +1636,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Trading Period',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1648,7 +1648,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Minimum Trading Days',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1660,7 +1660,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Daily Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1672,7 +1672,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Total Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1684,7 +1684,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Target',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1696,7 +1696,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Split',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1708,7 +1708,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Leverage',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1720,7 +1720,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Refundable Fee',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1737,12 +1737,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Step 1',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1755,7 +1755,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1767,7 +1767,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1779,7 +1779,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1791,7 +1791,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1803,7 +1803,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '7%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1815,7 +1815,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1827,7 +1827,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1839,7 +1839,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1856,12 +1856,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Funded',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1874,7 +1874,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1886,7 +1886,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1898,7 +1898,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1910,7 +1910,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1922,7 +1922,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1934,7 +1934,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1946,7 +1946,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1958,7 +1958,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1978,10 +1978,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                           ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -2005,23 +2005,23 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ],
                                                                                   ),
                                                                                   Align(
-                                                                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.center,
                                                                                         children: [
                                                                                           if (FFAppState().CUPON == 'NONE')
                                                                                             Align(
-                                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                 child: Text(
                                                                                                   '\$397 USD',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                        color: Color(0xFFB479FF),
+                                                                                                        color: const Color(0xFFB479FF),
                                                                                                         fontSize: 29.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
@@ -2032,14 +2032,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                             Align(
-                                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                 child: Text(
                                                                                                   '\$397 USD',
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                        color: Color(0xFFB479FF),
+                                                                                                        color: const Color(0xFFB479FF),
                                                                                                         fontSize: 29.0,
                                                                                                         letterSpacing: 0.0,
                                                                                                         fontWeight: FontWeight.bold,
@@ -2050,12 +2050,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$357.30 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2065,12 +2065,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon18)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$325.54 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2080,12 +2080,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$317.60 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2095,12 +2095,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$297.75 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2110,12 +2110,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon30)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$277.90 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2125,12 +2125,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$238.20 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2140,12 +2140,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                             ),
                                                                                           if (FFAppState().CUPON == newChallengeCuponRecord?.cupon50)
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '\$198.50 USD',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFB479FF),
+                                                                                                      color: const Color(0xFFB479FF),
                                                                                                       fontSize: 29.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       fontWeight: FontWeight.bold,
@@ -2158,7 +2158,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ),
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -2178,9 +2178,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           text: 'Pay Now with Crypto',
                                                                                           options: FFButtonOptions(
                                                                                             height: 51.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x078E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x078E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,
@@ -2210,7 +2210,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -2221,13 +2221,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Conditions',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2240,7 +2240,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Trading Period',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2252,7 +2252,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Minimum Trading Days',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2264,7 +2264,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Daily Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2276,7 +2276,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Total Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2288,7 +2288,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Target',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2300,7 +2300,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Split',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2312,7 +2312,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Leverage',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2324,7 +2324,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Refundable Fee',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2341,12 +2341,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Step 1',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2359,7 +2359,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2371,7 +2371,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2383,7 +2383,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '8%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2395,7 +2395,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2407,7 +2407,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '7%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2419,7 +2419,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2431,7 +2431,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2443,7 +2443,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2460,12 +2460,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Funded',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2478,7 +2478,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2490,7 +2490,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2502,7 +2502,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2514,7 +2514,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2526,7 +2526,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2538,7 +2538,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2550,7 +2550,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2562,7 +2562,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2582,10 +2582,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                           ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -2609,19 +2609,19 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ],
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                                                       children: [
                                                                                         if (FFAppState().CUPON == 'NONE')
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$597 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2631,12 +2631,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$597 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2646,12 +2646,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$447.30 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2665,12 +2665,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                               '\$407.54',
                                                                                             ))
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$397.60 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2680,12 +2680,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$397.60 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2695,12 +2695,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$447.5 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2710,12 +2710,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon30)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$347.90 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2725,12 +2725,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$298.20 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2740,12 +2740,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon50)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$248.50',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -2757,7 +2757,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ),
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -2777,9 +2777,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           text: 'Pay Now with Crypto',
                                                                                           options: FFButtonOptions(
                                                                                             height: 51.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x078E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x078E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,
@@ -2809,7 +2809,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -2820,13 +2820,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Conditions',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2839,7 +2839,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Trading Period',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2851,7 +2851,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Minimum Trading Days',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2863,7 +2863,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Daily Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2875,7 +2875,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Total Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2887,7 +2887,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Target',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2899,7 +2899,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Split',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2911,7 +2911,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Leverage',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2923,7 +2923,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Refundable Fee',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2940,12 +2940,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Step 1',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2958,7 +2958,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2970,7 +2970,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2982,7 +2982,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '8%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2994,7 +2994,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3006,7 +3006,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '7%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3018,7 +3018,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3030,7 +3030,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3042,7 +3042,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3059,12 +3059,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Funded',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3077,7 +3077,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3089,7 +3089,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3101,7 +3101,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3113,7 +3113,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3125,7 +3125,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3137,7 +3137,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3149,7 +3149,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3161,7 +3161,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3181,10 +3181,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                           ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -3208,19 +3208,19 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ],
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                                                       children: [
                                                                                         if (FFAppState().CUPON == 'NONE')
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1097 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3230,12 +3230,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1042,15 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3245,12 +3245,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$987.30 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3260,12 +3260,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon18)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$899.54 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3275,12 +3275,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$877.60 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3290,12 +3290,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$822.75 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3305,12 +3305,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$767.90 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3320,12 +3320,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$658.20 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3335,12 +3335,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon50)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$548.50 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3352,7 +3352,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ),
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -3372,9 +3372,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           text: 'Pay Now with Crypto',
                                                                                           options: FFButtonOptions(
                                                                                             height: 51.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x078E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x078E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,
@@ -3404,7 +3404,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 15.0,
                                                                                 0.0,
@@ -3415,13 +3415,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               children: [
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Conditions',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3434,7 +3434,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Trading Period',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3446,7 +3446,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Minimum Trading Days',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3458,7 +3458,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Daily Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3470,7 +3470,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Maximum Total Loss',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3482,7 +3482,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Target',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3494,7 +3494,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Profit Split',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3506,7 +3506,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Leverage',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3518,7 +3518,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Refundable Fee',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3535,12 +3535,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Step 1',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3553,7 +3553,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3565,7 +3565,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3577,7 +3577,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '8%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3589,7 +3589,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3601,7 +3601,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '7%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3613,7 +3613,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3625,7 +3625,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3637,7 +3637,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3654,12 +3654,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                 ),
                                                                                 Expanded(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(30.0, 10.0, 30.0, 0.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Funded',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3672,7 +3672,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Unlimited',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3684,7 +3684,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3696,7 +3696,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '5%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3708,7 +3708,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '10%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3720,7 +3720,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3732,7 +3732,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'Up To 90%',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3744,7 +3744,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             '1:100',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3756,7 +3756,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                           child: Text(
                                                                                             'X',
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -3776,10 +3776,10 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                           ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -3803,19 +3803,19 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ],
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                                                       children: [
                                                                                         if (FFAppState().CUPON == 'NONE')
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1497 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3825,12 +3825,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1497USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3840,12 +3840,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1,347.30 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3855,12 +3855,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1,197.60 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3870,12 +3870,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1,122.75 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3885,12 +3885,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon30)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$1,047.90 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3900,12 +3900,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$898.20 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3915,12 +3915,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           ),
                                                                                         if (FFAppState().CUPON == newChallengeCuponRecord?.cupon50)
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               '\$748.50 USD',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                    color: Color(0xFFB479FF),
+                                                                                                    color: const Color(0xFFB479FF),
                                                                                                     fontSize: 29.0,
                                                                                                     letterSpacing: 0.0,
                                                                                                     fontWeight: FontWeight.bold,
@@ -3932,7 +3932,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     ),
                                                                                   ),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 24.0, 0.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -3952,9 +3952,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                           text: 'Pay Now with Crypto',
                                                                                           options: FFButtonOptions(
                                                                                             height: 51.0,
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                            color: Color(0x078E33FF),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                            color: const Color(0x078E33FF),
                                                                                             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                   color: Colors.white,
@@ -4004,7 +4004,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                 desktop: false,
                               ))
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 10.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -4018,7 +4018,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                           child: Container(
                                             width: 100.0,
                                             height: 882.0,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                               color: Color(0x0004A24C),
                                               borderRadius: BorderRadius.only(
                                                 bottomLeft:
@@ -4032,7 +4032,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                             child: Column(
                                               children: [
                                                 Align(
-                                                  alignment: Alignment(0.0, 0),
+                                                  alignment: const Alignment(0.0, 0),
                                                   child: TabBar(
                                                     labelColor:
                                                         FlutterFlowTheme.of(
@@ -4060,14 +4060,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .titleMediumFamily),
                                                         ),
                                                     unselectedLabelStyle:
-                                                        TextStyle(),
+                                                        const TextStyle(),
                                                     indicatorColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .primaryText,
                                                     padding:
-                                                        EdgeInsets.all(4.0),
-                                                    tabs: [
+                                                        const EdgeInsets.all(4.0),
+                                                    tabs: const [
                                                       Tab(
                                                         text: 'HFT Challenge',
                                                       ),
@@ -4088,7 +4088,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                         width: double.infinity,
                                                         height: double.infinity,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           borderRadius:
                                                               BorderRadius.only(
                                                             bottomLeft:
@@ -4109,7 +4109,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  Alignment(
+                                                                  const Alignment(
                                                                       0.0, 0),
                                                               child:
                                                                   FlutterFlowButtonTabBar(
@@ -4137,7 +4137,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               FlutterFlowTheme.of(context).titleMediumFamily),
                                                                     ),
                                                                 unselectedLabelStyle:
-                                                                    TextStyle(),
+                                                                    const TextStyle(),
                                                                 labelColor: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
@@ -4146,7 +4146,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             context)
                                                                         .secondaryText,
                                                                 backgroundColor:
-                                                                    Color(
+                                                                    const Color(
                                                                         0x025119B7),
                                                                 borderColor:
                                                                     FlutterFlowTheme.of(
@@ -4158,17 +4158,17 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                     20.0,
                                                                 elevation: 0.0,
                                                                 labelPadding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             2.0),
                                                                 buttonMargin:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             15.0,
                                                                             0.0,
                                                                             15.0,
                                                                             0.0),
-                                                                tabs: [
+                                                                tabs: const [
                                                                   Tab(
                                                                     text:
                                                                         '\$25K',
@@ -4217,7 +4217,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -4231,14 +4231,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Conditions',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4251,7 +4251,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Trading Period',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4263,7 +4263,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Minimum Trading Days',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4275,7 +4275,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Daily Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4287,7 +4287,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Total Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4299,7 +4299,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Target',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4311,7 +4311,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Split',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4323,7 +4323,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Leverage',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4335,7 +4335,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'EA´s',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4347,7 +4347,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'News Trading',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4359,7 +4359,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Weekend Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4371,7 +4371,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Overnight Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4383,7 +4383,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Refundable Fee',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4400,13 +4400,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Step 1',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4419,7 +4419,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4431,7 +4431,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4443,7 +4443,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4455,7 +4455,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4467,7 +4467,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '7%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4479,7 +4479,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4491,7 +4491,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4503,7 +4503,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4515,7 +4515,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4527,7 +4527,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4539,7 +4539,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4551,7 +4551,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4568,13 +4568,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Funded',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4587,7 +4587,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4599,7 +4599,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4611,7 +4611,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4623,7 +4623,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4635,7 +4635,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4647,7 +4647,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4659,7 +4659,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4671,7 +4671,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4683,7 +4683,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4695,7 +4695,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4707,7 +4707,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4719,7 +4719,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4739,7 +4739,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -4773,12 +4773,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   children: [
                                                                                     if (FFAppState().CUPON == 'NONE')
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$297 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4788,12 +4788,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$297 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4803,12 +4803,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$297 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4818,12 +4818,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon10)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$267.30 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4833,12 +4833,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon20)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$237.60 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4848,12 +4848,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$222.75 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4863,12 +4863,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon30)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$207.90 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4878,12 +4878,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon40)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$178.20 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -4894,7 +4894,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   ],
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
                                                                                   child: FFButtonWidget(
                                                                                     onPressed: () async {
                                                                                       context.pushNamed(
@@ -4910,9 +4910,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     text: 'Pay Now with Crypto',
                                                                                     options: FFButtonOptions(
                                                                                       height: 37.0,
-                                                                                      padding: EdgeInsets.all(14.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: Color(0x008E33FF),
+                                                                                      padding: const EdgeInsets.all(14.0),
+                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      color: const Color(0x008E33FF),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                             color: Colors.white,
@@ -4944,7 +4944,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -4958,14 +4958,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Conditions',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4978,7 +4978,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Trading Period',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -4990,7 +4990,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Minimum Trading Days',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5002,7 +5002,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Daily Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5014,7 +5014,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Total Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5026,7 +5026,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Target',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5038,7 +5038,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Split',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5050,7 +5050,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Leverage',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5062,7 +5062,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'EA´s',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5074,7 +5074,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'News Trading',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5086,7 +5086,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Weekend Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5098,7 +5098,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Overnight Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5110,7 +5110,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Refundable Fee',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5127,13 +5127,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Step 1',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5146,7 +5146,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5158,7 +5158,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5170,7 +5170,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5182,7 +5182,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5194,7 +5194,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '7%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5206,7 +5206,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5218,7 +5218,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5230,7 +5230,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5242,7 +5242,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5254,7 +5254,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5266,7 +5266,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5278,7 +5278,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5295,13 +5295,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Funded',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5314,7 +5314,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5326,7 +5326,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5338,7 +5338,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5350,7 +5350,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5362,7 +5362,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5374,7 +5374,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5386,7 +5386,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5398,7 +5398,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5410,7 +5410,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5422,7 +5422,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5434,7 +5434,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5446,7 +5446,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5466,7 +5466,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -5497,12 +5497,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   children: [
                                                                                     if (FFAppState().CUPON == 'NONE')
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$397 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -5512,12 +5512,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$285.84 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -5527,12 +5527,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$397 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -5543,7 +5543,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   ],
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
                                                                                   child: FFButtonWidget(
                                                                                     onPressed: () async {
                                                                                       context.pushNamed(
@@ -5559,9 +5559,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     text: 'Pay Now with Crypto',
                                                                                     options: FFButtonOptions(
                                                                                       height: 37.0,
-                                                                                      padding: EdgeInsets.all(14.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: Color(0x008E33FF),
+                                                                                      padding: const EdgeInsets.all(14.0),
+                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      color: const Color(0x008E33FF),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                             color: Colors.white,
@@ -5593,7 +5593,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -5607,14 +5607,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Conditions',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5627,7 +5627,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Trading Period',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5639,7 +5639,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Minimum Trading Days',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5651,7 +5651,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Daily Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5663,7 +5663,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Total Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5675,7 +5675,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Target',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5687,7 +5687,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Split',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5699,7 +5699,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Leverage',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5711,7 +5711,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'EA´s',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5723,7 +5723,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'News Trading',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5735,7 +5735,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Weekend Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5747,7 +5747,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Overnight Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5759,7 +5759,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Refundable Fee',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5776,13 +5776,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Step 1',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5795,7 +5795,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5807,7 +5807,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5819,7 +5819,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5831,7 +5831,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5843,7 +5843,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '7%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5855,7 +5855,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5867,7 +5867,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5879,7 +5879,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5891,7 +5891,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5903,7 +5903,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5915,7 +5915,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5927,7 +5927,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5944,13 +5944,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Funded',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5963,7 +5963,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5975,7 +5975,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5987,7 +5987,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -5999,7 +5999,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6011,7 +6011,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6023,7 +6023,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6035,7 +6035,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6047,7 +6047,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6059,7 +6059,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6071,7 +6071,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6083,7 +6083,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6095,7 +6095,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6115,7 +6115,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -6146,12 +6146,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   children: [
                                                                                     if (FFAppState().CUPON == 'NONE')
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$597 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6161,12 +6161,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$597 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6176,12 +6176,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$447.75 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6192,7 +6192,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   ],
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
                                                                                   child: FFButtonWidget(
                                                                                     onPressed: () async {
                                                                                       context.pushNamed(
@@ -6208,9 +6208,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     text: 'Pay Now with Crypto',
                                                                                     options: FFButtonOptions(
                                                                                       height: 37.0,
-                                                                                      padding: EdgeInsets.all(14.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: Color(0x008E33FF),
+                                                                                      padding: const EdgeInsets.all(14.0),
+                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      color: const Color(0x008E33FF),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                             color: Colors.white,
@@ -6242,7 +6242,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -6256,14 +6256,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Conditions',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6276,7 +6276,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Trading Period',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6288,7 +6288,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Minimum Trading Days',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6300,7 +6300,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Daily Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6312,7 +6312,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Total Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6324,7 +6324,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Target',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6336,7 +6336,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Split',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6348,7 +6348,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Leverage',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6360,7 +6360,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'EA´s',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6372,7 +6372,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'News Trading',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6384,7 +6384,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Weekend Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6396,7 +6396,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Overnight Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6408,7 +6408,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Refundable Fee',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6425,13 +6425,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Step 1',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6444,7 +6444,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6456,7 +6456,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6468,7 +6468,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6480,7 +6480,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6492,7 +6492,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '7%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6504,7 +6504,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6516,7 +6516,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6528,7 +6528,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6540,7 +6540,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6552,7 +6552,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6564,7 +6564,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6576,7 +6576,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6593,13 +6593,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Funded',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6612,7 +6612,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6624,7 +6624,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6636,7 +6636,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6648,7 +6648,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6660,7 +6660,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6672,7 +6672,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6684,7 +6684,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6696,7 +6696,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6708,7 +6708,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6720,7 +6720,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6732,7 +6732,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6744,7 +6744,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6764,7 +6764,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -6795,12 +6795,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   children: [
                                                                                     if (FFAppState().CUPON == 'NONE')
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$1097 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6810,12 +6810,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '1042,15 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6825,12 +6825,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$822.75  USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -6841,7 +6841,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   ],
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
                                                                                   child: FFButtonWidget(
                                                                                     onPressed: () async {
                                                                                       context.pushNamed(
@@ -6857,9 +6857,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     text: 'Pay Now with Crypto',
                                                                                     options: FFButtonOptions(
                                                                                       height: 37.0,
-                                                                                      padding: EdgeInsets.all(14.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: Color(0x008E33FF),
+                                                                                      padding: const EdgeInsets.all(14.0),
+                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      color: const Color(0x008E33FF),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                             color: Colors.white,
@@ -6891,7 +6891,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -6905,14 +6905,14 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                             children: [
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Conditions',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6925,7 +6925,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Trading Period',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6937,7 +6937,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Minimum Trading Days',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6949,7 +6949,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Daily Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6961,7 +6961,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Maximum Total Loss',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6973,7 +6973,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Target',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6985,7 +6985,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Profit Split',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -6997,7 +6997,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Leverage',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7009,7 +7009,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'EA´s',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7021,7 +7021,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'News Trading',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7033,7 +7033,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Weekend Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7045,7 +7045,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Overnight Holding',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7057,7 +7057,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Refundable Fee',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7074,13 +7074,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Step 1',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7093,7 +7093,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7105,7 +7105,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7117,7 +7117,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7129,7 +7129,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7141,7 +7141,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '7%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7153,7 +7153,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7165,7 +7165,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7177,7 +7177,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7189,7 +7189,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7201,7 +7201,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7213,7 +7213,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7225,7 +7225,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7242,13 +7242,13 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                               ),
                                                                               Expanded(
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 5.0, 5.0, 0.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                     children: [
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Funded',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7261,7 +7261,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Unlimited',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7273,7 +7273,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7285,7 +7285,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '5%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7297,7 +7297,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '10%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7309,7 +7309,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7321,7 +7321,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Up To 90%',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7333,7 +7333,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           '1:100',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7345,7 +7345,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Allowed',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7357,7 +7357,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7369,7 +7369,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7381,7 +7381,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'Yes',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7393,7 +7393,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                         ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                                                                                         child: Text(
                                                                                           'X',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -7413,7 +7413,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -7444,12 +7444,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   children: [
                                                                                     if (FFAppState().CUPON == 'NONE')
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$1497 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -7459,12 +7459,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon5)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$1497 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -7474,12 +7474,12 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                       ),
                                                                                     if (FFAppState().CUPON == newChallengeCuponRecord?.cupon25)
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '\$1,122.75 USD',
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFB479FF),
+                                                                                                color: const Color(0xFFB479FF),
                                                                                                 fontSize: 29.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.bold,
@@ -7490,7 +7490,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                   ],
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 10.0),
                                                                                   child: FFButtonWidget(
                                                                                     onPressed: () async {
                                                                                       context.pushNamed(
@@ -7506,9 +7506,9 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                                     text: 'Pay Now with Crypto',
                                                                                     options: FFButtonOptions(
                                                                                       height: 37.0,
-                                                                                      padding: EdgeInsets.all(14.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: Color(0x008E33FF),
+                                                                                      padding: const EdgeInsets.all(14.0),
+                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                      color: const Color(0x008E33FF),
                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                             color: Colors.white,
@@ -7556,7 +7556,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                               ))
                                 Flexible(
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -7690,7 +7690,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                           children: [
                                             Expanded(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 5.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
@@ -7715,7 +7715,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7745,7 +7745,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7775,7 +7775,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7805,7 +7805,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7835,7 +7835,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7865,7 +7865,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7895,7 +7895,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7925,7 +7925,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7947,7 +7947,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                   .primaryText,
                                                             ),
                                                           ),
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   4000),
                                                           backgroundColor:
@@ -7965,11 +7965,11 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                   options: FFButtonOptions(
                                                     height: 45.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -7997,7 +7997,7 @@ class _NewChallengeWidgetState extends State<NewChallengeWidget>
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 2.0,
                                                     ),

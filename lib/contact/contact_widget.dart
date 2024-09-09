@@ -4,11 +4,9 @@ import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'contact_model.dart';
 export 'contact_model.dart';
 
@@ -84,7 +82,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -135,7 +133,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 15.0, 40.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -145,7 +143,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                   desktop: false,
                                 ))
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 5.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -167,7 +165,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 25.0, 25.0, 0.0, 5.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -175,7 +173,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Text(
                                     'Get in touch',
                                     style: FlutterFlowTheme.of(context)
@@ -205,13 +203,13 @@ class _ContactWidgetState extends State<ContactWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       25.0, 25.0, 25.0, 25.0),
                                   child: Container(
                                     width: 445.0,
                                     height: 486.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x309137EC),
+                                      color: const Color(0x309137EC),
                                       borderRadius: BorderRadius.circular(24.0),
                                     ),
                                     child: Column(
@@ -227,7 +225,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 10.0, 0.0, 0.0),
                                           child: Text(
                                             'Business Hours',
@@ -251,7 +249,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 10.0, 0.0, 0.0),
                                           child: Text(
                                             '1:00 PM a 02:00 AM (UTC)',
@@ -279,25 +277,25 @@ class _ContactWidgetState extends State<ContactWidget> {
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         25.0, 25.0, 25.0, 25.0),
                                     child: Container(
                                       width: 445.0,
                                       height: 486.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0x309137EC),
+                                        color: const Color(0x309137EC),
                                         borderRadius:
                                             BorderRadius.circular(24.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(24.0),
+                                        padding: const EdgeInsets.all(24.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -323,7 +321,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -445,7 +443,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -567,7 +565,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -689,7 +687,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -813,7 +811,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 10.0),
                                               child: FFButtonWidget(
@@ -842,7 +840,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     'tickets_support',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -855,14 +853,14 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     'Send your Support Ticket',
                                                 options: FFButtonOptions(
                                                   height: 51.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -911,13 +909,13 @@ class _ContactWidgetState extends State<ContactWidget> {
                               children: [
                                 Flexible(
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 505.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0x2D8E33FF),
-                                        borderRadius: BorderRadius.only(
+                                        color: const Color(0x2D8E33FF),
+                                        borderRadius: const BorderRadius.only(
                                           bottomLeft: Radius.circular(25.0),
                                           bottomRight: Radius.circular(25.0),
                                           topLeft: Radius.circular(25.0),
@@ -929,14 +927,14 @@ class _ContactWidgetState extends State<ContactWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsets.all(24.0),
+                                        padding: const EdgeInsets.all(24.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -962,7 +960,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 15.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1084,7 +1082,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1206,7 +1204,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1328,7 +1326,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                             ),
                                             Flexible(
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: TextFormField(
@@ -1452,7 +1450,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 10.0),
                                               child: FFButtonWidget(
@@ -1481,7 +1479,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     'tickets_support',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -1494,14 +1492,14 @@ class _ContactWidgetState extends State<ContactWidget> {
                                                     'Send your Support Ticket',
                                                 options: FFButtonOptions(
                                                   height: 51.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -1546,11 +1544,11 @@ class _ContactWidgetState extends State<ContactWidget> {
                             children: [
                               Flexible(
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 198.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(25.0),
                                         bottomRight: Radius.circular(25.0),

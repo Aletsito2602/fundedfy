@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'faq_model.dart';
 export 'faq_model.dart';
 
@@ -57,7 +56,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -108,7 +107,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 64.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -156,10 +155,10 @@ class _FaqWidgetState extends State<FaqWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Color(0x15B46221),
+                                color: const Color(0x15B46221),
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                             ),
@@ -169,12 +168,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 0.0, 20.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 268.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x10AAA5AF),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(20.0),
@@ -188,7 +187,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -272,7 +271,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 listViewIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       15.0,
                                                                       15.0,
@@ -287,7 +286,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -316,12 +315,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             20.0,
                                                                             30.0,
@@ -347,7 +346,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -373,12 +372,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -407,12 +406,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -431,7 +430,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                         elevation:
                                                                             3.0,
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                           width:
@@ -467,12 +466,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 0.0, 20.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 268.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x10AAA5AF),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(20.0),
@@ -486,7 +485,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -570,7 +569,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 listViewIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       15.0,
                                                                       15.0,
@@ -585,7 +584,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -614,12 +613,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             20.0,
                                                                             30.0,
@@ -645,7 +644,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -671,12 +670,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -705,12 +704,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -729,7 +728,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                         elevation:
                                                                             3.0,
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                           width:
@@ -765,12 +764,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 0.0, 20.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 268.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x1D8E33FF),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(20.0),
@@ -784,7 +783,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -867,7 +866,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 listViewIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       15.0,
                                                                       15.0,
@@ -882,7 +881,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -911,12 +910,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             20.0,
                                                                             30.0,
@@ -942,7 +941,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -968,12 +967,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1002,12 +1001,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -1026,7 +1025,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                         elevation:
                                                                             3.0,
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                           width:
@@ -1062,12 +1061,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 0.0, 20.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 268.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x10AAA5AF),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(20.0),
@@ -1081,7 +1080,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1165,7 +1164,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 listViewIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       15.0,
                                                                       15.0,
@@ -1180,7 +1179,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -1209,12 +1208,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             20.0,
                                                                             30.0,
@@ -1240,7 +1239,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -1266,12 +1265,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1300,12 +1299,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -1324,7 +1323,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                         elevation:
                                                                             3.0,
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                           width:
@@ -1360,12 +1359,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 20.0, 0.0, 20.0),
                                   child: Container(
                                     width: 100.0,
                                     height: 268.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x10AAA5AF),
                                       borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(20.0),
@@ -1379,7 +1378,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 0.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -1463,7 +1462,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 listViewIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       15.0,
                                                                       15.0,
@@ -1478,7 +1477,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                       .of(context)
                                                                   .secondaryBackground,
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -1507,12 +1506,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             20.0,
                                                                             30.0,
@@ -1538,7 +1537,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -1564,12 +1563,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1598,12 +1597,12 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -1622,7 +1621,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                                                         elevation:
                                                                             3.0,
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                           width:
@@ -1655,18 +1654,18 @@ class _FaqWidgetState extends State<FaqWidget> {
                           ),
                           Container(
                             height: 233.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                           Container(
                             height: 233.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 50.0),
                             child: Container(
                               height: 233.0,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                             ),
                           ),
                         ],

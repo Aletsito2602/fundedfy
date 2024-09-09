@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -60,7 +59,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -71,7 +70,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   )
                 ],
               ),
-              alignment: AlignmentDirectional(0.0, -1.0),
+              alignment: const AlignmentDirectional(0.0, -1.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -108,10 +107,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     child: Container(
                       width: double.infinity,
                       height: 1502.0,
-                      decoration: BoxDecoration(),
-                      alignment: AlignmentDirectional(0.0, -1.0),
+                      decoration: const BoxDecoration(),
+                      alignment: const AlignmentDirectional(0.0, -1.0),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -125,14 +124,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 child: Container(
                                   width: double.infinity,
                                   height: double.infinity,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0x310D121D),
                                   ),
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: Padding(
-                                      padding: EdgeInsets.all(24.0),
+                                      padding: const EdgeInsets.all(24.0),
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -143,10 +142,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           children: [
                                             Container(
                                               width: double.infinity,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -154,7 +153,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, -1.0),
                                                       child:
                                                           SingleChildScrollView(
@@ -172,11 +171,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                               width: double
                                                                   .infinity,
                                                               decoration:
-                                                                  BoxDecoration(),
+                                                                  const BoxDecoration(),
                                                             ),
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0,
                                                                       -1.0),
                                                               child: Row(
@@ -206,7 +205,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             5.0,
                                                                             0.0,
                                                                             0.0,
@@ -234,7 +233,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           20.0,
@@ -247,7 +246,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child: Text(
@@ -281,7 +280,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             ))
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             5.0,
@@ -336,11 +335,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                               itemBuilder: (context, listViewIndex) {
                                                                                 final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                   child: Container(
                                                                                     width: 100.0,
                                                                                     height: 188.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       gradient: LinearGradient(
                                                                                         colors: [
                                                                                           Color(0xA04591D5),
@@ -358,7 +357,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(20.0),
+                                                                                      padding: const EdgeInsets.all(20.0),
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -391,9 +390,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                 text: 'Accounts Details',
                                                                                                 options: FFButtonOptions(
                                                                                                   height: 40.0,
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                  color: Color(0x03FFFFFF),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                  color: const Color(0x03FFFFFF),
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                         color: Colors.white,
@@ -421,7 +420,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                 ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                             child: SingleChildScrollView(
                                                                                               scrollDirection: Axis.horizontal,
                                                                                               child: Row(
@@ -438,12 +437,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                         ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewChallengueAccountsRecord.serverAccount,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                            color: Color(0xFFD4B1FF),
+                                                                                                            color: const Color(0xFFD4B1FF),
                                                                                                             fontSize: 20.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -451,7 +450,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                     child: InkWell(
                                                                                                       splashColor: Colors.transparent,
                                                                                                       focusColor: Colors.transparent,
@@ -468,7 +467,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                     child: Text(
                                                                                                       'Login',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -481,12 +480,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewChallengueAccountsRecord.idAccount,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                            color: Color(0xFFD4B1FF),
+                                                                                                            color: const Color(0xFFD4B1FF),
                                                                                                             fontSize: 20.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -494,7 +493,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                     child: InkWell(
                                                                                                       splashColor: Colors.transparent,
                                                                                                       focusColor: Colors.transparent,
@@ -511,7 +510,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                     child: Text(
                                                                                                       'Password',
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -524,12 +523,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewChallengueAccountsRecord.passwordAccount,
                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                             fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                            color: Color(0xFFD4B1FF),
+                                                                                                            color: const Color(0xFFD4B1FF),
                                                                                                             fontSize: 20.0,
                                                                                                             letterSpacing: 0.0,
                                                                                                             useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -537,7 +536,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                     child: InkWell(
                                                                                                       splashColor: Colors.transparent,
                                                                                                       focusColor: Colors.transparent,
@@ -618,11 +617,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                               itemBuilder: (context, listViewIndex) {
                                                                                 final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                   child: Container(
                                                                                     width: 100.0,
                                                                                     height: 377.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       color: Color(0x780D121D),
                                                                                       borderRadius: BorderRadius.only(
                                                                                         bottomLeft: Radius.circular(20.0),
@@ -632,7 +631,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(20.0),
+                                                                                      padding: const EdgeInsets.all(20.0),
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -654,7 +653,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ],
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               listViewChallengueAccountsRecord.status,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -667,7 +666,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -692,12 +691,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -705,7 +704,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -730,7 +729,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -741,7 +740,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Login',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -758,12 +757,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.idAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -771,7 +770,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -796,7 +795,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -807,7 +806,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Password',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -824,12 +823,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.passwordAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -837,7 +836,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -862,9 +861,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ),
                                                                                           ),
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                               child: FFButtonWidget(
                                                                                                 onPressed: () async {
                                                                                                   context.pushNamed(
@@ -880,8 +879,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                 text: 'Accounts Details',
                                                                                                 options: FFButtonOptions(
                                                                                                   height: 40.0,
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -890,7 +889,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                       ),
                                                                                                   elevation: 3.0,
-                                                                                                  borderSide: BorderSide(
+                                                                                                  borderSide: const BorderSide(
                                                                                                     color: Colors.transparent,
                                                                                                     width: 1.0,
                                                                                                   ),
@@ -920,7 +919,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             ))
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             24.0),
                                                                 child: Row(
@@ -939,7 +938,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         text:
                                                                             'Start New Challenge',
                                                                         icon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .add_box,
                                                                           size:
@@ -949,12 +948,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             FFButtonOptions(
                                                                           height:
                                                                               60.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               24.0,
                                                                               0.0,
                                                                               24.0,
                                                                               0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
@@ -972,7 +971,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                           elevation:
                                                                               3.0,
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Colors.transparent,
                                                                             width:
@@ -999,10 +998,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               phone: false,
                                             ))
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 50.0),
                                                   child: Row(
@@ -1015,7 +1014,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                       Flexible(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       15.0,
@@ -1027,7 +1026,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             decoration:
                                                                 BoxDecoration(
                                                               gradient:
-                                                                  LinearGradient(
+                                                                  const LinearGradient(
                                                                 colors: [
                                                                   Color(
                                                                       0xCF4591D5),
@@ -1109,7 +1108,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
@@ -1173,13 +1172,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 child: Container(
                                   width: double.infinity,
                                   height: 100.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0x310D121D),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: SingleChildScrollView(
                                         child: Column(
@@ -1191,10 +1190,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           children: [
                                             Container(
                                               width: double.infinity,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 30.0, 10.0, 0.0),
                                               child: Row(
@@ -1202,7 +1201,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 children: [
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Text(
                                                       'Hello!',
@@ -1231,11 +1230,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -1274,7 +1273,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -1296,7 +1295,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             width:
                                                                 double.infinity,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                           ),
                                                           Row(
                                                             mainAxisSize:
@@ -1305,11 +1304,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           20.0,
@@ -1341,7 +1340,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         5.0,
@@ -1411,13 +1410,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             final listViewChallengueAccountsRecord =
                                                                                 listViewChallengueAccountsRecordList[listViewIndex];
                                                                             return Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                               child: Container(
                                                                                 width: 100.0,
                                                                                 height: 188.0,
                                                                                 decoration: BoxDecoration(
                                                                                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(20.0),
                                                                                     bottomRight: Radius.circular(20.0),
                                                                                     topLeft: Radius.circular(20.0),
@@ -1425,7 +1424,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                   ),
                                                                                 ),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(20.0),
+                                                                                  padding: const EdgeInsets.all(20.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -1458,8 +1457,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             text: 'Accounts Details',
                                                                                             options: FFButtonOptions(
                                                                                               height: 40.0,
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                              iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                               color: FlutterFlowTheme.of(context).primary,
                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -1468,7 +1467,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                   ),
                                                                                               elevation: 3.0,
-                                                                                              borderSide: BorderSide(
+                                                                                              borderSide: const BorderSide(
                                                                                                 color: Colors.transparent,
                                                                                                 width: 1.0,
                                                                                               ),
@@ -1488,7 +1487,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                             ),
                                                                                       ),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                         child: Row(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           children: [
@@ -1503,12 +1502,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                   ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                               child: Text(
                                                                                                 listViewChallengueAccountsRecord.serverAccount,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFD4B1FF),
+                                                                                                      color: const Color(0xFFD4B1FF),
                                                                                                       fontSize: 20.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1516,7 +1515,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                               child: InkWell(
                                                                                                 splashColor: Colors.transparent,
                                                                                                 focusColor: Colors.transparent,
@@ -1533,7 +1532,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                               child: Text(
                                                                                                 'Login',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1546,12 +1545,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                               child: Text(
                                                                                                 listViewChallengueAccountsRecord.idAccount,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFD4B1FF),
+                                                                                                      color: const Color(0xFFD4B1FF),
                                                                                                       fontSize: 20.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1559,7 +1558,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                               child: InkWell(
                                                                                                 splashColor: Colors.transparent,
                                                                                                 focusColor: Colors.transparent,
@@ -1576,7 +1575,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                               child: Text(
                                                                                                 'Password',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1589,12 +1588,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                               child: Text(
                                                                                                 listViewChallengueAccountsRecord.passwordAccount,
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Color(0xFFD4B1FF),
+                                                                                                      color: const Color(0xFFD4B1FF),
                                                                                                       fontSize: 20.0,
                                                                                                       letterSpacing: 0.0,
                                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1602,7 +1601,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               ),
                                                                                             ),
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                               child: InkWell(
                                                                                                 splashColor: Colors.transparent,
                                                                                                 focusColor: Colors.transparent,
@@ -1640,7 +1639,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           10.0,
                                                                           1.0,
                                                                           10.0,
@@ -1697,11 +1696,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                 (context, listViewIndex) {
                                                                               final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                 child: Container(
                                                                                   width: 100.0,
                                                                                   height: 371.0,
-                                                                                  decoration: BoxDecoration(
+                                                                                  decoration: const BoxDecoration(
                                                                                     gradient: LinearGradient(
                                                                                       colors: [
                                                                                         Color(0xA04591D5),
@@ -1722,7 +1721,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                     ),
                                                                                   ),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsets.all(20.0),
+                                                                                    padding: const EdgeInsets.all(20.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1744,7 +1743,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                           ],
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                           child: Text(
                                                                                             listViewChallengueAccountsRecord.status,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1757,7 +1756,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1782,12 +1781,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1795,7 +1794,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -1820,7 +1819,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1831,7 +1830,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Login',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1848,12 +1847,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1861,7 +1860,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -1886,7 +1885,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1897,7 +1896,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Password',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1914,12 +1913,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.passwordAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1927,7 +1926,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -1952,9 +1951,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                           ),
                                                                                         ),
                                                                                         Align(
-                                                                                          alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                             child: FFButtonWidget(
                                                                                               onPressed: () async {
                                                                                                 context.pushNamed(
@@ -1970,9 +1969,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                                               text: 'Accounts Details',
                                                                                               options: FFButtonOptions(
                                                                                                 height: 40.0,
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                color: Color(0x008E33FF),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                color: const Color(0x008E33FF),
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                       color: Colors.white,
@@ -2011,7 +2010,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           ))
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(
                                                                           24.0),
                                                               child: Row(
@@ -2022,7 +2021,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -2037,7 +2036,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                         text:
                                                                             'Start New Challenge',
                                                                         icon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .add_box,
                                                                           size:
@@ -2047,18 +2046,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                             FFButtonOptions(
                                                                           height:
                                                                               60.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               24.0,
                                                                               0.0,
                                                                               24.0,
                                                                               0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
                                                                               0.0),
                                                                           color:
-                                                                              Color(0x718E33FF),
+                                                                              const Color(0x718E33FF),
                                                                           textStyle: FlutterFlowTheme.of(context)
                                                                               .titleSmall
                                                                               .override(
@@ -2070,7 +2069,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                           elevation:
                                                                               3.0,
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Colors.transparent,
                                                                             width:
@@ -2097,7 +2096,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               phone: false,
                                             ))
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 50.0),
                                                 child: Row(
@@ -2109,7 +2108,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     Flexible(
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     15.0,
@@ -2120,7 +2119,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           height: 232.0,
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0x5F5119B7),
                                                             borderRadius:
                                                                 BorderRadius
@@ -2181,7 +2180,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:

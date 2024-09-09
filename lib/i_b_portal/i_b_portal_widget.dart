@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'i_b_portal_model.dart';
 export 'i_b_portal_model.dart';
 
@@ -60,7 +59,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                       'assets/images/Diseo_sin_ttulo_(1).jpg',
                     ).image,
                   ),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x4C00C0FF),
@@ -112,7 +111,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   15.0, 40.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -122,7 +121,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                     desktop: false,
                                   ))
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 5.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -144,7 +143,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   25.0, 25.0, 0.0, 5.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -152,7 +151,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Text(
                                       'Your earnings',
                                       style: FlutterFlowTheme.of(context)
@@ -201,13 +200,13 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                       MainAxisAlignment.spaceAround,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 25.0, 10.0, 25.0),
                                       child: Container(
                                         width: 250.0,
                                         height: 486.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x309137EC),
+                                          color: const Color(0x309137EC),
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                         ),
@@ -237,7 +236,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 25.0),
                                               child: Text(
@@ -267,7 +266,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -304,7 +303,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFF6BFF00),
+                                                    color: const Color(0xFF6BFF00),
                                                     fontSize: 28.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -336,7 +335,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -344,7 +343,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                   await Clipboard.setData(
                                                       ClipboardData(
                                                           text:
-                                                              'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                              'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                   ScaffoldMessenger.of(context)
                                                       .showSnackBar(
                                                     SnackBar(
@@ -356,7 +355,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                               .primaryText,
                                                         ),
                                                       ),
-                                                      duration: Duration(
+                                                      duration: const Duration(
                                                           milliseconds: 4000),
                                                       backgroundColor:
                                                           FlutterFlowTheme.of(
@@ -368,14 +367,14 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                 text: 'Share Now',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -412,13 +411,13 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 25.0, 10.0, 25.0),
                                       child: Container(
                                         width: 250.0,
                                         height: 486.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x309137EC),
+                                          color: const Color(0x309137EC),
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                         ),
@@ -448,7 +447,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 25.0),
                                               child: Text(
@@ -478,7 +477,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -515,7 +514,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFF6BFF00),
+                                                    color: const Color(0xFF6BFF00),
                                                     fontSize: 28.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -547,7 +546,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -555,7 +554,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                   await Clipboard.setData(
                                                       ClipboardData(
                                                           text:
-                                                              'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                              'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                   ScaffoldMessenger.of(context)
                                                       .showSnackBar(
                                                     SnackBar(
@@ -567,7 +566,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                               .primaryText,
                                                         ),
                                                       ),
-                                                      duration: Duration(
+                                                      duration: const Duration(
                                                           milliseconds: 4000),
                                                       backgroundColor:
                                                           FlutterFlowTheme.of(
@@ -579,14 +578,14 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                 text: 'Share Now',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -623,13 +622,13 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 25.0, 10.0, 25.0),
                                       child: Container(
                                         width: 250.0,
                                         height: 486.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x309137EC),
+                                          color: const Color(0x309137EC),
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                         ),
@@ -659,7 +658,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 25.0),
                                               child: Text(
@@ -689,7 +688,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -726,7 +725,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFF6BFF00),
+                                                    color: const Color(0xFF6BFF00),
                                                     fontSize: 28.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -758,7 +757,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -766,7 +765,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                   await Clipboard.setData(
                                                       ClipboardData(
                                                           text:
-                                                              'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                              'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                   ScaffoldMessenger.of(context)
                                                       .showSnackBar(
                                                     SnackBar(
@@ -778,7 +777,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                               .primaryText,
                                                         ),
                                                       ),
-                                                      duration: Duration(
+                                                      duration: const Duration(
                                                           milliseconds: 4000),
                                                       backgroundColor:
                                                           FlutterFlowTheme.of(
@@ -790,14 +789,14 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                 text: 'Share Now',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -834,13 +833,13 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 25.0, 10.0, 25.0),
                                       child: Container(
                                         width: 250.0,
                                         height: 486.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x309137EC),
+                                          color: const Color(0x309137EC),
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                         ),
@@ -870,7 +869,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 25.0),
                                               child: Text(
@@ -900,7 +899,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -937,7 +936,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFF6BFF00),
+                                                    color: const Color(0xFF6BFF00),
                                                     fontSize: 28.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -969,7 +968,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -977,7 +976,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                   await Clipboard.setData(
                                                       ClipboardData(
                                                           text:
-                                                              'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                              'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                   ScaffoldMessenger.of(context)
                                                       .showSnackBar(
                                                     SnackBar(
@@ -989,7 +988,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                               .primaryText,
                                                         ),
                                                       ),
-                                                      duration: Duration(
+                                                      duration: const Duration(
                                                           milliseconds: 4000),
                                                       backgroundColor:
                                                           FlutterFlowTheme.of(
@@ -1001,14 +1000,14 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                 text: 'Share Now',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -1045,13 +1044,13 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 25.0, 10.0, 25.0),
                                       child: Container(
                                         width: 250.0,
                                         height: 486.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x309137EC),
+                                          color: const Color(0x309137EC),
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                         ),
@@ -1081,7 +1080,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 25.0),
                                               child: Text(
@@ -1111,7 +1110,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
                                               child: Text(
@@ -1148,7 +1147,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFF6BFF00),
+                                                    color: const Color(0xFF6BFF00),
                                                     fontSize: 28.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -1180,7 +1179,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 15.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -1188,7 +1187,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                   await Clipboard.setData(
                                                       ClipboardData(
                                                           text:
-                                                              'https://portal.fundedfy.com/register?ref=${currentUserUid}'));
+                                                              'https://portal.fundedfy.com/register?ref=$currentUserUid'));
                                                   ScaffoldMessenger.of(context)
                                                       .showSnackBar(
                                                     SnackBar(
@@ -1200,7 +1199,7 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                               .primaryText,
                                                         ),
                                                       ),
-                                                      duration: Duration(
+                                                      duration: const Duration(
                                                           milliseconds: 4000),
                                                       backgroundColor:
                                                           FlutterFlowTheme.of(
@@ -1212,14 +1211,14 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                                                 text: 'Share Now',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x008E33FF),
+                                                  color: const Color(0x008E33FF),
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -1263,11 +1262,11 @@ class _IBPortalWidgetState extends State<IBPortalWidget> {
                               children: [
                                 Flexible(
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 198.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         borderRadius: BorderRadius.only(
                                           bottomLeft: Radius.circular(25.0),
                                           bottomRight: Radius.circular(25.0),

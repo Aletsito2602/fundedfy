@@ -2,10 +2,8 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sign_in_model.dart';
 export 'sign_in_model.dart';
 
@@ -68,7 +66,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                     'assets/images/LOGIN-min.jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -85,14 +83,14 @@ class _SignInWidgetState extends State<SignInWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+                        const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
                     child: Container(
                       width: double.infinity,
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxWidth: 430.0,
                       ),
                       decoration: BoxDecoration(
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x33000000),
@@ -102,30 +100,30 @@ class _SignInWidgetState extends State<SignInWidget> {
                             ),
                           )
                         ],
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [Color(0x1CF333FF), Color(0x66A547B4)],
                           stops: [0.0, 1.0],
                           begin: AlignmentDirectional(0.0, -1.0),
                           end: AlignmentDirectional(0, 1.0),
                         ),
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(20.0),
                           bottomRight: Radius.circular(20.0),
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
                         ),
                         border: Border.all(
-                          color: Color(0x4F8B76B0),
+                          color: const Color(0x4F8B76B0),
                           width: 2.0,
                         ),
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Form(
                           key: _model.formKey,
                           autovalidateMode: AutovalidateMode.disabled,
                           child: Padding(
-                            padding: EdgeInsets.all(24.0),
+                            padding: const EdgeInsets.all(24.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -140,16 +138,16 @@ class _SignInWidgetState extends State<SignInWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: double.infinity,
                                     child: TextFormField(
                                       controller:
                                           _model.emailAddressTextController,
                                       focusNode: _model.emailAddressFocusNode,
                                       autofocus: true,
-                                      autofillHints: [AutofillHints.email],
+                                      autofillHints: const [AutofillHints.email],
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         labelText: 'Email',
@@ -168,7 +166,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                           .labelLargeFamily),
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.white,
                                             width: 2.0,
                                           ),
@@ -204,7 +202,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         ),
                                         filled: true,
                                         fillColor: Colors.transparent,
-                                        suffixIcon: Icon(
+                                        suffixIcon: const Icon(
                                           Icons.person_outline_rounded,
                                           color: Color(0xFFEAE1E1),
                                           size: 22.0,
@@ -230,15 +228,15 @@ class _SignInWidgetState extends State<SignInWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: double.infinity,
                                     child: TextFormField(
                                       controller: _model.passwordTextController,
                                       focusNode: _model.passwordFocusNode,
                                       autofocus: true,
-                                      autofillHints: [AutofillHints.password],
+                                      autofillHints: const [AutofillHints.password],
                                       obscureText: !_model.passwordVisibility,
                                       decoration: InputDecoration(
                                         labelText: 'Password',
@@ -257,7 +255,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                           .labelLargeFamily),
                                             ),
                                         enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.white,
                                             width: 2.0,
                                           ),
@@ -328,7 +326,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -351,10 +349,10 @@ class _SignInWidgetState extends State<SignInWidget> {
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 44.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: Colors.white,
                                       textStyle: FlutterFlowTheme.of(context)
@@ -374,7 +372,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                         .titleSmallFamily),
                                           ),
                                       elevation: 3.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),
@@ -385,9 +383,9 @@ class _SignInWidgetState extends State<SignInWidget> {
 
                                 // You will have to add an action on this rich text to go to your login page.
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 12.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -402,7 +400,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             MediaQuery.of(context).textScaler,
                                         text: TextSpan(
                                           children: [
-                                            TextSpan(
+                                            const TextSpan(
                                               text: 'Don\'t have an account? ',
                                               style: TextStyle(),
                                             ),
@@ -451,9 +449,9 @@ class _SignInWidgetState extends State<SignInWidget> {
 
                                 // You will have to add an action on this rich text to go to your login page.
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 12.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -468,7 +466,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             MediaQuery.of(context).textScaler,
                                         text: TextSpan(
                                           children: [
-                                            TextSpan(
+                                            const TextSpan(
                                               text: 'Forgot your password? ',
                                               style: TextStyle(),
                                             ),
@@ -482,7 +480,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily,
-                                                    color: Color(0xFFFF0EF7),
+                                                    color: const Color(0xFFFF0EF7),
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
                                                     useGoogleFonts: GoogleFonts

@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'orders_model.dart';
 export 'orders_model.dart';
 
@@ -65,7 +64,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -112,7 +111,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                     child: Container(
                       width: 100.0,
                       height: 1445.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -124,20 +123,20 @@ class _OrdersWidgetState extends State<OrdersWidget>
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x310D121D),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -1.0),
+                                            const AlignmentDirectional(0.0, -1.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: SingleChildScrollView(
                                             child: Column(
@@ -149,10 +148,10 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                               children: [
                                                 Container(
                                                   width: double.infinity,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 5.0, 0.0, 0.0),
                                                   child: Row(
@@ -177,7 +176,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                 width: double
                                                                     .infinity,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                               ),
                                                               Row(
                                                                 mainAxisSize:
@@ -186,13 +185,13 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               14.0),
                                                                       child:
                                                                           Text(
@@ -221,7 +220,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                               ))
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               24.0),
                                                                   child: Row(
@@ -239,7 +238,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                           text:
                                                                               'Start New Challenge',
                                                                           icon:
-                                                                              Icon(
+                                                                              const Icon(
                                                                             Icons.add_box,
                                                                             size:
                                                                                 15.0,
@@ -248,12 +247,12 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 60.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 24.0,
                                                                                 0.0,
                                                                                 24.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -269,7 +268,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                             elevation:
                                                                                 3.0,
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Colors.transparent,
                                                                               width: 1.0,
                                                                             ),
@@ -294,7 +293,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsets.all(24.0),
+                                        padding: const EdgeInsets.all(24.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
@@ -302,7 +301,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                               child: Container(
                                                 width: 100.0,
                                                 height: 1230.0,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   color: Color(0x000D121D),
                                                   borderRadius:
                                                       BorderRadius.only(
@@ -320,7 +319,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          Alignment(0.0, 0),
+                                                          const Alignment(0.0, 0),
                                                       child: TabBar(
                                                         labelColor:
                                                             FlutterFlowTheme.of(
@@ -347,12 +346,12 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                               .titleMediumFamily),
                                                                 ),
                                                         unselectedLabelStyle:
-                                                            TextStyle(),
+                                                            const TextStyle(),
                                                         indicatorColor:
                                                             Colors.white,
                                                         padding:
-                                                            EdgeInsets.all(4.0),
-                                                        tabs: [
+                                                            const EdgeInsets.all(4.0),
+                                                        tabs: const [
                                                           Tab(
                                                             text:
                                                                 'Purchase Orders',
@@ -444,7 +443,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         listViewChallengesOrdersRecordList[
                                                                             listViewIndex];
                                                                     return Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -456,7 +455,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         height:
                                                                             188.0,
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           gradient:
                                                                               LinearGradient(
                                                                             colors: [
@@ -487,7 +486,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(20.0),
+                                                                              const EdgeInsets.all(20.0),
                                                                           child:
                                                                               Column(
                                                                             mainAxisSize:
@@ -516,14 +515,14 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                           print('Button pressed ...');
                                                                                         },
                                                                                         text: 'Pending order',
-                                                                                        icon: Icon(
+                                                                                        icon: const Icon(
                                                                                           Icons.pending_outlined,
                                                                                           size: 15.0,
                                                                                         ),
                                                                                         options: FFButtonOptions(
                                                                                           height: 40.0,
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                           color: FlutterFlowTheme.of(context).primary,
                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -532,7 +531,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                                 useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                               ),
                                                                                           elevation: 3.0,
-                                                                                          borderSide: BorderSide(
+                                                                                          borderSide: const BorderSide(
                                                                                             color: Colors.transparent,
                                                                                             width: 1.0,
                                                                                           ),
@@ -545,14 +544,14 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                           print('Button pressed ...');
                                                                                         },
                                                                                         text: 'Not approved',
-                                                                                        icon: Icon(
+                                                                                        icon: const Icon(
                                                                                           Icons.not_interested,
                                                                                           size: 15.0,
                                                                                         ),
                                                                                         options: FFButtonOptions(
                                                                                           height: 40.0,
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                           color: FlutterFlowTheme.of(context).error,
                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -561,7 +560,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                                 useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                               ),
                                                                                           elevation: 3.0,
-                                                                                          borderSide: BorderSide(
+                                                                                          borderSide: const BorderSide(
                                                                                             color: Colors.transparent,
                                                                                             width: 1.0,
                                                                                           ),
@@ -574,14 +573,14 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                           print('Button pressed ...');
                                                                                         },
                                                                                         text: 'Approved',
-                                                                                        icon: Icon(
+                                                                                        icon: const Icon(
                                                                                           Icons.check,
                                                                                           size: 15.0,
                                                                                         ),
                                                                                         options: FFButtonOptions(
                                                                                           height: 40.0,
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                           color: FlutterFlowTheme.of(context).success,
                                                                                           textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -590,7 +589,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                                 useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                               ),
                                                                                           elevation: 3.0,
-                                                                                          borderSide: BorderSide(
+                                                                                          borderSide: const BorderSide(
                                                                                             color: Colors.transparent,
                                                                                             width: 1.0,
                                                                                           ),
@@ -611,7 +610,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                     ),
                                                                               ),
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                 child: SingleChildScrollView(
                                                                                   scrollDirection: Axis.horizontal,
                                                                                   child: Row(
@@ -629,12 +628,12 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                       ),
                                                                                       Flexible(
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                           child: AutoSizeText(
                                                                                             listViewChallengesOrdersRecord.amountofaccount,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                   fontSize: 20.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -654,12 +653,12 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                       ),
                                                                                       Flexible(
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                           child: AutoSizeText(
                                                                                             listViewChallengesOrdersRecord.hashOrders,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                   fontSize: 20.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -749,7 +748,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         listViewSupportTicketsRecordList[
                                                                             listViewIndex];
                                                                     return Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -761,7 +760,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         height:
                                                                             188.0,
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           gradient:
                                                                               LinearGradient(
                                                                             colors: [
@@ -792,7 +791,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(20.0),
+                                                                              const EdgeInsets.all(20.0),
                                                                           child:
                                                                               Column(
                                                                             mainAxisSize:
@@ -826,7 +825,7 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                     ),
                                                                               ),
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   children: [
@@ -842,12 +841,12 @@ class _OrdersWidgetState extends State<OrdersWidget>
                                                                                     ),
                                                                                     Expanded(
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                         child: AutoSizeText(
                                                                                           listViewSupportTicketsRecord.textTicket,
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                color: Color(0xFFD4B1FF),
+                                                                                                color: const Color(0xFFD4B1FF),
                                                                                                 fontSize: 20.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),

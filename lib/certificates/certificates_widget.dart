@@ -6,14 +6,10 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'certificates_model.dart';
 export 'certificates_model.dart';
 
@@ -45,8 +41,8 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 1.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -83,7 +79,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -130,7 +126,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                     child: Container(
                       width: 100.0,
                       height: 1445.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -142,20 +138,20 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x310D121D),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, -1.0),
+                                            const AlignmentDirectional(0.0, -1.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 20.0, 0.0, 0.0),
                                           child: SingleChildScrollView(
                                             child: Column(
@@ -167,10 +163,10 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                               children: [
                                                 Container(
                                                   width: double.infinity,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 5.0, 0.0, 0.0),
                                                   child: Row(
@@ -195,7 +191,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                 width: double
                                                                     .infinity,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                               ),
                                                               Row(
                                                                 mainAxisSize:
@@ -204,13 +200,13 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               14.0),
                                                                       child:
                                                                           Text(
@@ -232,7 +228,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             5.0,
@@ -290,11 +286,11 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                               itemBuilder: (context, listViewIndex) {
                                                                                 final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                 return Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                   child: Container(
                                                                                     width: 100.0,
                                                                                     height: 377.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       color: Color(0x780D121D),
                                                                                       borderRadius: BorderRadius.only(
                                                                                         bottomLeft: Radius.circular(20.0),
@@ -304,7 +300,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                       ),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(20.0),
+                                                                                      padding: const EdgeInsets.all(20.0),
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -326,7 +322,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                             ],
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                             child: Text(
                                                                                               listViewChallengueAccountsRecord.status,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -339,7 +335,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -364,12 +360,12 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -377,7 +373,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -402,7 +398,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -413,7 +409,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Login',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -430,12 +426,12 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.idAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -443,7 +439,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -468,7 +464,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.max,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -479,7 +475,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                     children: [
                                                                                                       Padding(
-                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'Password',
                                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -496,12 +492,12 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.passwordAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 15.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -509,7 +505,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -534,9 +530,9 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                               child: FFButtonWidget(
                                                                                                 onPressed: () async {
                                                                                                   context.pushNamed(
@@ -552,8 +548,8 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                 text: 'Accounts Details',
                                                                                                 options: FFButtonOptions(
                                                                                                   height: 40.0,
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                  iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                   color: FlutterFlowTheme.of(context).primary,
                                                                                                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -562,7 +558,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                       ),
                                                                                                   elevation: 3.0,
-                                                                                                  borderSide: BorderSide(
+                                                                                                  borderSide: const BorderSide(
                                                                                                     color: Colors.transparent,
                                                                                                     width: 1.0,
                                                                                                   ),
@@ -593,7 +589,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                               ))
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               24.0),
                                                                   child: Row(
@@ -611,7 +607,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                           text:
                                                                               'Start New Challenge',
                                                                           icon:
-                                                                              Icon(
+                                                                              const Icon(
                                                                             Icons.add_box,
                                                                             size:
                                                                                 15.0,
@@ -620,12 +616,12 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 60.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 24.0,
                                                                                 0.0,
                                                                                 24.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -641,7 +637,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                             elevation:
                                                                                 3.0,
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Colors.transparent,
                                                                               width: 1.0,
                                                                             ),
@@ -670,7 +666,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                         phone: false,
                                       ))
                                         Padding(
-                                          padding: EdgeInsets.all(6.0),
+                                          padding: const EdgeInsets.all(6.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -678,7 +674,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                 child: Container(
                                                   width: 100.0,
                                                   height: 498.0,
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     borderRadius:
                                                         BorderRadius.only(
                                                       bottomLeft:
@@ -744,7 +740,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                   listViewIndex];
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     24.0),
                                                             child: InkWell(
                                                               splashColor: Colors
@@ -771,7 +767,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                             .certificate,
                                                                         fit: BoxFit
                                                                             .contain,
-                                                                        alignment: Alignment(
+                                                                        alignment: const Alignment(
                                                                             0.0,
                                                                             0.0),
                                                                         errorBuilder: (context,
@@ -781,7 +777,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                           'assets/images/error_image.jpg',
                                                                           fit: BoxFit
                                                                               .contain,
-                                                                          alignment: Alignment(
+                                                                          alignment: const Alignment(
                                                                               0.0,
                                                                               0.0),
                                                                         ),
@@ -818,7 +814,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                     fit: BoxFit
                                                                         .fill,
                                                                     alignment:
-                                                                        Alignment(
+                                                                        const Alignment(
                                                                             0.0,
                                                                             0.0),
                                                                     errorBuilder: (context,
@@ -834,7 +830,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                       fit: BoxFit
                                                                           .fill,
                                                                       alignment:
-                                                                          Alignment(
+                                                                          const Alignment(
                                                                               0.0,
                                                                               0.0),
                                                                     ),
@@ -865,15 +861,15 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                           ))
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, -1.0),
+                                alignment: const AlignmentDirectional(0.0, -1.0),
                                 child: Container(
                                   width: double.infinity,
                                   height: double.infinity,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0x310D121D),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -881,10 +877,10 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 20.0, 0.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -896,11 +892,11 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                 children: [
                                                   Container(
                                                     width: double.infinity,
-                                                    decoration: BoxDecoration(),
+                                                    decoration: const BoxDecoration(),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 5.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -925,7 +921,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                   width: double
                                                                       .infinity,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                 ),
                                                                 Row(
                                                                   mainAxisSize:
@@ -933,7 +929,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                           .max,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           10.0,
                                                                           30.0,
                                                                           10.0,
@@ -950,7 +946,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                 false,
                                                                           ))
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                                                                               child: InkWell(
                                                                                 splashColor: Colors.transparent,
                                                                                 focusColor: Colors.transparent,
@@ -968,7 +964,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                             ),
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.0, 0.0),
+                                                                                const AlignmentDirectional(0.0, 0.0),
                                                                             child:
                                                                                 Text(
                                                                               'Your Certificates',
@@ -988,7 +984,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                   ],
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           5.0,
@@ -1041,9 +1037,9 @@ class _CertificatesWidgetState extends State<CertificatesWidget>
                                                                                 itemBuilder: (context, listViewIndex) {
                                                                                   final listViewCertificatesRecord = listViewCertificatesRecordList[listViewIndex];
                                                                                   return Visibility(
-                                                                                    visible: listViewCertificatesRecord.certificate != null && listViewCertificatesRecord.certificate != '',
+                                                                                    visible: listViewCertificatesRecord.certificate != '',
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(10.0),
+                                                                                      padding: const EdgeInsets.all(10.0),
                                                                                       child: ClipRRect(
                                                                                         borderRadius: BorderRadius.circular(18.0),
                                                                                         child: Image.network(

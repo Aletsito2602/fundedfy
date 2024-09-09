@@ -6,7 +6,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'downloads_model.dart';
 export 'downloads_model.dart';
 
@@ -58,7 +57,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -103,7 +102,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                     ),
                   Expanded(
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, -1.0),
+                      alignment: const AlignmentDirectional(0.0, -1.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -111,7 +110,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 25.0, 0.0, 16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -139,10 +138,10 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                               desktop: false,
                             ))
                               Padding(
-                                padding: EdgeInsets.all(10.0),
+                                padding: const EdgeInsets.all(10.0),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0x15B46221),
+                                    color: const Color(0x15B46221),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Row(
@@ -153,14 +152,14 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                     children: [
                                       Expanded(
                                         child: Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: Text(
@@ -183,7 +182,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
@@ -193,7 +192,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                   },
                                                   text:
                                                       'Download MT4 (Android)',
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.android,
                                                     size: 15.0,
                                                   ),
@@ -201,11 +200,11 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     width: double.infinity,
                                                     height: 52.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -230,7 +229,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -241,7 +240,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
@@ -250,7 +249,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         'https://download.mql5.com/cdn/mobile/mt4/ios?server=JustMarkets-Demo,JustMarkets-Live,JustMarkets-Live2,JustMarkets-Live3,JustMarkets-Live4,JustMarkets-Live5');
                                                   },
                                                   text: 'Download MT4 (Iphone)',
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.apple_sharp,
                                                     size: 15.0,
                                                   ),
@@ -258,11 +257,11 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     width: double.infinity,
                                                     height: 52.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -287,7 +286,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -310,10 +309,10 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                               desktop: false,
                             ))
                               Padding(
-                                padding: EdgeInsets.all(10.0),
+                                padding: const EdgeInsets.all(10.0),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0x15B46221),
+                                    color: const Color(0x15B46221),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Row(
@@ -324,14 +323,14 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                     children: [
                                       Expanded(
                                         child: Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: Text(
@@ -354,7 +353,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
@@ -364,7 +363,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                   },
                                                   text:
                                                       'Download MT5 (Android)',
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.android,
                                                     size: 15.0,
                                                   ),
@@ -372,11 +371,11 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     width: double.infinity,
                                                     height: 52.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -401,7 +400,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -412,7 +411,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
@@ -421,7 +420,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         'https://download.mql5.com/cdn/mobile/mt5/ios?server=JustMarkets-Demo,JustMarkets-Live');
                                                   },
                                                   text: 'Download MT5 (Iphone)',
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.apple_sharp,
                                                     size: 15.0,
                                                   ),
@@ -429,11 +428,11 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                     width: double.infinity,
                                                     height: 52.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -458,7 +457,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -483,14 +482,14 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                               tabletLandscape: false,
                             ))
                               Padding(
-                                padding: EdgeInsets.all(10.0),
+                                padding: const EdgeInsets.all(10.0),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0x15B46221),
+                                    color: const Color(0x15B46221),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -505,7 +504,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: Text(
@@ -528,7 +527,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 25.0, 0.0),
                                                 child: AutoSizeText(
@@ -557,7 +556,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 20.0,
                                                                 10.0, 0.0),
                                                     child: FFButtonWidget(
@@ -566,7 +565,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                             'https://download.mql5.com/cdn/web/just.global.markets/mt4/justmarkets4setup.exe');
                                                       },
                                                       text: 'Download MT4',
-                                                      icon: FaIcon(
+                                                      icon: const FaIcon(
                                                         FontAwesomeIcons
                                                             .windows,
                                                         size: 15.0,
@@ -575,21 +574,21 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         width: 203.0,
                                                         height: 45.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0x005119B7),
+                                                            const Color(0x005119B7),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -625,7 +624,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 10.0,
                                                                 20.0,
@@ -637,7 +636,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                             'https://download.mql5.com/cdn/web/metaquotes.software.corp/mt4/MetaTrader4.pkg.zip');
                                                       },
                                                       text: 'Download MT4',
-                                                      icon: FaIcon(
+                                                      icon: const FaIcon(
                                                         FontAwesomeIcons.apple,
                                                         size: 15.0,
                                                       ),
@@ -645,21 +644,21 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         width: 203.0,
                                                         height: 45.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0x005119B7),
+                                                            const Color(0x005119B7),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -710,14 +709,14 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                               tabletLandscape: false,
                             ))
                               Padding(
-                                padding: EdgeInsets.all(10.0),
+                                padding: const EdgeInsets.all(10.0),
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Color(0x15B46221),
+                                    color: const Color(0x15B46221),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -732,7 +731,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: Text(
@@ -755,7 +754,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 25.0, 0.0),
                                                 child: Text(
@@ -784,7 +783,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 20.0,
                                                                 10.0, 0.0),
                                                     child: FFButtonWidget(
@@ -793,7 +792,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                             'https://download.mql5.com/cdn/web/just.global.markets/mt5/justmarkets5setup.exe');
                                                       },
                                                       text: 'Download MT5',
-                                                      icon: FaIcon(
+                                                      icon: const FaIcon(
                                                         FontAwesomeIcons
                                                             .windows,
                                                         size: 15.0,
@@ -802,21 +801,21 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         width: 203.0,
                                                         height: 45.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0x005119B7),
+                                                            const Color(0x005119B7),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -852,7 +851,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 10.0,
                                                                 20.0,
@@ -864,7 +863,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                             'https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/MetaTrader5.pkg.zip');
                                                       },
                                                       text: 'Download MT5',
-                                                      icon: FaIcon(
+                                                      icon: const FaIcon(
                                                         FontAwesomeIcons.apple,
                                                         size: 15.0,
                                                       ),
@@ -872,21 +871,21 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                                                         width: 203.0,
                                                         height: 45.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     24.0,
                                                                     0.0,
                                                                     24.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0x005119B7),
+                                                            const Color(0x005119B7),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)

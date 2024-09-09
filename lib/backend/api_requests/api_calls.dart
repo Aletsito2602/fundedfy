@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
-import '../schema/structs/index.dart';
 
 import 'package:flutter/foundation.dart';
 
@@ -61,8 +59,8 @@ class MakeCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "nombre": "${nombre}",
-  "email": "${email}"
+  "nombre": "$nombre",
+  "email": "$email"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'make',
@@ -96,13 +94,13 @@ class TaloCall {
     final ffApiRequestBody = '''
 {
   "price": {
-    "currency": "${currency}",
-    "amount": ${amount}
+    "currency": "$currency",
+    "amount": $amount
   },
-  "user_id": "${userId}",
-  "redirect_url": "${redirectUrl}",
-  "motive": "${motive}",
-  "external_id": "${externalId}"
+  "user_id": "$userId",
+  "redirect_url": "$redirectUrl",
+  "motive": "$motive",
+  "external_id": "$externalId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'talo',

@@ -5,11 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:sticky_headers/sticky_headers.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cuentas_copy_model.dart';
 export 'cuentas_copy_model.dart';
 
@@ -69,7 +67,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                       'assets/images/Diseo_sin_ttulo_(1).jpg',
                     ).image,
                   ),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x4C00C0FF),
@@ -117,7 +115,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                       child: Container(
                         width: 100.0,
                         height: 1445.0,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -125,11 +123,11 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                               child: Container(
                                 width: double.infinity,
                                 height: 100.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.transparent,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -140,11 +138,11 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                       children: [
                                         Container(
                                           width: double.infinity,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -163,7 +161,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                       Container(
                                                         width: double.infinity,
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                       ),
                                                       Row(
                                                         mainAxisSize:
@@ -183,13 +181,13 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                     header:
                                                                         Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               -1.0,
                                                                               0.0),
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(14.0),
+                                                                            const EdgeInsets.all(14.0),
                                                                         child:
                                                                             Text(
                                                                           'Your Challenges',
@@ -213,7 +211,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                               .max,
                                                                       children: [
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
@@ -230,7 +228,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                 BoxShadow(
                                                                                   blurRadius: 0.0,
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                  offset: Offset(
+                                                                                  offset: const Offset(
                                                                                     0.0,
                                                                                     1.0,
                                                                                   ),
@@ -260,7 +258,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                 1.0,
                                                         height: 730.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0x110D121D),
                                                           borderRadius:
@@ -281,7 +279,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                           child: Row(
                                                             mainAxisSize:
@@ -295,7 +293,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                   height:
                                                                       1230.0,
                                                                   decoration:
-                                                                      BoxDecoration(
+                                                                      const BoxDecoration(
                                                                     color: Color(
                                                                         0x000D121D),
                                                                     borderRadius:
@@ -318,7 +316,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                   child: Column(
                                                                     children: [
                                                                       Align(
-                                                                        alignment: Alignment(
+                                                                        alignment: const Alignment(
                                                                             -1.0,
                                                                             0),
                                                                         child:
@@ -338,12 +336,12 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                 useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                               ),
                                                                           unselectedLabelStyle:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                           indicatorColor:
                                                                               Colors.white,
                                                                           padding:
-                                                                              EdgeInsets.all(4.0),
-                                                                          tabs: [
+                                                                              const EdgeInsets.all(4.0),
+                                                                          tabs: const [
                                                                             Tab(
                                                                               text: 'Challenge',
                                                                             ),
@@ -369,7 +367,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                               _model.tabBarController,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                               child: StreamBuilder<List<ChallengueAccountsRecord>>(
                                                                                 stream: queryChallengueAccountsRecord(
                                                                                   queryBuilder: (challengueAccountsRecord) => challengueAccountsRecord.where(
@@ -402,19 +400,19 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                     itemBuilder: (context, listViewIndex) {
                                                                                       final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                       return Align(
-                                                                                        alignment: AlignmentDirectional(0.0, -1.0),
+                                                                                        alignment: const AlignmentDirectional(0.0, -1.0),
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                           child: Container(
                                                                                             width: double.infinity,
                                                                                             height: MediaQuery.sizeOf(context).height * 0.326,
                                                                                             decoration: BoxDecoration(
-                                                                                              color: Color(0x21B1B3B8),
+                                                                                              color: const Color(0x21B1B3B8),
                                                                                               borderRadius: BorderRadius.circular(6.0),
                                                                                             ),
-                                                                                            alignment: AlignmentDirectional(0.0, -1.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, -1.0),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 10.0, 30.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 10.0, 30.0),
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -441,7 +439,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                                 ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: TextStyle(),
+                                                                                                            style: const TextStyle(),
                                                                                                           ),
                                                                                                         ),
                                                                                                       ),
@@ -467,9 +465,9 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                             text: 'Details',
                                                                                                             options: FFButtonOptions(
                                                                                                               height: 40.0,
-                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                              color: Color(0x04FFFFFF),
+                                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                              iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                              color: const Color(0x04FFFFFF),
                                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                                     color: Colors.white,
@@ -488,7 +486,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                     ],
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                                                                                                     child: Row(
                                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                                       children: [
@@ -504,7 +502,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                               ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.serverAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -518,7 +516,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -534,7 +532,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -550,12 +548,12 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                                                                                                     child: Row(
                                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             'Login',
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -569,7 +567,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -583,7 +581,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -599,7 +597,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                     ),
                                                                                                                   ),
-                                                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                 ),
                                                                                                               );
@@ -616,12 +614,12 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                   ),
                                                                                                   Flexible(
                                                                                                     child: Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                                                                                                       child: Row(
                                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'Password',
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -635,7 +633,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               listViewChallengueAccountsRecord.passwordAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -649,7 +647,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -665,7 +663,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                       ),
                                                                                                                     ),
-                                                                                                                    duration: Duration(milliseconds: 4000),
+                                                                                                                    duration: const Duration(milliseconds: 4000),
                                                                                                                     backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                   ),
                                                                                                                 );
@@ -690,7 +688,7 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                       ))
                                                                                                         Expanded(
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                             child: FFButtonWidget(
                                                                                                               onPressed: () {
                                                                                                                 print('Button pressed ...');
@@ -698,9 +696,9 @@ class _CuentasCopyWidgetState extends State<CuentasCopyWidget>
                                                                                                               text: 'Details',
                                                                                                               options: FFButtonOptions(
                                                                                                                 height: 40.0,
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                                color: Color(0x04FFFFFF),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                                color: const Color(0x04FFFFFF),
                                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                                       color: Colors.white,

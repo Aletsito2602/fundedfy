@@ -7,9 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -38,7 +36,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
     super.initState();
     _model = createModel(context, () => RegisterModel());
 
-    _model.referralTextController ??= TextEditingController(text: widget!.ref);
+    _model.referralTextController ??= TextEditingController(text: widget.ref);
     _model.referralFocusNode ??= FocusNode();
 
     _model.customerNameTextController ??= TextEditingController();
@@ -130,7 +128,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                               'assets/images/LOGIN-min.jpg',
                             ).image,
                           ),
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 4.0,
                               color: Color(0x4C00C0FF),
@@ -147,9 +145,9 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller: _model.referralTextController,
@@ -164,7 +162,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLargeFamily,
-                                            color: Color(0x00FFFFFF),
+                                            color: const Color(0x00FFFFFF),
                                             letterSpacing: 0.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
@@ -172,7 +170,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                         .labelLargeFamily),
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -180,7 +178,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -188,7 +186,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             BorderRadius.circular(24.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -196,7 +194,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                             BorderRadius.circular(24.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -211,7 +209,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyLargeFamily,
-                                          color: Color(0x00FFFFFF),
+                                          color: const Color(0x00FFFFFF),
                                           letterSpacing: 0.0,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
@@ -225,15 +223,15 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     15.0, 100.0, 15.0, 15.0),
                                 child: Container(
                                   width: double.infinity,
-                                  constraints: BoxConstraints(
+                                  constraints: const BoxConstraints(
                                     maxWidth: 430.0,
                                   ),
                                   decoration: BoxDecoration(
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -243,7 +241,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                         ),
                                       )
                                     ],
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                       colors: [
                                         Color(0x1CF333FF),
                                         Color(0x66A547B4)
@@ -252,25 +250,25 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                       begin: AlignmentDirectional(0.0, -1.0),
                                       end: AlignmentDirectional(0, 1.0),
                                     ),
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(20.0),
                                       bottomRight: Radius.circular(20.0),
                                       topLeft: Radius.circular(20.0),
                                       topRight: Radius.circular(20.0),
                                     ),
                                     border: Border.all(
-                                      color: Color(0x4F8B76B0),
+                                      color: const Color(0x4F8B76B0),
                                       width: 2.0,
                                     ),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Form(
                                       key: _model.formKey,
                                       autovalidateMode:
                                           AutovalidateMode.disabled,
                                       child: Padding(
-                                        padding: EdgeInsets.all(10.0),
+                                        padding: const EdgeInsets.all(10.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -278,7 +276,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 30.0),
                                                 child: Text(
@@ -304,10 +302,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -315,7 +313,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     focusNode: _model
                                                         .customerNameFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.name
                                                     ],
                                                     obscureText: false,
@@ -410,10 +408,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -513,10 +511,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -524,7 +522,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     focusNode: _model
                                                         .emailAddressFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.email
                                                     ],
                                                     obscureText: false,
@@ -621,7 +619,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: FutureBuilder<
@@ -651,12 +649,12 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     final countryGetCellCodeOiResponse =
                                                         snapshot.data!;
 
-                                                    return Container(
+                                                    return SizedBox(
                                                       width: double.infinity,
                                                       child:
                                                           Autocomplete<String>(
                                                         initialValue:
-                                                            TextEditingValue(),
+                                                            const TextEditingValue(),
                                                         optionsBuilder:
                                                             (textEditingValue) {
                                                           if (textEditingValue
@@ -710,7 +708,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                               FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                     ),
                                                             textHighlightStyle:
-                                                                TextStyle(),
+                                                                const TextStyle(),
                                                             elevation: 4.0,
                                                             optionBackgroundColor:
                                                                 FlutterFlowTheme.of(
@@ -755,7 +753,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                 EasyDebounce
                                                                     .debounce(
                                                               '_model.countryTextController',
-                                                              Duration(
+                                                              const Duration(
                                                                   milliseconds:
                                                                       2000),
                                                               () async {
@@ -783,7 +781,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                               },
                                                             ),
                                                             autofocus: true,
-                                                            autofillHints: [
+                                                            autofillHints: const [
                                                               AutofillHints
                                                                   .countryName
                                                             ],
@@ -889,7 +887,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: FutureBuilder<
@@ -919,12 +917,12 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     final countryCodeGetCellCodeOiResponse =
                                                         snapshot.data!;
 
-                                                    return Container(
+                                                    return SizedBox(
                                                       width: double.infinity,
                                                       child:
                                                           Autocomplete<String>(
                                                         initialValue:
-                                                            TextEditingValue(),
+                                                            const TextEditingValue(),
                                                         optionsBuilder:
                                                             (textEditingValue) {
                                                           if (textEditingValue
@@ -978,7 +976,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                               FlutterFlowTheme.of(context).bodyMediumFamily),
                                                                     ),
                                                             textHighlightStyle:
-                                                                TextStyle(),
+                                                                const TextStyle(),
                                                             elevation: 4.0,
                                                             optionBackgroundColor:
                                                                 FlutterFlowTheme.of(
@@ -1020,7 +1018,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                             onEditingComplete:
                                                                 onEditingComplete,
                                                             autofocus: true,
-                                                            autofillHints: [
+                                                            autofillHints: const [
                                                               AutofillHints
                                                                   .telephoneNumberCountryCode
                                                             ],
@@ -1129,10 +1127,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -1140,7 +1138,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     focusNode: _model
                                                         .customerNumberFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints
                                                           .telephoneNumber
                                                     ],
@@ -1238,10 +1236,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -1249,7 +1247,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     focusNode: _model
                                                         .passwordFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -1368,10 +1366,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -1379,7 +1377,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     focusNode: _model
                                                         .passwordConfirmFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: [
+                                                    autofillHints: const [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -1499,7 +1497,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: Row(
@@ -1596,7 +1594,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: Row(
@@ -1693,7 +1691,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
                                                 child: FFButtonWidget(
@@ -1726,7 +1724,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                       ScaffoldMessenger.of(
                                                               context)
                                                           .showSnackBar(
-                                                        SnackBar(
+                                                        const SnackBar(
                                                           content: Text(
                                                             'Passwords don\'t match!',
                                                           ),
@@ -1805,9 +1803,6 @@ class _RegisterWidgetState extends State<RegisterWidget> {
 
                                                     if (_model.referralTextController
                                                                 .text !=
-                                                            null &&
-                                                        _model.referralTextController
-                                                                .text !=
                                                             '') {
                                                       await ReferidosListaRecord
                                                           .collection
@@ -1815,7 +1810,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                           .set(
                                                               createReferidosListaRecordData(
                                                             uidCustomer:
-                                                                widget!.ref,
+                                                                widget.ref,
                                                             uidUser1:
                                                                 currentUserUid,
                                                           ));
@@ -1830,7 +1825,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                       context.mounted,
                                                       extra: <String, dynamic>{
                                                         kTransitionInfoKey:
-                                                            TransitionInfo(
+                                                            const TransitionInfo(
                                                           hasTransition: true,
                                                           transitionType:
                                                               PageTransitionType
@@ -1844,11 +1839,11 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                     width: double.infinity,
                                                     height: 44.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -1872,7 +1867,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                                       .titleSmallFamily),
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -1885,10 +1880,10 @@ class _RegisterWidgetState extends State<RegisterWidget> {
 
                                               // You will have to add an action on this rich text to go to your login page.
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 12.0),
                                                   child: InkWell(
@@ -1910,7 +1905,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                                                               .textScaler,
                                                       text: TextSpan(
                                                         children: [
-                                                          TextSpan(
+                                                          const TextSpan(
                                                             text:
                                                                 'Do you already have an account? ',
                                                             style: TextStyle(),

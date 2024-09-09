@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -70,7 +69,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
     context.watch<FFAppState>();
 
     return StreamBuilder<CuponRecord>(
-      stream: CuponRecord.getDocument(widget!.ref100!),
+      stream: CuponRecord.getDocument(widget.ref100!),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
@@ -113,7 +112,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                           'assets/images/Diseo_sin_ttulo_(1).jpg',
                         ).image,
                       ),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 4.0,
                           color: Color(0x4C00C0FF),
@@ -166,7 +165,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 10.0, 0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -229,7 +228,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 10.0, 20.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -261,7 +260,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       'NONE')
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -277,7 +276,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .headlineSmallFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFE7D4FF),
                                                                   fontSize:
                                                                       30.0,
@@ -296,7 +295,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                           .cupon5)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -312,7 +311,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .headlineSmallFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFE7D4FF),
                                                                   fontSize:
                                                                       30.0,
@@ -331,7 +330,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                           .cupon25)
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -347,7 +346,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                   fontFamily: FlutterFlowTheme.of(
                                                                           context)
                                                                       .headlineSmallFamily,
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xFFE7D4FF),
                                                                   fontSize:
                                                                       30.0,
@@ -397,7 +396,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   10.0,
@@ -435,13 +434,13 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                 phone: false,
                                               ))
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 20.0, 0.0, 0.0),
                                                   child: Container(
                                                     width: 921.0,
                                                     height: 426.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       borderRadius:
                                                           BorderRadius.only(
                                                         bottomLeft:
@@ -462,7 +461,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       children: [
                                                         Align(
                                                           alignment:
-                                                              Alignment(0.0, 0),
+                                                              const Alignment(0.0, 0),
                                                           child: TabBar(
                                                             labelColor:
                                                                 FlutterFlowTheme.of(
@@ -488,13 +487,13 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                               FlutterFlowTheme.of(context).titleMediumFamily),
                                                                     ),
                                                             unselectedLabelStyle:
-                                                                TextStyle(),
+                                                                const TextStyle(),
                                                             indicatorColor:
                                                                 Colors.white,
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     4.0),
-                                                            tabs: [
+                                                            tabs: const [
                                                               Tab(
                                                                 text: 'TRC20',
                                                               ),
@@ -540,7 +539,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                         Flexible(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 10.0,
                                                                                 0.0,
@@ -560,7 +559,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -577,7 +576,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                 Colors.transparent,
                                                                             onTap:
                                                                                 () async {
-                                                                              await Clipboard.setData(ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
+                                                                              await Clipboard.setData(const ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
                                                                               ScaffoldMessenger.of(context).showSnackBar(
                                                                                 SnackBar(
                                                                                   content: Text(
@@ -586,13 +585,13 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                     ),
                                                                                   ),
-                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                 ),
                                                                               );
                                                                             },
                                                                             child:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.content_copy_rounded,
                                                                               color: Colors.white,
                                                                               size: 26.0,
@@ -614,7 +613,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                             .end,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             10.0,
                                                                             0.0,
@@ -636,7 +635,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                     ],
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             20.0,
@@ -692,7 +691,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                         Flexible(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 10.0,
                                                                                 0.0,
@@ -712,7 +711,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -729,7 +728,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                 Colors.transparent,
                                                                             onTap:
                                                                                 () async {
-                                                                              await Clipboard.setData(ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
+                                                                              await Clipboard.setData(const ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
                                                                               ScaffoldMessenger.of(context).showSnackBar(
                                                                                 SnackBar(
                                                                                   content: Text(
@@ -738,13 +737,13 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                       color: FlutterFlowTheme.of(context).primaryText,
                                                                                     ),
                                                                                   ),
-                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                 ),
                                                                               );
                                                                             },
                                                                             child:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.content_copy_rounded,
                                                                               color: Colors.white,
                                                                               size: 23.0,
@@ -766,7 +765,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                             .end,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             10.0,
                                                                             0.0,
@@ -788,7 +787,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                     ],
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             20.0,
@@ -829,7 +828,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                   ),
                                                 ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
                                                 child: Row(
@@ -843,7 +842,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       15.0,
@@ -863,7 +862,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      Alignment(
+                                                                      const Alignment(
                                                                           0.0,
                                                                           0),
                                                                   child: TabBar(
@@ -885,14 +884,14 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                               GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                         ),
                                                                     unselectedLabelStyle:
-                                                                        TextStyle(),
+                                                                        const TextStyle(),
                                                                     indicatorColor:
                                                                         FlutterFlowTheme.of(context)
                                                                             .primary,
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             4.0),
-                                                                    tabs: [
+                                                                    tabs: const [
                                                                       Tab(
                                                                         text:
                                                                             'TRC20',
@@ -936,7 +935,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                               children: [
                                                                                 Flexible(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                     child: AutoSizeText(
                                                                                       'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS',
                                                                                       textAlign: TextAlign.center,
@@ -951,14 +950,14 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                   ),
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: InkWell(
                                                                                     splashColor: Colors.transparent,
                                                                                     focusColor: Colors.transparent,
                                                                                     hoverColor: Colors.transparent,
                                                                                     highlightColor: Colors.transparent,
                                                                                     onTap: () async {
-                                                                                      await Clipboard.setData(ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
+                                                                                      await Clipboard.setData(const ClipboardData(text: 'TUzEUkzDjsX19WMJYWfwtbqXoEnFjoL4tS'));
                                                                                       ScaffoldMessenger.of(context).showSnackBar(
                                                                                         SnackBar(
                                                                                           content: Text(
@@ -967,12 +966,12 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                             ),
                                                                                           ),
-                                                                                          duration: Duration(milliseconds: 4000),
+                                                                                          duration: const Duration(milliseconds: 4000),
                                                                                           backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                         ),
                                                                                       );
                                                                                     },
-                                                                                    child: Icon(
+                                                                                    child: const Icon(
                                                                                       Icons.content_copy_rounded,
                                                                                       color: Colors.white,
                                                                                       size: 20.0,
@@ -991,7 +990,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                 CrossAxisAlignment.end,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                 child: AutoSizeText(
                                                                                   'Or Scan QR',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1006,7 +1005,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                             ],
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 20.0,
                                                                                 0.0,
@@ -1045,7 +1044,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                               children: [
                                                                                 Flexible(
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                     child: AutoSizeText(
                                                                                       '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956',
                                                                                       textAlign: TextAlign.center,
@@ -1060,14 +1059,14 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                   ),
                                                                                 ),
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                                   child: InkWell(
                                                                                     splashColor: Colors.transparent,
                                                                                     focusColor: Colors.transparent,
                                                                                     hoverColor: Colors.transparent,
                                                                                     highlightColor: Colors.transparent,
                                                                                     onTap: () async {
-                                                                                      await Clipboard.setData(ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
+                                                                                      await Clipboard.setData(const ClipboardData(text: '0x9Cb1AE5efE3AA099F0bED33896932C5Df9B0b956'));
                                                                                       ScaffoldMessenger.of(context).showSnackBar(
                                                                                         SnackBar(
                                                                                           content: Text(
@@ -1076,12 +1075,12 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                               color: FlutterFlowTheme.of(context).primaryText,
                                                                                             ),
                                                                                           ),
-                                                                                          duration: Duration(milliseconds: 4000),
+                                                                                          duration: const Duration(milliseconds: 4000),
                                                                                           backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                         ),
                                                                                       );
                                                                                     },
-                                                                                    child: Icon(
+                                                                                    child: const Icon(
                                                                                       Icons.content_copy_rounded,
                                                                                       color: Colors.white,
                                                                                       size: 20.0,
@@ -1100,7 +1099,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                                 CrossAxisAlignment.end,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                 child: AutoSizeText(
                                                                                   'Or Scan QR',
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1115,7 +1114,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                             ],
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 20.0,
                                                                                 0.0,
@@ -1166,7 +1165,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                       phone: false,
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           180.0, 0.0, 180.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1236,7 +1235,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 20.0,
                                                                 0.0, 0.0),
                                                     child: FlutterFlowDropDown<
@@ -1245,7 +1244,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                               .dropDownPlatformValueController ??=
                                                           FormFieldController<
                                                               String>(null),
-                                                      options: [
+                                                      options: const [
                                                         'Metatrader 4',
                                                         'Metatrader 5'
                                                       ],
@@ -1293,7 +1292,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       borderWidth: 2.0,
                                                       borderRadius: 8.0,
                                                       margin:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   4.0,
@@ -1311,7 +1310,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       30.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -1360,11 +1359,11 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                       .headlineSmallFamily),
                                                         ),
                                                   ),
-                                                  Container(
+                                                  SizedBox(
                                                     width: 200.0,
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   20.0,
@@ -1501,7 +1500,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 50.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1544,7 +1543,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 20.0, 0.0, 0.0),
                                                   child: FlutterFlowDropDown<
@@ -1553,7 +1552,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                             .dropDownPlattformResValueController ??=
                                                         FormFieldController<
                                                             String>(null),
-                                                    options: [
+                                                    options: const [
                                                       'Metatrader 4',
                                                       'Metatrader 5'
                                                     ],
@@ -1601,7 +1600,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                     borderWidth: 2.0,
                                                     borderRadius: 8.0,
                                                     margin:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 16.0, 4.0),
                                                     hidesUnderline: true,
@@ -1611,7 +1610,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 30.0, 0.0, 0.0),
                                                   child: Text(
@@ -1679,7 +1678,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   20.0),
                                                           child: TextFormField(
                                                             controller: _model
@@ -1821,7 +1820,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                           ))
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1850,7 +1849,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                         status:
                                                                             'Pending order',
                                                                         nameBuyer:
-                                                                            '${currentUserDisplayName} ${valueOrDefault(currentUserDocument?.lastName, '')}',
+                                                                            '$currentUserDisplayName ${valueOrDefault(currentUserDocument?.lastName, '')}',
                                                                         timeOrder:
                                                                             getCurrentTimestamp,
                                                                         referente1: valueOrDefault(
@@ -1870,10 +1869,10 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                     FFButtonOptions(
                                                                   height: 44.0,
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               4.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1900,7 +1899,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -1949,7 +1948,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                     .text,
                                                 status: 'Pending order',
                                                 nameBuyer:
-                                                    '${currentUserDisplayName} ${valueOrDefault(currentUserDocument?.lastName, '')}',
+                                                    '$currentUserDisplayName ${valueOrDefault(currentUserDocument?.lastName, '')}',
                                                 timeOrder: getCurrentTimestamp,
                                                 referente1: valueOrDefault(
                                                     currentUserDocument
@@ -1966,9 +1965,9 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                         text: 'Create Order Now',
                                         options: FFButtonOptions(
                                           height: 44.0,
-                                          padding: EdgeInsets.all(4.0),
+                                          padding: const EdgeInsets.all(4.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
@@ -1990,7 +1989,7 @@ class _SelectBalanceHft100kWidgetState extends State<SelectBalanceHft100kWidget>
                                                             .titleSmallFamily),
                                               ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),

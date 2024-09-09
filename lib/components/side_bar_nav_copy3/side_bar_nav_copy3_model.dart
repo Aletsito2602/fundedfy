@@ -1,10 +1,6 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'side_bar_nav_copy3_widget.dart' show SideBarNavCopy3Widget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class SideBarNavCopy3Model extends FlutterFlowModel<SideBarNavCopy3Widget> {
   @override

@@ -7,10 +7,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'profile_model.dart';
 export 'profile_model.dart';
 
@@ -181,7 +179,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 30.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -197,7 +195,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                       desktop: false,
                                     ))
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 5.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -239,7 +237,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             desktop: false,
                           ))
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -247,13 +245,13 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                     child: Container(
                                       width: 100.0,
                                       height: 645.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.transparent,
                                       ),
                                       child: Column(
                                         children: [
                                           Align(
-                                            alignment: Alignment(0.0, 0),
+                                            alignment: const Alignment(0.0, 0),
                                             child: TabBar(
                                               isScrollable: true,
                                               labelColor:
@@ -278,12 +276,12 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         context)
                                                                     .titleMediumFamily),
                                                       ),
-                                              unselectedLabelStyle: TextStyle(),
+                                              unselectedLabelStyle: const TextStyle(),
                                               indicatorColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
-                                              padding: EdgeInsets.all(8.0),
-                                              tabs: [
+                                              padding: const EdgeInsets.all(8.0),
+                                              tabs: const [
                                                 Tab(
                                                   text: 'User Data',
                                                 ),
@@ -307,7 +305,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   width: 100.0,
                                                   height: 612.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x06C8FAD6),
+                                                    color: const Color(0x06C8FAD6),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             12.0),
@@ -324,7 +322,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                         ))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         44.0,
@@ -372,7 +370,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                   children: [
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -411,7 +409,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -419,7 +417,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -427,7 +425,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -437,7 +435,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -458,7 +456,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -495,7 +493,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -503,7 +501,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -511,7 +509,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -521,7 +519,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -542,7 +540,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           TextFormField(
@@ -585,7 +583,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           focusedBorder:
                                                                               OutlineInputBorder(
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Color(0x00000000),
                                                                               width: 2.0,
                                                                             ),
@@ -595,7 +593,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           errorBorder:
                                                                               OutlineInputBorder(
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Color(0x00000000),
                                                                               width: 2.0,
                                                                             ),
@@ -605,7 +603,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           focusedErrorBorder:
                                                                               OutlineInputBorder(
                                                                             borderSide:
-                                                                                BorderSide(
+                                                                                const BorderSide(
                                                                               color: Color(0x00000000),
                                                                               width: 2.0,
                                                                             ),
@@ -616,7 +614,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                               true,
                                                                           fillColor:
                                                                               FlutterFlowTheme.of(context).primaryBackground,
-                                                                          contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               20.0,
                                                                               24.0,
                                                                               0.0,
@@ -636,7 +634,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -673,7 +671,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -681,7 +679,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -689,7 +687,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -699,7 +697,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -720,7 +718,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -757,7 +755,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -765,7 +763,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -773,7 +771,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -783,7 +781,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -804,7 +802,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -841,7 +839,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -849,7 +847,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -857,7 +855,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -867,7 +865,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -888,7 +886,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                     Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               8.0),
                                                                       child:
                                                                           AuthUserStreamWidget(
@@ -925,7 +923,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -933,7 +931,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             errorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -941,7 +939,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             ),
                                                                             focusedErrorBorder:
                                                                                 OutlineInputBorder(
-                                                                              borderSide: BorderSide(
+                                                                              borderSide: const BorderSide(
                                                                                 color: Color(0x00000000),
                                                                                 width: 2.0,
                                                                               ),
@@ -951,7 +949,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 true,
                                                                             fillColor:
                                                                                 FlutterFlowTheme.of(context).primaryBackground,
-                                                                            contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 20.0,
                                                                                 24.0,
                                                                                 0.0,
@@ -978,11 +976,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.05),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         24.0,
@@ -1028,7 +1026,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                   ScaffoldMessenger.of(
                                                                           context)
                                                                       .showSnackBar(
-                                                                    SnackBar(
+                                                                    const SnackBar(
                                                                       content:
                                                                           Text(
                                                                         'Email required!',
@@ -1059,14 +1057,14 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 width: 270.0,
                                                                 height: 50.0,
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1094,7 +1092,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                     ),
                                                                 elevation: 2.0,
                                                                 borderSide:
-                                                                    BorderSide(
+                                                                    const BorderSide(
                                                                   color: Colors
                                                                       .transparent,
                                                                   width: 1.0,
@@ -1115,7 +1113,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   width: 100.0,
                                                   height: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x06C8FAD6),
+                                                    color: const Color(0x06C8FAD6),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             12.0),
@@ -1131,7 +1129,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ))
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       44.0,
@@ -1190,7 +1188,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ))
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       5.0,
@@ -1259,7 +1257,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                               ?.walletServer,
                                                                           ''),
                                                                     ),
-                                                                    options: [
+                                                                    options: const [
                                                                       'Tether USDT (Tron TRC20 Network)',
                                                                       'Tether USDT (Ethereum ERC20 Network)'
                                                                     ],
@@ -1307,7 +1305,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         2.0,
                                                                     borderRadius:
                                                                         50.0,
-                                                                    margin: EdgeInsetsDirectional
+                                                                    margin: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             4.0,
@@ -1324,7 +1322,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           15.0,
@@ -1378,7 +1376,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1390,7 +1388,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1402,7 +1400,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1415,7 +1413,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                             true,
                                                                         fillColor:
                                                                             FlutterFlowTheme.of(context).primary,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -1446,11 +1444,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.05),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       24.0,
@@ -1482,7 +1480,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           .primaryText,
                                                                     ),
                                                                   ),
-                                                                  duration: Duration(
+                                                                  duration: const Duration(
                                                                       milliseconds:
                                                                           4000),
                                                                   backgroundColor:
@@ -1502,14 +1500,14 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                               width: 270.0,
                                                               height: 50.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1534,7 +1532,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       ),
                                                               elevation: 2.0,
                                                               borderSide:
-                                                                  BorderSide(
+                                                                  const BorderSide(
                                                                 color: Colors
                                                                     .transparent,
                                                                 width: 1.0,
@@ -1566,7 +1564,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             tablet: false,
                           ))
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -1574,13 +1572,13 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                     child: Container(
                                       width: 100.0,
                                       height: 525.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.transparent,
                                       ),
                                       child: Column(
                                         children: [
                                           Align(
-                                            alignment: Alignment(0.0, 0),
+                                            alignment: const Alignment(0.0, 0),
                                             child: FlutterFlowButtonTabBar(
                                               useToggleButtonStyle: false,
                                               labelStyle:
@@ -1599,7 +1597,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         context)
                                                                     .titleMediumFamily),
                                                       ),
-                                              unselectedLabelStyle: TextStyle(),
+                                              unselectedLabelStyle: const TextStyle(),
                                               labelColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -1607,9 +1605,9 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
                                               backgroundColor:
-                                                  Color(0xB6B68FE0),
+                                                  const Color(0xB6B68FE0),
                                               unselectedBackgroundColor:
-                                                  Color(0x005119B7),
+                                                  const Color(0x005119B7),
                                               unselectedBorderColor:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
@@ -1617,11 +1615,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                               borderRadius: 25.0,
                                               elevation: 0.0,
                                               buttonMargin:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           8.0, 0.0, 8.0, 0.0),
-                                              padding: EdgeInsets.all(12.0),
-                                              tabs: [
+                                              padding: const EdgeInsets.all(12.0),
+                                              tabs: const [
                                                 Row(
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
@@ -1674,7 +1672,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   width: 100.0,
                                                   height: 531.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x06C8FAD6),
+                                                    color: const Color(0x06C8FAD6),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             12.0),
@@ -1690,7 +1688,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ))
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       44.0,
@@ -1739,7 +1737,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                               children: [
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -1792,7 +1790,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1804,7 +1802,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1816,7 +1814,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -1827,7 +1825,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -1855,7 +1853,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -1911,7 +1909,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       focusedBorder:
                                                                           OutlineInputBorder(
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Color(0x00000000),
                                                                           width:
@@ -1923,7 +1921,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       errorBorder:
                                                                           OutlineInputBorder(
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Color(0x00000000),
                                                                           width:
@@ -1935,7 +1933,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       focusedErrorBorder:
                                                                           OutlineInputBorder(
                                                                         borderSide:
-                                                                            BorderSide(
+                                                                            const BorderSide(
                                                                           color:
                                                                               Color(0x00000000),
                                                                           width:
@@ -1946,7 +1944,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       ),
                                                                       filled:
                                                                           true,
-                                                                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           20.0,
                                                                           24.0,
                                                                           0.0,
@@ -1973,7 +1971,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -2022,7 +2020,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2034,7 +2032,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2046,7 +2044,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2057,7 +2055,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -2094,7 +2092,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                               children: [
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -2143,7 +2141,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2155,7 +2153,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2167,7 +2165,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2178,7 +2176,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -2206,7 +2204,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -2255,7 +2253,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2267,7 +2265,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2279,7 +2277,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2290,7 +2288,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -2318,7 +2316,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -2367,7 +2365,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2379,7 +2377,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2391,7 +2389,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2402,7 +2400,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -2430,7 +2428,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child:
@@ -2479,7 +2477,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2491,7 +2489,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2503,7 +2501,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0x00000000),
                                                                             width:
@@ -2514,7 +2512,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                         ),
                                                                         filled:
                                                                             true,
-                                                                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                             20.0,
                                                                             24.0,
                                                                             0.0,
@@ -2542,7 +2540,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               8.0),
                                                                   child: Row(
@@ -2553,7 +2551,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               0.0,
                                                                               0.05),
                                                                           child:
@@ -2570,7 +2568,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                               ));
                                                                               if (_model.emailPcTextController.text.isEmpty) {
                                                                                 ScaffoldMessenger.of(context).showSnackBar(
-                                                                                  SnackBar(
+                                                                                  const SnackBar(
                                                                                     content: Text(
                                                                                       'Email required!',
                                                                                     ),
@@ -2593,9 +2591,9 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 FFButtonOptions(
                                                                               width: double.infinity,
                                                                               height: 50.0,
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                              color: Color(0x008E33FF),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                              iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                              color: const Color(0x008E33FF),
                                                                               textStyle: FlutterFlowTheme.of(context).titleMedium.override(
                                                                                     fontFamily: FlutterFlowTheme.of(context).titleMediumFamily,
                                                                                     color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -2627,7 +2625,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   width: 100.0,
                                                   height: 511.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x06C8FAD6),
+                                                    color: const Color(0x06C8FAD6),
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             12.0),
@@ -2643,7 +2641,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ))
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       44.0,
@@ -2702,7 +2700,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ))
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       5.0,
@@ -2759,7 +2757,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       .max,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -2782,7 +2780,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 'Save your network wallet here',
                                                                               ),
                                                                             ),
-                                                                            options: [
+                                                                            options: const [
                                                                               'Tether USDT (Tron TRC20 Network)',
                                                                               'Tether USDT (Ethereum ERC20 Network)'
                                                                             ],
@@ -2816,7 +2814,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 2.0,
                                                                             borderRadius:
                                                                                 50.0,
-                                                                            margin: EdgeInsetsDirectional.fromSTEB(
+                                                                            margin: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 4.0,
                                                                                 16.0,
@@ -2836,7 +2834,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -2850,7 +2848,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                       Expanded(
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               15.0,
                                                                               0.0,
@@ -2884,21 +2882,21 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                   borderRadius: BorderRadius.circular(50.0),
                                                                                 ),
                                                                                 focusedBorder: OutlineInputBorder(
-                                                                                  borderSide: BorderSide(
+                                                                                  borderSide: const BorderSide(
                                                                                     color: Color(0x00000000),
                                                                                     width: 2.0,
                                                                                   ),
                                                                                   borderRadius: BorderRadius.circular(50.0),
                                                                                 ),
                                                                                 errorBorder: OutlineInputBorder(
-                                                                                  borderSide: BorderSide(
+                                                                                  borderSide: const BorderSide(
                                                                                     color: Color(0x00000000),
                                                                                     width: 2.0,
                                                                                   ),
                                                                                   borderRadius: BorderRadius.circular(50.0),
                                                                                 ),
                                                                                 focusedErrorBorder: OutlineInputBorder(
-                                                                                  borderSide: BorderSide(
+                                                                                  borderSide: const BorderSide(
                                                                                     color: Color(0x00000000),
                                                                                     width: 2.0,
                                                                                   ),
@@ -2906,7 +2904,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                                 ),
                                                                                 filled: true,
                                                                                 fillColor: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                contentPadding: EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
+                                                                                contentPadding: const EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
@@ -2928,11 +2926,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.05),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       24.0,
@@ -2964,7 +2962,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                                           .primaryText,
                                                                     ),
                                                                   ),
-                                                                  duration: Duration(
+                                                                  duration: const Duration(
                                                                       milliseconds:
                                                                           4000),
                                                                   backgroundColor:
@@ -2984,20 +2982,20 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                               width: 270.0,
                                                               height: 50.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0x008E33FF),
                                                               textStyle:
                                                                   FlutterFlowTheme.of(

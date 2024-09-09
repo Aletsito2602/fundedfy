@@ -1,16 +1,13 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cuentas_api_model.dart';
 export 'cuentas_api_model.dart';
 
@@ -95,7 +92,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                         'assets/images/Diseo_sin_ttulo_(1).jpg',
                       ).image,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4C00C0FF),
@@ -144,7 +141,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                         child: Container(
                           width: 100.0,
                           height: 1445.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -156,14 +153,14 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                   child: Container(
                                     width: double.infinity,
                                     height: 100.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.transparent,
                                     ),
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(0.0, -1.0),
+                                          const AlignmentDirectional(0.0, -1.0),
                                       child: Padding(
-                                        padding: EdgeInsets.all(24.0),
+                                        padding: const EdgeInsets.all(24.0),
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -174,10 +171,10 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                             children: [
                                               Container(
                                                 width: double.infinity,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 5.0, 0.0, 0.0),
                                                 child: Row(
@@ -201,7 +198,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                               width: double
                                                                   .infinity,
                                                               decoration:
-                                                                  BoxDecoration(),
+                                                                  const BoxDecoration(),
                                                             ),
                                                             Row(
                                                               mainAxisSize:
@@ -210,13 +207,13 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                               children: [
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             14.0),
                                                                     child: Text(
                                                                       'Your Challenges',
@@ -247,7 +244,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                               height: 730.0,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0x1E0D121D),
                                                                 borderRadius:
                                                                     BorderRadius
@@ -256,7 +253,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             24.0),
                                                                 child: Row(
@@ -272,7 +269,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                         height:
                                                                             1230.0,
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           color:
                                                                               Color(0x000D121D),
                                                                           borderRadius:
@@ -291,7 +288,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                             Column(
                                                                           children: [
                                                                             Align(
-                                                                              alignment: Alignment(0.0, 0),
+                                                                              alignment: const Alignment(0.0, 0),
                                                                               child: TabBar(
                                                                                 labelColor: FlutterFlowTheme.of(context).primaryText,
                                                                                 unselectedLabelColor: FlutterFlowTheme.of(context).secondaryText,
@@ -301,10 +298,10 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                       letterSpacing: 0.0,
                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleMediumFamily),
                                                                                     ),
-                                                                                unselectedLabelStyle: TextStyle(),
+                                                                                unselectedLabelStyle: const TextStyle(),
                                                                                 indicatorColor: Colors.white,
-                                                                                padding: EdgeInsets.all(10.0),
-                                                                                tabs: [
+                                                                                padding: const EdgeInsets.all(10.0),
+                                                                                tabs: const [
                                                                                   Tab(
                                                                                     text: 'Challenges',
                                                                                   ),
@@ -332,10 +329,10 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                         valueOrDefault<String>(
                                                                                           (cuentasApiGeetResponse.jsonBody.toList().map<GeetStruct?>(GeetStruct.maybeFromMap).toList() as Iterable<GeetStruct?>)
                                                                                               .withoutNulls
-                                                                                              ?.contains(GeetStruct(
+                                                                                              .contains(GeetStruct(
                                                                                                 email: '0',
                                                                                               ))
-                                                                                              ?.toString(),
+                                                                                              .toString(),
                                                                                           'o',
                                                                                         ),
                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -383,11 +380,11 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                         children: List.generate(columnFundedAccountsRecordList.length, (columnIndex) {
                                                                                           final columnFundedAccountsRecord = columnFundedAccountsRecordList[columnIndex];
                                                                                           return Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                             child: Container(
                                                                                               width: double.infinity,
                                                                                               height: 188.0,
-                                                                                              decoration: BoxDecoration(
+                                                                                              decoration: const BoxDecoration(
                                                                                                 gradient: LinearGradient(
                                                                                                   colors: [
                                                                                                     Color(0xA04591D5),
@@ -405,13 +402,13 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsets.all(20.0),
+                                                                                                padding: const EdgeInsets.all(20.0),
                                                                                                 child: Column(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                                       child: Row(
                                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -437,7 +434,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                   ),
                                                                                                                 )
                                                                                                               ],
-                                                                                                              style: TextStyle(),
+                                                                                                              style: const TextStyle(),
                                                                                                             ),
                                                                                                           ),
                                                                                                           FFButtonWidget(
@@ -455,9 +452,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             text: 'Accounts Details',
                                                                                                             options: FFButtonOptions(
                                                                                                               height: 40.0,
-                                                                                                              padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                              iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                              color: Color(0x008E33FF),
+                                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                              iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                              color: const Color(0x008E33FF),
                                                                                                               textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                                     color: Colors.white,
@@ -477,7 +474,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                                       child: Row(
                                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                                         children: [
@@ -492,12 +489,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                 ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               columnFundedAccountsRecord.serverAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 20.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -505,7 +502,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -521,7 +518,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                       ),
                                                                                                                     ),
-                                                                                                                    duration: Duration(milliseconds: 4000),
+                                                                                                                    duration: const Duration(milliseconds: 4000),
                                                                                                                     backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                   ),
                                                                                                                 );
@@ -534,7 +531,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'Login',
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -547,12 +544,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               columnFundedAccountsRecord.idAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 20.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -560,7 +557,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -576,7 +573,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                       ),
                                                                                                                     ),
-                                                                                                                    duration: Duration(milliseconds: 4000),
+                                                                                                                    duration: const Duration(milliseconds: 4000),
                                                                                                                     backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                   ),
                                                                                                                 );
@@ -589,7 +586,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'Password',
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -602,12 +599,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               columnFundedAccountsRecord.passwordAccount,
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                    color: Color(0xFFD4B1FF),
+                                                                                                                    color: const Color(0xFFD4B1FF),
                                                                                                                     fontSize: 20.0,
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -615,7 +612,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             ),
                                                                                                           ),
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                             child: InkWell(
                                                                                                               splashColor: Colors.transparent,
                                                                                                               focusColor: Colors.transparent,
@@ -631,7 +628,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                         color: FlutterFlowTheme.of(context).primaryText,
                                                                                                                       ),
                                                                                                                     ),
-                                                                                                                    duration: Duration(milliseconds: 4000),
+                                                                                                                    duration: const Duration(milliseconds: 4000),
                                                                                                                     backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                                                   ),
                                                                                                                 );
@@ -668,7 +665,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           5.0,
@@ -736,11 +733,11 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                 (context, listViewIndex) {
                                                                               final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                 child: Container(
                                                                                   width: 100.0,
                                                                                   height: 377.0,
-                                                                                  decoration: BoxDecoration(
+                                                                                  decoration: const BoxDecoration(
                                                                                     color: Color(0x780D121D),
                                                                                     borderRadius: BorderRadius.only(
                                                                                       bottomLeft: Radius.circular(20.0),
@@ -750,7 +747,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                     ),
                                                                                   ),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsets.all(20.0),
+                                                                                    padding: const EdgeInsets.all(20.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -772,7 +769,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ],
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                           child: Text(
                                                                                             listViewChallengueAccountsRecord.status,
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -785,7 +782,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -810,12 +807,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -823,7 +820,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -848,7 +845,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -859,7 +856,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Login',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -876,12 +873,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -889,7 +886,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -914,7 +911,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -925,7 +922,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Password',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -942,12 +939,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewChallengueAccountsRecord.passwordAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -955,7 +952,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -980,9 +977,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Align(
-                                                                                          alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                             child: FFButtonWidget(
                                                                                               onPressed: () async {
                                                                                                 context.pushNamed(
@@ -998,8 +995,8 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                               text: 'Accounts Details',
                                                                                               options: FFButtonOptions(
                                                                                                 height: 40.0,
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -1008,7 +1005,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                                     ),
                                                                                                 elevation: 3.0,
-                                                                                                borderSide: BorderSide(
+                                                                                                borderSide: const BorderSide(
                                                                                                   color: Colors.transparent,
                                                                                                   width: 1.0,
                                                                                                 ),
@@ -1038,7 +1035,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                             ))
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             24.0),
                                                                 child: Row(
@@ -1057,7 +1054,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                         text:
                                                                             'Start New Challenge',
                                                                         icon:
-                                                                            Icon(
+                                                                            const Icon(
                                                                           Icons
                                                                               .add_box,
                                                                           size:
@@ -1067,12 +1064,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                             FFButtonOptions(
                                                                           height:
                                                                               60.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               24.0,
                                                                               0.0,
                                                                               24.0,
                                                                               0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
@@ -1090,7 +1087,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                           elevation:
                                                                               3.0,
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Colors.transparent,
                                                                             width:
@@ -1126,13 +1123,13 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                   child: Container(
                                     width: double.infinity,
                                     height: 100.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x310D121D),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 30.0, 0.0, 0.0),
                                         child: SingleChildScrollView(
                                           child: Column(
@@ -1144,10 +1141,10 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                             children: [
                                               Container(
                                                 width: double.infinity,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 30.0, 10.0, 0.0),
                                                 child: Row(
@@ -1156,7 +1153,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Text(
                                                         'Your Challenges',
@@ -1188,7 +1185,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 5.0, 0.0, 0.0),
                                                 child: Row(
@@ -1200,7 +1197,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                         width: 100.0,
                                                         height: 659.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0x140D121D),
                                                           borderRadius:
@@ -1223,7 +1220,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  Alignment(
+                                                                  const Alignment(
                                                                       0.0, 0),
                                                               child: TabBar(
                                                                 labelColor: FlutterFlowTheme.of(
@@ -1248,16 +1245,16 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                               FlutterFlowTheme.of(context).titleMediumFamily),
                                                                     ),
                                                                 unselectedLabelStyle:
-                                                                    TextStyle(),
+                                                                    const TextStyle(),
                                                                 indicatorColor:
                                                                     FlutterFlowTheme.of(
                                                                             context)
                                                                         .primaryText,
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             8.0),
-                                                                tabs: [
+                                                                tabs: const [
                                                                   Tab(
                                                                     text:
                                                                         'Challenges',
@@ -1289,13 +1286,13 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                             .max,
                                                                     children: [
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         child:
                                                                             Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(6.0),
+                                                                              const EdgeInsets.all(6.0),
                                                                           child:
                                                                               SingleChildScrollView(
                                                                             child:
@@ -1306,26 +1303,26 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                               children: [
                                                                                 Container(
                                                                                   width: double.infinity,
-                                                                                  decoration: BoxDecoration(),
+                                                                                  decoration: const BoxDecoration(),
                                                                                 ),
                                                                                 if (responsiveVisibility(
                                                                                   context: context,
                                                                                   phone: false,
                                                                                 ))
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 50.0),
                                                                                     child: Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       mainAxisAlignment: MainAxisAlignment.center,
                                                                                       children: [
                                                                                         Flexible(
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                             child: Container(
                                                                                               width: 2247.0,
                                                                                               height: 232.0,
                                                                                               decoration: BoxDecoration(
-                                                                                                color: Color(0x5F5119B7),
+                                                                                                color: const Color(0x5F5119B7),
                                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                                                 border: Border.all(
                                                                                                   color: FlutterFlowTheme.of(context).primary,
@@ -1358,7 +1355,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       ),
                                                                                                     ),
                                                                                                     Align(
-                                                                                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                       child: InkWell(
                                                                                                         splashColor: Colors.transparent,
                                                                                                         focusColor: Colors.transparent,
@@ -1403,7 +1400,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                         Expanded(
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 10.0,
                                                                                 1.0,
                                                                                 10.0,
@@ -1443,11 +1440,11 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                   itemBuilder: (context, listViewIndex) {
                                                                                     final listViewChallengueAccountsRecord = listViewChallengueAccountsRecordList[listViewIndex];
                                                                                     return Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                       child: Container(
                                                                                         width: 100.0,
                                                                                         height: 371.0,
-                                                                                        decoration: BoxDecoration(
+                                                                                        decoration: const BoxDecoration(
                                                                                           gradient: LinearGradient(
                                                                                             colors: [
                                                                                               Color(0xA04591D5),
@@ -1465,7 +1462,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsets.all(20.0),
+                                                                                          padding: const EdgeInsets.all(20.0),
                                                                                           child: Column(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1510,7 +1507,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ],
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                                 child: Text(
                                                                                                   listViewChallengueAccountsRecord.status,
                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1523,7 +1520,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                 child: Row(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -1548,12 +1545,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                             children: [
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                                 child: Text(
                                                                                                                   listViewChallengueAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                        color: Color(0xFFD4B1FF),
+                                                                                                                        color: const Color(0xFFD4B1FF),
                                                                                                                         fontSize: 15.0,
                                                                                                                         letterSpacing: 0.0,
                                                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1561,7 +1558,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                 ),
                                                                                                               ),
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                                 child: InkWell(
                                                                                                                   splashColor: Colors.transparent,
                                                                                                                   focusColor: Colors.transparent,
@@ -1586,7 +1583,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                 child: Row(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -1597,7 +1594,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'Login',
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1614,12 +1611,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                             children: [
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                                 child: Text(
                                                                                                                   listViewChallengueAccountsRecord.idAccount,
                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                        color: Color(0xFFD4B1FF),
+                                                                                                                        color: const Color(0xFFD4B1FF),
                                                                                                                         fontSize: 15.0,
                                                                                                                         letterSpacing: 0.0,
                                                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1627,7 +1624,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                 ),
                                                                                                               ),
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                                 child: InkWell(
                                                                                                                   splashColor: Colors.transparent,
                                                                                                                   focusColor: Colors.transparent,
@@ -1652,7 +1649,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                                 child: Row(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -1663,7 +1660,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                         children: [
                                                                                                           Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'Password',
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1680,12 +1677,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                             children: [
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                                 child: Text(
                                                                                                                   listViewChallengueAccountsRecord.passwordAccount,
                                                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                        color: Color(0xFFD4B1FF),
+                                                                                                                        color: const Color(0xFFD4B1FF),
                                                                                                                         fontSize: 15.0,
                                                                                                                         letterSpacing: 0.0,
                                                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1693,7 +1690,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                                 ),
                                                                                                               ),
                                                                                                               Padding(
-                                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                                 child: InkWell(
                                                                                                                   splashColor: Colors.transparent,
                                                                                                                   focusColor: Colors.transparent,
@@ -1718,9 +1715,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                 ),
                                                                                               ),
                                                                                               Align(
-                                                                                                alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                                   child: FFButtonWidget(
                                                                                                     onPressed: () async {
                                                                                                       context.pushNamed(
@@ -1736,9 +1733,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                     text: 'Accounts Details',
                                                                                                     options: FFButtonOptions(
                                                                                                       height: 40.0,
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                      color: Color(0x008E33FF),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                      color: const Color(0x008E33FF),
                                                                                                       textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                             fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                             color: Colors.white,
@@ -1778,7 +1775,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                     ),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           10.0,
                                                                           1.0,
                                                                           10.0,
@@ -1833,11 +1830,11 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                 (context, listViewIndex) {
                                                                               final listViewFundedAccountsRecord = listViewFundedAccountsRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                                                                                 child: Container(
                                                                                   width: 100.0,
                                                                                   height: 340.0,
-                                                                                  decoration: BoxDecoration(
+                                                                                  decoration: const BoxDecoration(
                                                                                     gradient: LinearGradient(
                                                                                       colors: [
                                                                                         Color(0xA04591D5),
@@ -1858,7 +1855,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                     ),
                                                                                   ),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsets.all(20.0),
+                                                                                    padding: const EdgeInsets.all(20.0),
                                                                                     child: Column(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1903,7 +1900,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ],
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1928,12 +1925,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.serverAccount.maybeHandleOverflow(maxChars: 10),
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1941,7 +1938,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -1966,7 +1963,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -1977,7 +1974,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Login',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1994,12 +1991,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.idAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2007,7 +2004,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -2032,7 +2029,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.start,
@@ -2043,7 +2040,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                   children: [
                                                                                                     Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'Password',
                                                                                                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2060,12 +2057,12 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                       children: [
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                                           child: Text(
                                                                                                             listViewFundedAccountsRecord.passwordAccount,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                                  color: Color(0xFFD4B1FF),
+                                                                                                                  color: const Color(0xFFD4B1FF),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2073,7 +2070,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                                           ),
                                                                                                         ),
                                                                                                         Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                                           child: InkWell(
                                                                                                             splashColor: Colors.transparent,
                                                                                                             focusColor: Colors.transparent,
@@ -2098,9 +2095,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Align(
-                                                                                          alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                                                                                             child: FFButtonWidget(
                                                                                               onPressed: () async {
                                                                                                 context.pushNamed(
@@ -2116,9 +2113,9 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                                               text: 'Accounts Details',
                                                                                               options: FFButtonOptions(
                                                                                                 height: 40.0,
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                                color: Color(0x008E33FF),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                                color: const Color(0x008E33FF),
                                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                                                                                                       color: Colors.white,
@@ -2161,7 +2158,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                 phone: false,
                                               ))
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 50.0),
                                                   child: Row(
@@ -2174,7 +2171,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                       Flexible(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       15.0,
@@ -2185,7 +2182,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                             height: 232.0,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0x5F5119B7),
                                                               borderRadius:
                                                                   BorderRadius
@@ -2250,7 +2247,7 @@ class _CuentasApiWidgetState extends State<CuentasApiWidget>
                                                                   ),
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:

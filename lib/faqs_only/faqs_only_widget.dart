@@ -2,12 +2,9 @@ import '/backend/backend.dart';
 import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'faqs_only_model.dart';
 export 'faqs_only_model.dart';
 
@@ -46,7 +43,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<FaqsChallengeRecord>(
-      stream: FaqsChallengeRecord.getDocument(widget!.faqs!),
+      stream: FaqsChallengeRecord.getDocument(widget.faqs!),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
@@ -87,7 +84,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                         'assets/images/Diseo_sin_ttulo_(1).jpg',
                       ).image,
                     ),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x4C00C0FF),
@@ -140,7 +137,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 64.0, 0.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -188,7 +185,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 30.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -197,7 +194,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                                         children: [
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: AutoSizeText(
                                                 valueOrDefault<String>(
@@ -234,7 +231,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     30.0, 10.0, 10.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -242,7 +239,7 @@ class _FaqsOnlyWidgetState extends State<FaqsOnlyWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 20.0, 40.0, 0.0),
                                         child: AutoSizeText(
                                           valueOrDefault<String>(

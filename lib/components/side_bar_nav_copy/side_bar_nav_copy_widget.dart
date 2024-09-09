@@ -1,9 +1,6 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'side_bar_nav_copy_model.dart';
 export 'side_bar_nav_copy_model.dart';
 
@@ -59,7 +56,7 @@ class _SideBarNavCopyWidgetState extends State<SideBarNavCopyWidget> {
       width: 230.0,
       height: double.infinity,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(0.0),
@@ -78,7 +75,7 @@ class _SideBarNavCopyWidgetState extends State<SideBarNavCopyWidget> {
           child: Container(
             width: 100.0,
             height: 100.0,
-            decoration: BoxDecoration(),
+            decoration: const BoxDecoration(),
           ),
         ),
       ),

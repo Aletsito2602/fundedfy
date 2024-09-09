@@ -2,11 +2,9 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/components/side_bar_nav/side_bar_nav_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'menu_res_model.dart';
 export 'menu_res_model.dart';
 
@@ -58,7 +56,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                     'assets/images/Diseo_sin_ttulo_(1).jpg',
                   ).image,
                 ),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 4.0,
                     color: Color(0x4C00C0FF),
@@ -109,7 +107,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 15.0, 50.0, 15.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -136,7 +134,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                   desktop: false,
                                 ))
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 5.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -168,9 +166,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -183,8 +181,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -201,7 +199,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -222,7 +220,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -255,7 +253,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -282,9 +280,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -297,8 +295,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -315,7 +313,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -336,7 +334,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -369,7 +367,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -396,9 +394,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -411,8 +409,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -429,7 +427,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -450,7 +448,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -483,7 +481,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -510,9 +508,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -525,8 +523,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -543,7 +541,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -564,7 +562,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -597,7 +595,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -624,9 +622,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -639,8 +637,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -657,7 +655,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: FaIcon(
@@ -678,7 +676,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -711,7 +709,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -738,9 +736,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -753,8 +751,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -771,7 +769,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -792,7 +790,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -825,7 +823,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -852,9 +850,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -867,8 +865,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -885,7 +883,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -906,7 +904,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -939,7 +937,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
@@ -966,9 +964,9 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -981,8 +979,8 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                         width: double.infinity,
                                         height: 68.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0x12EAEEEB),
-                                          boxShadow: [
+                                          color: const Color(0x12EAEEEB),
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 3.0,
                                               color: Color(0x33000000),
@@ -999,7 +997,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       15.0, 0.0, 0.0, 0.0),
                                               child: Icon(
@@ -1020,7 +1018,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1053,7 +1051,7 @@ class _MenuResWidgetState extends State<MenuResWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           15.0, 0.0, 15.0, 0.0),
                                                   child: Icon(
